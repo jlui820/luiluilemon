@@ -1,0 +1,33 @@
+Users Table
+
+| column name     | data type | details               |
+|-----------------|-----------|-----------------------|
+| id              | integer   | not null, primary key |
+| username        | string    | not null              |
+| email           | string    | not null              |
+| password_digest | string    | not null              |
+| session_token   | string    | not null              |
+| created_at      | date      | not null              |
+| updated_at      | date        not null              |
+
+
+Products Table
+
+| column_name | data type | details               |
+|-------------|-----------|-----------------------|
+| id          | interger  | primary_key, not null |
+| type        | string    | not null              |
+| name        | string    | not null              |
+| description | string    | not null              |
+| size        | string    | not null              |
+| created_at  | date      | not null              |
+| updated_at  | date      | not null              |
+
+| column_name | data type | details     |
+|-------------|-----------|-------------|
+| id          | integer   | primary_key |
+| user_id     | integer   | foreign_key |
+| created_at  | date      | not null    |
+| updated_at  | date      | not null    |
+|             |           |             |
+|             |           |             |
