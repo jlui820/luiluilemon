@@ -42,6 +42,7 @@ class SessionForm extends React.Component {
                             />
                     </label>
                     <input type="submit"/>
+                    {/* <button>Sign In</button> */}
                 </form>
             </div>
         )

@@ -3,6 +3,7 @@ import GreetingContainer from './greeting/greeting_container';
 import LoginFormContainer from './sessions/login_form_container';
 import SignupFormContainer from './sessions/signup_form_container';
 import { Route } from 'react-router-dom';
+import { AuthRoute } from '../util/route_util'
 
 
 const App = () => (
@@ -12,8 +13,8 @@ const App = () => (
             <GreetingContainer />
         </header>
 
-        <Route path='/login' component={LoginFormContainer} />
-        <Route path='/signup' component={SignupFormContainer} />
+        <AuthRoute path='/login' component={LoginFormContainer} />
+        <AuthRoute path='/signup' component={SignupFormContainer} />
     </div>
 );
 
