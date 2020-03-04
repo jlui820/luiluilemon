@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-    validates :username, presence: true, uniqueness: true
+    validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP } 
+    validates :first_name, :last_name, presence: true
     validates :password_digest, presence: true
     validates :session_token, presence: true, uniqueness: true
     validates :password, length: { minimum: 6, allow_nil: true }
@@ -7,8 +8,8 @@ class User < ApplicationRecord
 
     attr_reader :password
 
-    def self.find_by_credentials(username, password)
-        user = User.find_by(username: username)
+    def self.find_by_credentials(email, password)
+        user = User.find_by(email: email)
         return nil if user.nil?
         user.is_password?(password) ? user : nil
     end
