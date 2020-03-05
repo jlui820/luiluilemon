@@ -1,11 +1,31 @@
 .nav-bar-head-nav {
     display: flex;
+    justify-content: space-between;
+}   
+
+
+
+/* .nav-bar-logo {
+    height: 10px;
+    width: 10px;
+} */
+
+.left-side-list {
+    display: flex;
 }
 
+.nav-logo {
+    width: 30px;
+    height: 30px;
+}
 
+.nav-bar-nav-link {
+    padding: 10px;
+}
+.click-link {
+    text-decoration: none;
+}
 
-img{
-    height: 100px;
-    width: 100px;
-    display: flex;
+.greeting-container-links {
+    text-decoration: none;
 }

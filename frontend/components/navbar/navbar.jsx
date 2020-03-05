@@ -9,21 +9,18 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className='nav-bar-head-nav'>
-                <div>
-                        <img src="/assets/lululemon.png" alt=""/>
-                    <ul>
+                <div className='left-side-nav-bar'>
+                    <ul className="left-side-list">
+                     <img className="nav-logo" src="/assets/lululemon.png" alt=""/>
                         <li className='nav-bar-nav-link' >
                             <a className='click-link' href="">WOMEN</a>
                         </li>
-                        
                         <li className='nav-bar-nav-link'>
                             <a className='click-link' href="">MEN</a>
                         </li>
-
                         <li className='nav-bar-nav-link'>
                             <a className='click-link' href="">GIRLS</a>
                         </li>
-
                         <li className='nav-bar-nav-link'>
                             <a className='click-link' href="">ACCESSORIES</a>
                         </li>
@@ -35,3 +32,6 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
+
+//text decoration : none.. remove underline put on parent?
+//ReactLink for the links
