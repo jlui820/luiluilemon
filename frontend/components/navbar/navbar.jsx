@@ -8,11 +8,11 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <div className="side-box">
+                <div className='main-nav'>
                 <div className='nav-bar-head-nav'>
                     <div className='left-side-nav-bar'>
                         <ul className="left-side-list">
-                        <img className="nav-logo" src="/assets/lululemon.png" alt=""/>
+                        <img className="nav-logo" src="/assets/pinklogo.jpg" alt=""/>
                             <li className='nav-bar-nav-link' >
                                 <a className='click-link' href="">WOMEN</a>
                             </li>
@@ -28,7 +28,7 @@ class NavBar extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </div>
+                </div>
         )
     }
 }

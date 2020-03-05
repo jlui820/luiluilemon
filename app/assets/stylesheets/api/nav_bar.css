@@ -5,13 +5,18 @@
     font-size: 0.87rem;
     font-weight: bold;
     text-align: left;
-    padding: 24px 25px 12px;
+    /* padding: 24px 25px 12px 0px; */
+    padding-top: 24px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    padding-right: 12px;
     align-items: baseline;
+    margin-left: 160px;
 }   
 
-.side-box{
+/* .main-nav{
     padding-left: 160px;
-}
+} */
 
 .left-side-list {
     display: flex;
