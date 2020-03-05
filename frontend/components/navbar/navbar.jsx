@@ -7,29 +7,46 @@ class NavBar extends React.Component {
     }
 
     render() {
-        return (
-                <div className='main-nav'>
-                <div className='nav-bar-head-nav'>
+        return (        
+            <div className='nav-bar-head'>
+                <div className='nav-bar-head-container'>
                     <div className='left-side-nav-bar'>
-                        <ul className="left-side-list">
-                        {/* <img className="nav-logo" src="/assets/pinklogo.jpg" alt=""/> */}
-                            <img className='nav-logo' src={window.navlogo} />
+                        <div className='nav-bar-logo'>
+                           <img className='nav-logo' src={window.navlogo} />
+                        </div>   
+                        <div>
                             <li className='nav-bar-nav-link' >
-                                <a className='click-link' href="">WOMEN</a>
+                                <Link className='click-link' href="">WOMEN</Link>
                             </li>
+                        </div>   
+                        <div>
                             <li className='nav-bar-nav-link'>
-                                <a className='click-link' href="">MEN</a>
+                                <Link className='click-link' href="">MEN</Link>
                             </li>
+                        </div>   
+                            
+                        <div>
                             <li className='nav-bar-nav-link'>
-                                <a className='click-link' href="">GIRLS</a>
+                                <Link className='click-link' href="">GIRLS</Link>
                             </li>
+                        </div>   
+                        <div>
                             <li className='nav-bar-nav-link'>
-                                <a className='click-link' href="">ACCESSORIES</a>
+                                <Link className='click-link' href="">ACCESSORIES</Link>
                             </li>
-                        </ul>
+                        </div>  
                     </div>
-                </div>
-                </div>
+                    <div className='right-side-nav-bar'>
+                        <div className='login'>
+                            <Link className='login-button'>Login</Link>
+                        </div>
+                        <div className='search'>
+                            <Link className='login-button'>search</Link>
+                        </div>
+                    </div>
+                 </div>           
+            </div>
+            
         )
     }
 }
