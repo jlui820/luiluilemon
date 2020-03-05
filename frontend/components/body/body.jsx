@@ -9,26 +9,30 @@ class Body extends React.Component {
     render() {
         return(
             <div className='main-body-container'>
-                <img className="main-body-image" src="/assets/lulumainbodyimage.jpg" alt="" />
-                <div className='side-nav'>
+                <div className='main-body-image'>
+                    <img className="main-image" src="/assets/mainpage.jpg" alt="" />
+                </div>
+                <div className='left-side-container'>
                     <h1>lululemon</h1>
-                    <ul className="side-nav-links">
-                        <li>
-                            <a className=''>What's New</a>
-                        </li>
-                        <li>
-                            <a className=''>All Women's</a>
-                        </li>
-                        <li>
-                            <a className=''>All Men's</a>
-                        </li>
-                        <li>
-                            <a className=''>All Girls</a>
-                        </li>
-                        <li>
-                            <a className=''>All Accessories</a>
-                        </li>
-                    </ul>
+                    <div className='left-side-container-items'>
+                        <ul className='left-side-container-list'>
+                            <li className='left-side-container-item'>
+                                <a className='click-category-link' href="">Women's What's New</a>
+                            </li>
+                            <li className='left-side-container-item'>
+                                <a className='click-category-link' href="">All Women's</a>
+                            </li>
+                            <li className='left-side-container-item'>
+                                <a className='click-category-link' href="">All Men's</a>
+                            </li>
+                            <li className='left-side-container-item'>
+                                <a className='click-category-link' href="">All Girls'</a>
+                            </li>
+                            <li className='left-side-container-item'>
+                                <a className='click-category-link' href="">All Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )

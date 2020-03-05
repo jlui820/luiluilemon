@@ -1,23 +1,33 @@
-.side-nav {
-    background-color: white;
-    position: absolute;
-    /* bottom: 300px; */
-    height: 353px;
-    width: 230px;
-    color: black;
+.main-body-container {
+    display: flex;
 }
 
-.side-nav h1 {
+.left-side-container h1 {
     font-size: 3rem;
     text-align: left;
+    justify-content: left;
+    padding: 0px 16px 0px 0px
 }
 
-.side-nav-links {
+.left-side-container {
+        height: 293px;
+        width: 230px;
+        padding: 30px 0px 30px 0px;
+        text-align: left;
+}
+
+.left-side-container-list {
     font-size: 1.188rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.main-body-container {
-    display: inline-block;
-    margin: 0 auto;
+.left-side-container-items {
+    height: 204px;
+    width: 200px;
+    padding: 30px 0px 15px
+}
 
+.left-side-container-item {
+    padding: 5px;
 }

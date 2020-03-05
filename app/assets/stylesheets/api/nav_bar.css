@@ -1,18 +1,17 @@
+
 .nav-bar-head-nav {
     display: flex;
     justify-content: space-between;
-    font-size: 0.88rem;
+    font-size: 0.87rem;
     font-weight: bold;
     text-align: left;
-    padding-left: 30px;
+    padding: 24px 25px 12px;
+    align-items: baseline;
 }   
 
-
-
-/* .nav-bar-logo {
-    height: 10px;
-    width: 10px;
-} */
+.side-box{
+    padding-left: 160px;
+}
 
 .left-side-list {
     display: flex;
@@ -21,10 +20,12 @@
 .nav-logo {
     width: 30px;
     height: 30px;
+    padding-right: 70px;
+
 }
 
 .nav-bar-nav-link {
-    padding: 10px;
+    padding: 0px 45px 0px 0px;
 }
 .click-link {
     text-decoration: none;
