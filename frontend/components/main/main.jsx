@@ -7,8 +7,7 @@ class Main extends React.Component {
         return (
             <header>
                 <NavBar />
-                <br/>
-                <h1 className='Main'>LuluLemon</h1>
+                
                 <GreetingContainer />
             </header>
         )
