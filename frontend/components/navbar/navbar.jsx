@@ -12,7 +12,8 @@ class NavBar extends React.Component {
                 <div className='nav-bar-head-nav'>
                     <div className='left-side-nav-bar'>
                         <ul className="left-side-list">
-                        <img className="nav-logo" src="/assets/pinklogo.jpg" alt=""/>
+                        {/* <img className="nav-logo" src="/assets/pinklogo.jpg" alt=""/> */}
+                            <img className='nav-logo' src={window.navlogo} />
                             <li className='nav-bar-nav-link' >
                                 <a className='click-link' href="">WOMEN</a>
                             </li>
