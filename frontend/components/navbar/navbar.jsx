@@ -16,32 +16,32 @@ class NavBar extends React.Component {
                         </div>   
                         <div>
                             <li className='nav-bar-nav-link' >
-                                <Link className='click-link' href="">WOMEN</Link>
+                                <Link to='/'className='click-link' href="">WOMEN</Link>
                             </li>
                         </div>   
                         <div>
                             <li className='nav-bar-nav-link'>
-                                <Link className='click-link' href="">MEN</Link>
+                                <Link to='/'className='click-link' href="">MEN</Link>
                             </li>
                         </div>   
                             
                         <div>
                             <li className='nav-bar-nav-link'>
-                                <Link className='click-link' href="">GIRLS</Link>
+                                <Link to='/'className='click-link' href="">GIRLS</Link>
                             </li>
                         </div>   
                         <div>
                             <li className='nav-bar-nav-link'>
-                                <Link className='click-link' href="">ACCESSORIES</Link>
+                                <Link to='/'className='click-link' href="">ACCESSORIES</Link>
                             </li>
                         </div>  
                     </div>
                     <div className='right-side-nav-bar'>
                         <div className='login'>
-                            <Link className='login-button'>Login</Link>
+                            <Link to='/login' className='login-button'>Login</Link>
                         </div>
                         <div className='search'>
-                            <Link className='login-button'>search</Link>
+                            <Link to='/'className='login-button'>search</Link>
                         </div>
                     </div>
                  </div>           

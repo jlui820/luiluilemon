@@ -18,13 +18,14 @@
 
 .left-side-nav-bar {
    display: flex;
-   justify-content: center;
    align-items: center;
+   font-weight: bold;
+   justify-content: space-between;
 }
 
 .right-side-nav-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -33,11 +34,15 @@
 }
 
 .click-link {
-    text-decoration: none;
+    text-decoration: none; 
     list-style-type: none;
 }
 
-/* .greeting-container-links {
-    text-decoration: none;
-} */
+.nav-bar-nav-link {
+    list-style-type: none;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+
+}
+
 
