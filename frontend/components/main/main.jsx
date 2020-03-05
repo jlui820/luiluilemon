@@ -6,6 +6,7 @@ import Body from '../body/body'
 class Main extends React.Component {
     render() {
         return (
+            <img src={window.brentURL} />
             <div className='main'>
                 <header>
                     <NavBar />
