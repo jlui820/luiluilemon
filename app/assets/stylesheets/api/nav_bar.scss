@@ -21,6 +21,7 @@
    align-items: center;
    font-weight: bold;
    justify-content: space-between;
+   max-width: 808px;
 }
 
 .right-side-nav-bar {
@@ -41,8 +42,9 @@
 .nav-bar-nav-link {
     list-style-type: none;
     font-size: 0.875rem;
-    letter-spacing: 1.5px;
-
-}
+    letter-spacing: .09375rem;
+    padding-right: 1em;
+    vertical-align: top;
+}   
 
 
