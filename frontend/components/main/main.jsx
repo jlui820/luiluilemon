@@ -7,14 +7,16 @@ import MainBodyProducts from '../main_body_products/main_products_body'
 class Main extends React.Component {
     render() {
         return (
-            <div className='main'>
-                <header>
-                    <NavBar />
-                    <GreetingContainer />
-                </header>
-                <div>
-                    <Body />
-                    <MainBodyProducts />
+            <div>
+                <div className='main'>
+                    <header>
+                        <NavBar />
+                        {/* <GreetingContainer /> */}
+                    </header>
+                    <div>
+                        <Body />
+                        {/* <MainBodyProducts /> */}
+                    </div>
                 </div>
             </div>
         )

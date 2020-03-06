@@ -1,7 +1,3 @@
-.whole-page-container {
-    display: flex;
-}
-
 .main-body-container {
     display: flex;
     flex-direction: row;
