@@ -8,7 +8,7 @@ class Body extends React.Component {
 
     render() {
         return(
-            <div className='whole-page-container'>
+            // <div className='whole-page-container'>
                 <div className='main-body-container'>
                     <div className='main-body-image'>
                         {/* <img className="main-image" src="/assets/mainpage.jpg" alt="" /> */}
@@ -37,7 +37,7 @@ class Body extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            // </div>
         )
     }
 }
