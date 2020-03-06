@@ -10,12 +10,12 @@ class Main extends React.Component {
             <div>
                 <div className='main'>
                     <header>
-                        <NavBar />
+                        {/* <NavBar /> */}
                         {/* <GreetingContainer /> */}
                     </header>
                     <div>
                         <Body />
-                        {/* <MainBodyProducts /> */}
+                        <MainBodyProducts />
                     </div>
                 </div>
             </div>

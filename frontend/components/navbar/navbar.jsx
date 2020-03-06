@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (        
@@ -40,8 +37,9 @@ class NavBar extends React.Component {
                         <div className='login'>
                             <Link to='/userSession' className='login-button'>Login</Link>
                         </div>
+                        <div className="line-brea">|</div>
                         <div className='search'>
-                            <Link to='/'className='login-button'>search</Link>
+                            <Link to='/'className='login-button'>Search</Link>
                         </div>
                     </div>
                  </div>           
@@ -51,7 +49,7 @@ class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
+export default NavBar
 
 //text decoration : none.. remove underline put on parent?
 //ReactLink for the links

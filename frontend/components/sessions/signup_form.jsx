@@ -28,8 +28,7 @@ class SignupForm extends React.Component {
                 <h1>{this.props.formType}</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.update('email')}
-                        />
+                        <input type="text" value={this.state.email} onChange={this.update('email')}/>
                     </label>
                     <label>Password:
                         <input

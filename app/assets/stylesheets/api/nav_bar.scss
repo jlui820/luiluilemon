@@ -9,7 +9,7 @@
 .nav-bar-head-container {
     display: flex;
     justify-content: space-between;
-    align: left;
+    text-align: left;
     width: 100%;
     padding-top: 1.5rem;
     padding-left: 1.5625rem;
@@ -20,7 +20,7 @@
 .left-side-nav-bar {
    display: flex;
    align-items: center;
-   font-weight: bold;
+   font-weight: 600;
    justify-content: space-between;
    max-width: 808px;
    width: 40%;
@@ -30,10 +30,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 55px;
 }
 
 .nav-logo {
     height: 2.0625rem;
+    margin-right: 30px;
 }
 
 .click-link {
@@ -43,7 +45,7 @@
 
 .nav-bar-nav-link {
     list-style-type: none;
-    font-size: 0.875rem;
+    font-size: 0.70rem;
     letter-spacing: .09375rem;
     padding-right: 1em;
     vertical-align: top;
@@ -53,3 +55,6 @@
     padding: 8px;
 }
 
+.line-break {
+    color: grey;
+}
