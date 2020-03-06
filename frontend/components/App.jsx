@@ -12,8 +12,8 @@ import UserSession from '../components/login_signup/user_session'
 const App = () => (
     <div>
      <Switch>
-        <AuthRoute path='/login' component={LoginFormContainer} />
-        <AuthRoute path='/signup' component={SignupFormContainer} />
+        {/* <AuthRoute path='/login' component={LoginFormContainer} />
+        <AuthRoute path='/signup' component={SignupFormContainer} /> */}
         <Route path='/userSession' component={UserSession} />
         <Route path='/' component={Main}/>
     </Switch>
