@@ -3,6 +3,7 @@
     justify-content: flex-start;
     align-items: left;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .nav-bar-head-container {
@@ -22,6 +23,7 @@
    font-weight: bold;
    justify-content: space-between;
    max-width: 808px;
+   width: 40%;
 }
 
 .right-side-nav-bar {
@@ -47,4 +49,7 @@
     vertical-align: top;
 }   
 
+.login-button {
+    padding: 8px;
+}
 

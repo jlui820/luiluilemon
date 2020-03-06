@@ -2,16 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
 }
 
 .main-body-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: image-url('mainpage.jpg');
-    width: 66%;
-    height: 450px;
+    width: 100%;
+    flex-direction: row-reverse;
 }
 
 .left-side-container {
@@ -21,7 +19,7 @@
     background-color: white;
     justify-content: left;
     line-height: 22.8px;
-    padding: 1.875rem 0;
+    padding: 1.875rem 1rem;
     width: 14.375rem;
 }
 
@@ -36,7 +34,11 @@
     font-size: 1.1875rem;
     display: flex;
     flex-direction: column;
-    
+}
+
+.left-side-container-wrapper {
+    position: absolute;
+    left: 20px;
 }
 
 .left-side-container-list-wrapper {
@@ -50,4 +52,10 @@
 
 .click-category-link {
     text-decoration: none;
+}
+
+.splash-img {
+    width: 85%;
+    height: auto;
+    margin-left: 5em;
 }

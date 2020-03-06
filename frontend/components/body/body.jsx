@@ -10,7 +10,9 @@ class Body extends React.Component {
         return(
             <div className='lulu-body'>
                 <div className='main-body-container'>
+                    <img className='splash-img' src={window.mainpageimage} alt="" srcset=""/>
                     <div className='left-side-container-wrapper'>
+
                         <div className='left-side-container'>
                             <h1 className='left-side-container-title'>lululemon</h1>
                             <div className='left-side-container-items'>
