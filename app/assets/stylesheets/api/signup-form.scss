@@ -36,3 +36,22 @@
     padding-bottom: 11px;
     padding-right: 18px;
 }
+
+.sign-up-field, .sign-up-password-field {
+    height: 45px;
+    width: 360px;
+    border: 1px solid black;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 0.9375rem;
+}
+
+.sign-up-field input{
+    padding: 10px;
+    border: none;
+}
+
+.sign-up-password-field input {
+    padding: 10px;
+    border: none;
+}

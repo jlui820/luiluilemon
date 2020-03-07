@@ -30,14 +30,14 @@ class LoginForm extends React.Component {
                         <div className='login-acccount-container'>
                             <div className='login-email'>
                                 <div className='login-email-text'>Email Address
-                                    <div>
+                                    <div className='login-field'>
                                         <input type="text" value={this.state.email} onChange={this.update('email')} />
                                     </div>
                                 </div>
                             </div>
                             <div className='login-password'>
                                 <div className='login-password-text'>Password 
-                                    <div>
+                                    <div className='password-field'>
                                         <input type="password" value={this.state.password} onChange={this.update('password')} />        
                                     </div>
                                 </div>                               
