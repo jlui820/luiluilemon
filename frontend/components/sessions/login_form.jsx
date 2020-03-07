@@ -24,25 +24,45 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>{this.props.formType}</h1>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.update('email')}
-                        />
-                    </label>
-                    <label>Password:
-                        <input
-                            type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                        />
-                    </label>
-                    <input type="submit" value='Sign In' />
-                </form>
+            <div className='login-form-container-wrapper'>
+                <div className='login-form-container'>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className='login-acccount-container'>
+                            <div className='login-email'>
+                                <div>Email
+                                    <div>
+                                        <input type="text" value={this.state.email} onChange={this.update('email')} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='login-password'>
+                                <div>Password
+                                    <div>
+                                        <input type="password" value={this.state.password} onChange={this.update('password')} />        
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value='SIGN IN' />
+                        </div>
+                    </form>
+                </div>
             </div>
         )
     }
 }
 
 export default LoginForm;
+
+{/* <div>
+    <form onSubmit={this.handleSubmit}>
+        <label>Email:
+                        <input type="text" value={this.state.email} onChange={this.update('email')}
+            />
+        </label>
+        <label>Password:
+                        <input type="password" value={this.state.password} onChange={this.update('password')}
+            />
+        </label>
+        <input type="submit" value='Sign In' />
+    </form>
+</div> */}

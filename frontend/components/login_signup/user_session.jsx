@@ -47,8 +47,7 @@ class UserSession extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='user-form-wrapper'>
-                        <div className='user-form-container'>
+                        <div className='user-session-wrapper'>
                             <div className='sign-in-form-wrapper'>
                                 <div className='sign-in-container'>
                                     <h4 className='sign-in-form-title'>
@@ -65,14 +64,14 @@ class UserSession extends React.Component {
                                         CREATE AN ACCOUNT
                                     </h4>
                                     <div>
-                                <SignupFormContainer />
-                            </div>
+                                        <SignupFormContainer />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
+             
         )
     }
 }

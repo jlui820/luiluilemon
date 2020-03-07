@@ -71,3 +71,17 @@
     margin-top: 5px;
     color: #999;
 }
+
+.user-session-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.sign-in-form-title, .sign-up-form-title {
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+    text-align: left;
+    letter-spacing: 1.5px;
+    fill: #333333;
+}
