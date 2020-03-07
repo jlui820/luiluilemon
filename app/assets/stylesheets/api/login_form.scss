@@ -1,0 +1,39 @@
+.login-form-container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.login-acccount-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-email,
+.login-password {
+    font-size: 0.8125rem;
+    line-height: 1.1rem;
+    text-align: left;
+    color: #777;
+}
+
+// .login-form-button {
+//     font-size: 0.9375rem;
+//     line-height: 0.9375rem;
+//     text-align: start;
+//     border: 1px solid #777;
+//     width: 100%;
+//     height: 45px;
+//     padding-top: 12px;
+//     padding-left: 15px;
+//     padding-bottom: 11px;
+//     padding-right: 18px;
+// }

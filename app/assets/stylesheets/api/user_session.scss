@@ -5,10 +5,11 @@
 }
 
 .profile-container {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .profile-container-header {
