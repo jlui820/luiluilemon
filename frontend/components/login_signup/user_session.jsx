@@ -6,8 +6,8 @@ class UserSession extends React.Component {
     render() {
         return (
             <div className='profile-container-wrapper'>
-                <div classname='profile-container'>
-                    <div clasName='profile-container-top-sectioin'>
+                <div className='profile-container'>
+                    <div className='profile-container-top-sectioin'>
                         <h1 className='profile-container-header'>Let's be friends with benefits</h1>
                         <p className='profile-container-body-text'>Here are just a few ways we can make it all about you:</p>
                         <div className='profile-container-icons-holder'>

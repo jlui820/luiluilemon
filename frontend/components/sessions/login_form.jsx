@@ -29,7 +29,7 @@ class LoginForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div className='login-acccount-container'>
                             <div className='login-email'>
-                                <div>Email
+                                <div className='login-email-text'>Email Address
                                     <div>
                                         <input type="text" value={this.state.email} onChange={this.update('email')} />
                                     </div>
@@ -37,7 +37,7 @@ class LoginForm extends React.Component {
                             </div>
                             <div className='login-password'>
                                 <div>Password
-                                    <div>
+                                    <div className='login-password-text'>
                                         <input type="password" value={this.state.password} onChange={this.update('password')} />        
                                     </div>
                                 </div>

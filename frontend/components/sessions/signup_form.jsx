@@ -29,20 +29,22 @@ class SignupForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div className='create-acccount-container'>
                             <div className='sign-up-email'>
-                                <div>Email
+                                <div className='sign-up-email-text'>Email
                                     <div>
                                         <input type="text" value={this.state.email} onChange={this.update('email')}/>
                                     </div>
                                 </div>
                             </div>
                             <div className='sign-up-password'>
-                                <div>Password
+                                <div className='sign-up-password-text'>Password
                                     <div>
                                         <input type="password" value={this.state.password} onChange={this.update('password')}/>
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" value='CREATE ACCOUNT' />
+                            <div className='signup-form-button'>
+                                <input type="submit" value='CREATE ACCOUNT' />
+                            </div>
                         </div>
                     </form>
                 </div>
