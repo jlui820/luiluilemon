@@ -21,6 +21,7 @@
     margin-bottom: 10px;
     width: 1070px;
     margin-bottom: 10px;
+    color: #666
 }
 
 .profile-container-body-text {
@@ -29,4 +30,44 @@
     text-align: center;
     font-size: 1.00rem;
     font-weight: 100;
+    margin-bottom: 0.625em;
+    color: #666
+}
+
+.profile-container-icons-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2.75em;
+    margin-top: 40px;
+    margin-bottom: 1.375em;
+    width: 85%;
+    margin-left: 7%;
+    border-bottom: 1px solid #ddd;
+    align-items: baseline;
+}
+
+.user-form-wrapper {
+    display: flex;
+}
+
+.user-form-container {
+    display: flex;
+}
+
+.profile-container-icon {
+    display: block;
+    width: 14%;
+    margin-right: 2%;
+    float: left;
+    width: 130px;
+}
+
+.icon-description {
+    font-size: .875rem;
+    line-height: 17.5px;
+    text-align: center;
+    margin-top: 5px;
+    color: #999;
 }

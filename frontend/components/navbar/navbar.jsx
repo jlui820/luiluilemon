@@ -10,6 +10,7 @@ class NavBar extends React.Component {
                     <div className='left-side-nav-bar'>
                         <div className='nav-bar-logo'>
                            <img className='nav-logo' src={window.navlogo} />
+                            {/* <Link to='/' className='home-page-button'></Link> */}
                         </div>   
                         <div>
                             <li className='nav-bar-nav-link' >
