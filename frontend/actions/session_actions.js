@@ -24,14 +24,14 @@ export const signup = user => dispatch => (
     error => dispatch(receiveErrors(error.responseJSON))
 )
 
-export const login = user => dispatch => (
-    APIUtil.login(user)
+export const login = user => dispatch => {
+    
+    return APIUtil.login(user)
     .then(user => dispatch(receiveCurrentUser(user))),
     error => dispatch(receiveErrors(error.responseJSON))
-)
+}
 
 export const logout = () => dispatch => (
     APIUtil.logout()
-    .then((user) => dispatch(logoutCurrentUser())),
-    error => dispatch(receiveErrors(error.responseJSON))
+    .then((user) => dispatch(logoutCurrentUser()))
 )
