@@ -1,94 +1,150 @@
-.lulu-body {
+// .lulu-body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .main-body-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     flex-direction: row-reverse;
+// }
+
+// .left-side-container {
+//     height: 293px;
+//     width: 230px;
+//     text-align: left;
+//     background-color: white;
+//     justify-content: left;
+//     line-height: 22.8px;
+//     padding: 1.875rem 1rem;
+//     width: 14.375rem;
+// }
+
+// .left-side-container-title {
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 3rem;
+//     font-weight: 600;
+// }
+
+// .left-side-container-list {
+//     font-size: 1.1875rem;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .left-side-container-wrapper {
+//     position: absolute;
+//     left: 20px;
+// }
+
+// .left-side-container-list-wrapper {
+//     padding: 30px 0px 15px;
+//     height: 204px;
+//     width: 200px;
+// }
+// .left-side-container-item {
+//     padding: 5px;
+// }
+
+// .click-category-link {
+//     text-decoration: none;
+// }
+
+// .splash-img {
+//     width: 85%;
+//     height: auto;
+//     margin-left: 5em;
+// }
+
+// .main-container {
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+
+// .main-product-item {
+//     height: 100px;
+//     flex-wrap: wrap;
+//     padding-top: 30px;
+//     border: 1px solid red;
+//     margin-left: 100px;
+// }
+
+// .product-description {
+//     border: 1px solid black;
+//     padding-bottom: 10px;
+//     flex-wrap: wrap;
+//     font-size: 1.1rem;
+//     line-height: 1.2rem;
+// }
+
+// .price {
+//     border: 1px solid purple;
+// }
+
+// .front-page-items {
+//     height: 300px;
+//     width: auto;
+//     border: 1px solid blue;
+// }
+
+.splash-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-body-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: row-reverse;
-}
-
-.left-side-container {
-    height: 293px;
-    width: 230px;
-    text-align: left;
-    background-color: white;
-    justify-content: left;
-    line-height: 22.8px;
-    padding: 1.875rem 1rem;
-    width: 14.375rem;
-}
-
-.left-side-container-title {
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.left-side-container-list {
-    font-size: 1.1875rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-side-container-wrapper {
-    position: absolute;
-    left: 20px;
-}
-
-.left-side-container-list-wrapper {
-    padding: 30px 0px 15px;
-    height: 204px;
-    width: 200px;
-}
-.left-side-container-item {
-    padding: 5px;
-}
-
-.click-category-link {
-    text-decoration: none;
+    // justify-content: center;
+    align-content: flex-start;
 }
 
 .splash-img {
-    width: 85%;
-    height: auto;
-    margin-left: 5em;
-}
-
-.main-container {
     display: flex;
-    justify-content: space-evenly;
+    height: 675px;
+    width: 1210px;
+    padding-left: 200px;
+    margin-left: 90px;
+    position: relative;
+    // justify-content: center;
+    align-items:flex-start;
 }
 
-.main-product-item {
-    height: 100px;
-    flex-wrap: wrap;
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    height: 293px;
+    width: 230px;
+    position: absolute;
+    background-color: white;
     padding-top: 30px;
-    border: 1px solid red;
-    margin-left: 100px;
+    padding-bottom: 30px;
+    margin-left: 180px;
+    margin-top: 70px;
+    position: absolute;
+    text-align: left;
+    // border: 1px solid red;
 }
 
-.product-description {
-    border: 1px solid black;
-    padding-bottom: 10px;
-    flex-wrap: wrap;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+.left-side-container-title {
+    font-size: 2.75rem;
+    line-height: 3rem;
+    text-align: left;
+    display: flex;
+    font-weight: 600;
+    padding-right: 16px;
 }
 
-.price {
-    border: 1px solid purple;
+.left-side-container-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
-.front-page-items {
-    height: 300px;
-    width: auto;
-    border: 1px solid blue;
+.left-side-container-category {
+    font-size: 1.05rem;
+    display: flex;
+    text-align: left;
+    margin-bottom: 22px;
 }
-
-//1.5625 rem

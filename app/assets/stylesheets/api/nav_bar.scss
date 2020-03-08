@@ -25,14 +25,14 @@
    max-width: 808px;
    width: 40%;
    margin-left: 50px;
-   margin-left: 155px;
+   margin-left: 125px;
 }
 
 .right-side-nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 55px;
+    margin-right: 155px;
 }
 
 .nav-logo {
@@ -40,7 +40,7 @@
     margin-right: 30px;
 }
 
-.click-link {
+.click-link, .login-button {
     text-decoration: none; 
     list-style-type: none;
 }

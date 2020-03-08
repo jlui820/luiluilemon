@@ -1,43 +1,72 @@
+// import React from 'react';
+// import { Link } from 'react-router-dom'
+
+// class Body extends React.Component {
+//     constructor(props) {
+//         super(props)
+//     }
+
+//     render() {
+//         return(
+//             <div className='lulu-body'>
+//                 <div className='main-body-container'>
+//                     <img className='splash-img' src={window.mainpageimage} alt="" srcset=""/>
+//                     <div className='left-side-container-wrapper'>
+
+//                         <div className='left-side-container'>
+//                             <h1 className='left-side-container-title'>lululemon</h1>
+//                             <div className='left-side-container-items'>
+//                                 <ul className='left-side-container-list'>
+//                                     <div className='left-side-container-list-wrapper'>
+//                                         <li className='left-side-container-item'>
+//                                             <Link to="/" className='click-category-link' href="">Women's What's New</Link>
+//                                         </li>
+//                                         <li className='left-side-container-item'>
+//                                             <Link to="/" className='click-category-link' href="">All Women's</Link>
+//                                         </li>
+//                                         <li className='left-side-container-item'>
+//                                             <Link to="/" className='click-category-link' href="">All Men's</Link>
+//                                         </li>
+//                                         <li className='left-side-container-item'>
+//                                             <Link to="/" className='click-category-link' href="">All Girls'</Link>
+//                                         </li>
+//                                         <li className='left-side-container-item'>
+//                                             <Link to="/" className='click-category-link' href="">All Accessories</Link>
+//                                         </li>
+//                                     </div>
+//                                 </ul>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+// export default Body;
+
+
 import React from 'react';
 import { Link } from 'react-router-dom'
 
 class Body extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
-        return(
-            <div className='lulu-body'>
-                <div className='main-body-container'>
-                    <img className='splash-img' src={window.mainpageimage} alt="" srcset=""/>
-                    <div className='left-side-container-wrapper'>
-
-                        <div className='left-side-container'>
-                            <h1 className='left-side-container-title'>lululemon</h1>
-                            <div className='left-side-container-items'>
-                                <ul className='left-side-container-list'>
-                                    <div className='left-side-container-list-wrapper'>
-                                        <li className='left-side-container-item'>
-                                            <Link to="/" className='click-category-link' href="">Women's What's New</Link>
-                                        </li>
-                                        <li className='left-side-container-item'>
-                                            <Link to="/" className='click-category-link' href="">All Women's</Link>
-                                        </li>
-                                        <li className='left-side-container-item'>
-                                            <Link to="/" className='click-category-link' href="">All Men's</Link>
-                                        </li>
-                                        <li className='left-side-container-item'>
-                                            <Link to="/" className='click-category-link' href="">All Girls'</Link>
-                                        </li>
-                                        <li className='left-side-container-item'>
-                                            <Link to="/" className='click-category-link' href="">All Accessories</Link>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        return (
+            <div className='splash-main'>
+                <div className='splash-page-main-img'>
+                    <img className='splash-img' src={window.mainpageimage} alt="" srcset="" />
+                </div>
+                <div className='left-side-container'>
+                    <h1 className='left-side-container-title'>lululemon</h1>
+                    <ul className='left-side-container-categories'>
+                        <li className='left-side-container-category'>Women's What's New</li>
+                        <li className='left-side-container-category'>All Women's</li>
+                        <li className='left-side-container-category'>All Men's</li>
+                        <li className='left-side-container-category'>All Girl's</li>
+                        <li className='left-side-container-category'>All Accessories</li>
+                    </ul>
                 </div>
             </div>
         )
