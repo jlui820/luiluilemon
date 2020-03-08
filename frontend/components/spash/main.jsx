@@ -1,6 +1,7 @@
 import React from 'react';
 import Body from '../body/splashpage';
 import MainBodyProducts from '../main_body_products/main_page_products_body'
+import Greeting from '../greeting/greeting'
 
 class Main extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class Main extends React.Component {
 
                     </header>
                     <div>
+                        {/* <Greeting /> */}
                         <Body />
                         <MainBodyProducts />
                     </div>

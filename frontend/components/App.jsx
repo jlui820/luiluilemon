@@ -5,6 +5,7 @@ import { AuthRoute } from '../util/route_util'
 import Main from './spash/main'
 import UserSession from '../components/login_signup/user_session'
 import NavBar from './navbar/navbar'
+import Greeting from './greeting/greeting'
 
 
 const App = () => (
