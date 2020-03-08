@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class NavBar extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+const NavBar = ({ currentUser, logout }) => {
+        const display = currentUser ? (
+            <div>
+                <h3>Welcome, {currentUser.first_name}</h3>
+                <button type='button' onClick={logout()}>Logout</button>
+            </div>
+        ) : (
+            <div>
+                <Link to='/userSession'></Link>
+            </div>
+        )
     
-    render() {
         return (
             <div className='nav-bar-head'>
+                <div>
+                    {display}
+                </div>
                 <div className='nav-bar-head-container'>
                     <div className='left-side-nav-bar'>
                         <div className='nav-bar-logo'>
@@ -51,7 +60,6 @@ class NavBar extends React.Component {
             </div>
 
         )
-    }
 }
 
-export default NavBar
+export default NavBar;
