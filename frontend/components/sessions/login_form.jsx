@@ -54,17 +54,3 @@ class LoginForm extends React.Component {
 }
 
 export default LoginForm;
-
-{/* <div>
-    <form onSubmit={this.handleSubmit}>
-        <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.update('email')}
-            />
-        </label>
-        <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.update('password')}
-            />
-        </label>
-        <input type="submit" value='Sign In' />
-    </form>
-</div> */}

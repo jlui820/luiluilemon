@@ -59,3 +59,34 @@
     height: auto;
     margin-left: 5em;
 }
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-product-item {
+    height: 100px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+.product-description {
+    border: 1px solid black;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.price {
+    border: 1px solid purple;
+}
+
+.front-page-items {
+    height: 300px;
+    width: auto;
+    border: 1px solid blue;
+}

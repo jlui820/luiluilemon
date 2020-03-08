@@ -10,8 +10,7 @@ class Main extends React.Component {
             <div>
                 <div className='main'>
                     <header>
-                        {/* <NavBar /> */}
-                        {/* <GreetingContainer /> */}
+
                     </header>
                     <div>
                         <Body />

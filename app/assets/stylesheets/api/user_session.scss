@@ -1,6 +1,6 @@
 .profile-container-wrapper {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
@@ -10,6 +10,12 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    max-width: 1322px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-left: 4.155%;
+    margin-right: 4.155%;
+    min-width: 90em;
 }
 
 .profile-container-header {
@@ -47,6 +53,7 @@
     margin-left: 7%;
     border-bottom: 1px solid #ddd;
     align-items: baseline;
+    flex-wrap: wra;
 }
 
 .user-form-wrapper {
@@ -58,11 +65,11 @@
 }
 
 .profile-container-icon {
-    display: block;
+    display: flex;
     width: 14%;
     margin-right: 2%;
     float: left;
-    width: 130px;
+    flex-direction: column;
 }
 
 .icon-description {
@@ -86,6 +93,7 @@
 
 .sign-up-form-wrapper {
     margin: 10px;
+    text-align: left;
 }
 
 .sign-in-form-title, .sign-up-form-title {
@@ -101,3 +109,4 @@
     width: 1px;
     height: px;
 }
+

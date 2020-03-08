@@ -16,31 +16,41 @@ class UserSession extends React.Component {
                                 <p className='icon-description'></p>
                             </div>
                             <div className='profile-container-icon'>
-                                <div className='icon-log'></div>
+                                <div className='icon-log'>
+                                    <i className="fas fa-box-open"></i>
+                                </div>
                                 <p className='icon-description'>
                                     Quick order and return tracking
                                 </p>
                             </div>
                             <div className='profile-container-icon'>
-                                <div className='icon-log'></div>
+                                <div className='icon-log'>
+                                    <i className="fas fa-credit-card"></i>
+                                </div>
                                 <p className='icon-description'>
                                     Store shipping and payment information securely
                                 </p>
                             </div>
                             <div className='profile-container-icon'>
-                                <div className='icon-log'></div>
+                                <div className='icon-log'>
+                                    <i className="far fa-heart"></i> 
+                                </div>
                                 <p className='icon-description'>
                                     Access to your favourites
                                 </p>
                             </div>
                             <div className='profile-container-icon'>
-                                <div className='icon-log'></div>
+                                <div className='icon-log'>
+                                    <i className="far fa-comment"></i>
+                                </div>
                                 <p className='icon-description'>
                                     Instant product reviewer status
                                 </p>
                             </div>
                             <div className='profile-container-icon'>
-                                <div className='icon-log'></div>
+                                <div className='icon-log'>
+                                    <i className="fas fa-shopping-bag"></i>
+                                </div>
                                 <p className='icon-description'>
                                     Get a tailored shopping experience
                                 </p>
