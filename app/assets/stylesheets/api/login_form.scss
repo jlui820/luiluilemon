@@ -27,7 +27,7 @@
 .login-field, .password-field {
     height: 45px;
     width: 360px;
-    border: 1px solid black;
+    border: 1px solid #777;
     text-align: start;
     font-size: 1rem;
     line-height: 0.9375rem;
@@ -36,6 +36,7 @@
 .login-field input{
     padding: 10px;
     border: none;
+    border: 1px solid black;
 }
 
 .password-field input {
@@ -43,6 +44,22 @@
    border: none;
 }
 
+.login-form-button input {
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.login-email-text {
+    padding-bottom: 20px;
+}
+
+.login-password-text {
+    padding-bottom: 43px;
+}
 
 
 // .login-field {

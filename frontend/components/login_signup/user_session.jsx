@@ -58,6 +58,7 @@ class UserSession extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className='user-session-border'></div>
                             <div className='sign-up-form-wrapper'>
                                 <div className='sign-up-container'>
                                     <h4 className='sign-up-form-title'>

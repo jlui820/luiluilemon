@@ -76,7 +76,16 @@
 .user-session-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center
+   
+}
+
+.sign-in-form-wrapper {
+    display: flex;
+    margin: 10px
+}
+
+.sign-up-form-wrapper {
+    margin: 10px;
 }
 
 .sign-in-form-title, .sign-up-form-title {
@@ -85,4 +94,10 @@
     text-align: left;
     letter-spacing: 1.5px;
     fill: #333333;
+}
+
+.user-session-border {
+    border-left: 1px solid #777;
+    width: 1px;
+    height: px;
 }

@@ -40,7 +40,7 @@
 .sign-up-field, .sign-up-password-field {
     height: 45px;
     width: 360px;
-    border: 1px solid black;
+    border: 1px solid #777;
     text-align: start;
     font-size: 1rem;
     line-height: 0.9375rem;
@@ -54,4 +54,20 @@
 .sign-up-password-field input {
     padding: 10px;
     border: none;
+}
+
+.sign-up-email-text {
+    margin-bottom: 20px;
+}
+
+.sign-up-password-text {
+    margin-bottom: 43px;
+}
+
+.signup-form-button input{
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
 }
