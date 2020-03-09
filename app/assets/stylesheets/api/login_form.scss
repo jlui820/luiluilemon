@@ -1,7 +1,5 @@
 .login-form-container-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid brown;
 }
 
 .login-form-container {
@@ -9,52 +7,60 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    // border: 1px solid orange;
 }
 
 .login-acccount-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    // border: 1px solid green;
 }
 
 .login-email, .login-password {
     font-size: 0.8125rem;
     line-height: 1.1rem;
     text-align: left;
-    color: #777;
+    // color: #777;
+    // border: 1px solid blue;
 }
 
 .login-field, .password-field {
-    height: 45px;
-    width: 360px;
+    height: 2.813rem;
+    width: 20.376rem;
     border: 1px solid #777;
     text-align: start;
     font-size: 1rem;
     line-height: 0.9375rem;
+    // border: 1px solid magenta
 }
 
 .login-field input{
-    padding: 10px;
-    border: none;
-    border: 1px solid black;
+    height: 30px;
+    width: 350px;
+    // border: 1px solid #000;
+    line-height: .938rem;
+    font-size: 1rem;
 }
 
-.password-field input {
-   padding: 10px;
-   border: none;
-}
+// .password-field input {
+//    padding: 10px;
+//    border: none;
+// }
 
 .login-form-button input {
     width: 360px;
     height: 45px;
     padding: 10px;
-    background-color: #000;
+    // background-color: #000;
     color: #fff;
     transition: all .2s ease-in-out;
 }
 
 .login-email-text {
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-password-text {

@@ -94,18 +94,20 @@ flex-wrap: wrap;
 
 .user-session-wrapper {
     display: flex;
-    justify-content: center;
-   
+    // justify-content: center;
+   justify-content: space-around;
 }
 
 .sign-in-form-wrapper {
     display: flex;
-    margin: 10px
+    margin: 10px;
+    text-align: left;
 }
 
 .sign-up-form-wrapper {
     margin: 10px;
     text-align: left;
+    display: flex;
 }
 
 .sign-in-form-title, .sign-up-form-title {
@@ -122,3 +124,6 @@ flex-wrap: wrap;
     height: px;
 }
 
+.sign-up-container {
+    //border-left: 1px solid #ddd;
+}
