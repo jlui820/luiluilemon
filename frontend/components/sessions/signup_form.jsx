@@ -42,14 +42,13 @@ class SignupForm extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className='password-requirements'>
-                                <p>1</p>
-                                <p>2</p>
-                                <p>3</p>
-                                <p>4</p>
-                            </div>
                             <div className='signup-form-button'>
                                 <input type="submit" value='CREATE ACCOUNT' />
+                            </div>
+                            <div>
+                                <p>
+                                  lululemon will use information you submit (including identifiers, commercial information, and internet or other electronic network activity information) to fulfill this request. To learn more, see our privacy policy and terms of use.  
+                                </p>
                             </div>
                         </div>
                     </form>
