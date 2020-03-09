@@ -37,23 +37,32 @@
     padding-right: 18px;
 }
 
+// .sign-up-field, .sign-up-password-field {
+//     height: 45px;
+//     width: 360px;
+//     border: 1px solid #777;
+//     text-align: start;
+//     font-size: 1rem;
+//     line-height: 0.9375rem;
+// }
+
 .sign-up-field, .sign-up-password-field {
-    height: 45px;
-    width: 360px;
-    border: 1px solid #777;
+    height: 2.813rem;
+    width: 20.376rem;
+    // border: 1px solid #777;
     text-align: start;
     font-size: 1rem;
     line-height: 0.9375rem;
+    // border: 1px solid magenta
 }
 
-.sign-up-field input{
-    padding: 10px;
-    border: none;
-}
 
-.sign-up-password-field input {
-    padding: 10px;
-    border: none;
+.sign-up-field input, .sign-up-password-field input {
+    height: 30px;
+    width: 350px;
+    // border: 1px solid red;
+    line-height: .938rem;
+    font-size: 1rem;
 }
 
 .sign-up-email-text {
@@ -71,3 +80,8 @@
     background-color: #000;
     color: #fff;
 }
+
+// .signup-form-wrapper {
+//     height: 28.0875rem;
+//     width: 22.5rem;
+// }

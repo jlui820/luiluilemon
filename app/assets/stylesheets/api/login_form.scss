@@ -1,5 +1,5 @@
 .login-form-container-wrapper {
-    border: 1px solid brown;
+    // border: 1px solid brown;
 }
 
 .login-form-container {
@@ -21,24 +21,23 @@
     font-size: 0.8125rem;
     line-height: 1.1rem;
     text-align: left;
-    // color: #777;
-    // border: 1px solid blue;
+    color: #777;
 }
 
 .login-field, .password-field {
     height: 2.813rem;
     width: 20.376rem;
-    border: 1px solid #777;
+    // border: 1px solid #777;
     text-align: start;
     font-size: 1rem;
     line-height: 0.9375rem;
     // border: 1px solid magenta
 }
 
-.login-field input{
+.login-field input, .password-field input {
     height: 30px;
     width: 350px;
-    // border: 1px solid #000;
+    // border: 1px solid red;
     line-height: .938rem;
     font-size: 1rem;
 }
@@ -52,7 +51,7 @@
     width: 360px;
     height: 45px;
     padding: 10px;
-    // background-color: #000;
+    background-color: #000;
     color: #fff;
     transition: all .2s ease-in-out;
 }

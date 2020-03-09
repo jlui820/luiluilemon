@@ -93,9 +93,11 @@ flex-wrap: wrap;
 }
 
 .user-session-wrapper {
-    display: flex;
-    // justify-content: center;
-   justify-content: space-around;
+   display: flex;
+   justify-content: space-evenly;
+   height: 70.6rem;
+   width: 70.6rem;
+
 }
 
 .sign-in-form-wrapper {
@@ -105,9 +107,11 @@ flex-wrap: wrap;
 }
 
 .sign-up-form-wrapper {
-    margin: 10px;
+    margin-left: 5.0125rem;
     text-align: left;
     display: flex;
+    height: 29.024rem;
+    width: 22.5rem;
 }
 
 .sign-in-form-title, .sign-up-form-title {
