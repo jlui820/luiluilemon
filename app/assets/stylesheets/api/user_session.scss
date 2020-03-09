@@ -1,7 +1,7 @@
 .profile-container-wrapper {
-    display: flex;
-    align-items: left;
-    justify-content: center;
+    margin-left: 4.155%;
+    margin-right: 4.155%;
+    min-width: 90em;
 }
 
 .profile-container {
@@ -11,28 +11,29 @@
     text-align: center;
     flex-direction: column;
     max-width: 1322px;
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-left: 4.155%;
-    margin-right: 4.155%;
     min-width: 90em;
+flex-wrap: wrap;
+}
+
+.profile-container-top-sectioin {
+    padding-top: 2.75rem;
 }
 
 .profile-container-header {
-    justify-content: center;
-    align-items: center;
+    justify-content: flexe;
     text-align: center;
     font-size: 2.85rem;
     line-height: 50px;
     font-weight: 100;
-    margin-bottom: 10px;
+    margin-top: 10px;
     width: 1070px;
     margin-bottom: 10px;
-    color: #666
+    color: #666;
+    margin-left: 80px;
 }
 
 .profile-container-body-text {
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     font-size: 1.00rem;
@@ -43,41 +44,52 @@
 
 .profile-container-icons-holder {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     padding-bottom: 2.75em;
     margin-top: 40px;
     margin-bottom: 1.375em;
-    width: 85%;
-    margin-left: 7%;
+    width: 75%;
+    margin-left: 7.278%;
     border-bottom: 1px solid #ddd;
     align-items: baseline;
-    flex-wrap: wra;
-}
-
-.user-form-wrapper {
-    display: flex;
-}
-
-.user-form-container {
-    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    line-height: 1.16;
 }
 
 .profile-container-icon {
     display: flex;
-    width: 14%;
+    width: 10.5rem;
+    height: 6.938rem;
     margin-right: 2%;
     float: left;
     flex-direction: column;
+    width: 15%;
+
 }
 
 .icon-description {
-    font-size: .875rem;
+    font-size: .75rem;
     line-height: 17.5px;
     text-align: center;
     margin-top: 5px;
     color: #999;
+}
+
+.fas {
+    height: 3.75rem;
+    width: 4.688rem;
+    color: #999;
+    font-size: 2em;
+}
+
+.far {
+    height: 3.75rem;
+    width: 4.688rem;
+    color: #999;
+    font-size: 2em;
 }
 
 .user-session-wrapper {

@@ -10,7 +10,7 @@ const NavBar = ({ currentUser, logout }) => {
         </div >
     ) : (
             <div className='login'>
-                <Link to='/userSession' className='login-button'>Login</Link>
+                <Link to='/userSession' className='login-button'>SIGN IN</Link>
             </div > 
             
         )
@@ -48,7 +48,7 @@ const NavBar = ({ currentUser, logout }) => {
                     {display}
                     <div className="line-break">|</div>
                     <div className='search'>
-                        <Link to='/' className='login-button'>Search</Link>
+                        <Link to='/' className='login-button'>SEARCH</Link>
                     </div>
                 </div>
             </div>
