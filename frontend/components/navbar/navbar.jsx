@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const NavBar = ({ currentUser, logout }) => {
     const display = currentUser ? (
         <div>
-            <h3>Welcome, {currentUser.email}</h3>
+            <h3 className='user-greeting'>HI {currentUser.email}</h3>
             <button type='button' onClick={logout}>Logout</button>
         </div >
     ) : (
