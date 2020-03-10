@@ -48,7 +48,11 @@ const NavBar = ({ currentUser, logout }) => {
                     {display}
                     <div className="line-break">|</div>
                     <div className='search'>
-                        <Link to='/' className='login-button'>SEARCH</Link>
+                        {/* <Link to='/' className='login-button'>SEARCH</Link> */}
+                        <div className='search-bar'>
+                            {/* <i className="fas fa-search" fa-xs></i> */}
+                            <input type="text" placeholder='Search'/>
+                        </div>
                     </div>
                 </div>
             </div>

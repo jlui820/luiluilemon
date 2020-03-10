@@ -10,8 +10,8 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    max-width: 1322px;
-    min-width: 90em;
+    // max-width: 1322px;
+    // min-width: 90em;
 flex-wrap: wrap;
 }
 
@@ -135,4 +135,9 @@ flex-wrap: wrap;
 
 .sign-up-container {
     //border-left: 1px solid #ddd;
+}
+
+.user-session-wrapper {
+    height: auto;
+    margin-bottom: 6rem;
 }
