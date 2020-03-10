@@ -44,7 +44,8 @@ class Footer extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='footer-wrapper-bottom-section'>
+                    <div className
+                    ='footer-wrapper-bottom-section'>
                         <div className='bottom-container'>
                             <div className='contact-us-container'>
                                 <div className='contact'>Contact Us</div>

@@ -20,7 +20,7 @@ const NavBar = ({ currentUser, logout }) => {
                 <div className='left-side-nav-bar'>
                     <div className='nav-bar-logo'>
                         <Link to='/'>
-                            <img className='nav-logo' src={window.navlogo} />
+                            <img className='nav-logo' src={window.navlogo2} />
                         </Link>
                     </div>
                     <div>
