@@ -5,6 +5,7 @@ import { AuthRoute } from '../util/route_util'
 import Main from './spash/main'
 import UserSession from '../components/login_signup/user_session'
 import NavBarContainer from './navbar/navbar_container'
+import Footer from '../components/footer/footer'
 
 
 const App = () => (
@@ -16,6 +17,9 @@ const App = () => (
             <AuthRoute path='/userSession' component={UserSession} />
             <Route path='/' component={Main}/>
         </Switch>
+        <footer>
+            <Footer />
+        </footer>
     </div>
 );
 
