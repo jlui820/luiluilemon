@@ -108,7 +108,7 @@ class Body extends React.Component {
                         </ul>
                     </div>
                     <div className='splash-page-main-image-container'>
-                        <img className='splash-page-img' src={window.mainpageimage} alt="" srcset="" />
+                        <img className='splash-page-img' src={window.mainpageimage} alt="" />
                         <div className='image-click-button'></div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Main from './spash/main'
 import UserSession from '../components/login_signup/user_session'
 import NavBarContainer from './navbar/navbar_container'
 import Footer from '../components/footer/footer'
+import Product from './products/product_show'
 
 
 const App = () => (
