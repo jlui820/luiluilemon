@@ -1,10 +1,10 @@
 import React from 'react';
 import { LInk } from 'react-router-dom';
 
-export const ProductIndexItem = ({product}) => {
+const ProductIndexItem = ({product}) => {
     return (
         <div>
-            <div>
+            <div className='main-'>
                 <Link to={`products/${product.id}`}>product</Link>
             </div>
             <div className='product-item-info'>
