@@ -16,6 +16,7 @@ class ProductIndex extends React.Component {
         return (
             <div>
                 {productList}
+                {/* hello */}
             </div>
         );
     }

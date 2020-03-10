@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
     products: Object.values(state.entities.products)
 })
 
-const mapStateToDispatch = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     fetchProducts: () => dispatch(fetchProducts()),
 })
 

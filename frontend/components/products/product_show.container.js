@@ -7,7 +7,7 @@ const mapStateToProps = (state, ownProps) => ({
     product: state.products[ownProps.match.params.productId]
 })
 
-const mapStateToDispatch = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     fetchProduct: id => dispatch(fetchProduct(id))
 })
 

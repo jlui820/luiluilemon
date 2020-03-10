@@ -18,7 +18,7 @@ class Product extends React.Component {
                         <div className='top-page-product-description'></div>
                     </div>
                     <div className='main-product-description'>
-                        <h1 className='product-name'></h1>
+                        {/* <h1 className='product-name'>{this.props.product.description}</h1> */}
                         {/* {this.props.product.description} */}
                         <div className='product-price'>price goes here</div>
                         {/* {this.props.product.price} */}
