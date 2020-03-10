@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductIndexItem = ({product}) => {
+const ProductIndexItem = (props) => {
+    // debugger
     return (
         <div>
             <div className='main-'>
-                {/* <Link to={`products/${product.id}`}>product</Link> */}
+                {/* {product.namer} */}
             </div>
             <div className='product-item-info'>
                 <div>
                     <p>color</p>
                 </div>
                 <div className='product-name'>
-                    {/* {product.name} */}
+                    {props.product.name}
                 </div>
                 <div className='product-price'>
-                    {/* {product.price} */}
-                    hellowwwww
+                    {props.product.price}
                 </div>
             </div>
         </div>

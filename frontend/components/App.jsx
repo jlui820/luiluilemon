@@ -6,7 +6,8 @@ import Main from './spash/main'
 import UserSession from '../components/login_signup/user_session'
 import NavBarContainer from './navbar/navbar_container'
 import Footer from '../components/footer/footer'
-import ProductShow from './products/product_show.container'
+import ProductShowContainer from './products/product_show.container'
+import ProductIndexContainer from './products/product_index_container'
 
 
 const App = () => (
@@ -15,8 +16,9 @@ const App = () => (
             <NavBarContainer />
         </header>
         <Switch>
-            <AuthRoute path='/userSession' component={UserSession} />
-            {/* <AuthRoute path='/productShow' component={ProductShow} /> */}
+            <AuthRoute path='/UserSession' component={UserSession} />
+            <AuthRoute path='/ProductIndex' component={ProductIndexContainer} />
+            <AuthRoute path='/ProductShow/:id' component={ProductShowContainer} />
             <Route path='/' component={Main}/>
         </Switch>
         <footer>
@@ -27,5 +29,3 @@ const App = () => (
 
 export default App;
 
-{/* <AuthRoute path='/login' component={LoginFormContainer} />  
-<AuthRoute path='/signup' component={SignupFormContainer} /> */}

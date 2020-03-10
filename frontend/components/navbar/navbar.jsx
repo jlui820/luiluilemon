@@ -10,7 +10,7 @@ const NavBar = ({ currentUser, logout }) => {
         </div >
     ) : (
             <div className='login'>
-                <Link to='/userSession' className='login-button'>SIGN IN</Link>
+                <Link to='/UserSession' className='login-button'>SIGN IN</Link>
             </div > 
             
         )
@@ -30,7 +30,7 @@ const NavBar = ({ currentUser, logout }) => {
                     </div>
                     <div>
                         <li className='nav-bar-nav-link'>
-                            <Link to='/' className='click-link' href="">MEN</Link>
+                            <Link to='ProductIndex' className='click-link' href="">MEN</Link>
                         </li>
                     </div>
                     <div>
