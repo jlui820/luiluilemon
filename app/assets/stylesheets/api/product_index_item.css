@@ -1,0 +1,26 @@
+.whole-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.product-index-item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.whole-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* width: 33%; */
+}
+
+.product-image-item-img {
+    height: auto;
+    width: 100%;
+}
+

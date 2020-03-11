@@ -19,10 +19,8 @@ class ProductIndex extends React.Component {
         })
 
         return (
-            <div>
-                hellllo
+            <div className='product-index-item'>
                 {productList}
-
             </div>
         );
     }
