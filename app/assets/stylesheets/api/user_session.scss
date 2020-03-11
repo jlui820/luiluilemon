@@ -78,14 +78,17 @@ flex-wrap: wrap;
     color: #999;
 }
 
-.fas {
+.fas.fa-box-open,
+.fas.fa-credit-card,
+.fas.fa-shopping-bag {
     height: 3.75rem;
     width: 4.688rem;
     color: #999;
     font-size: 2em;
 }
 
-.far {
+.far.fa-heart,
+.far.fa-comment {
     height: 3.75rem;
     width: 4.688rem;
     color: #999;
@@ -133,9 +136,6 @@ flex-wrap: wrap;
     // margin-left: 24px;
 }
 
-.sign-up-container {
-    //border-left: 1px solid #ddd;
-}
 
 .user-session-wrapper {
     height: auto;

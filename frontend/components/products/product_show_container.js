@@ -6,7 +6,7 @@ import { fetchProduct } from '../../actions/product_actions';
 const mapStateToProps = (state, ownProps) => {
     // debugger
     return {
-        product: state.entities.products[ownProps.match.params.productId]
+        product: state.entities.products[ownProps.match.params.id]
     }
 }
 

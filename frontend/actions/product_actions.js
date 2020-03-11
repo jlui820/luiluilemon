@@ -8,10 +8,13 @@ export const receiveProducts = products => ({
     products
 })
 
-export const receiveProduct = product => ({
-    type: RECEIVE_PRODUCT,
-    product
-})
+export const receiveProduct = product => {
+    // debugger
+    return {
+        type: RECEIVE_PRODUCT,
+        product
+    }
+}
 
 export const fetchProducts = () => dispatch => (
     ProductApiUtil.fetchProducts()

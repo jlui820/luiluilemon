@@ -20,14 +20,14 @@ const ProductIndexItem = (props) => {
                         </div>
                     </Link>
                 </div>
-                <div className='product-item-color-button-holder'>
+                {/* <div className='product-item-color-button-holder'>
                     <div className='single-button-container'>
                         <button className='product-color-button color-black'></button>
                     </div>
                     <div className='single-button-container'>
                         <button className='product-color-button'></button>
                     </div>
-                </div>
+                </div> */}
                 <div className='product-item-name'>
                     {props.product.name}
                 </div>
