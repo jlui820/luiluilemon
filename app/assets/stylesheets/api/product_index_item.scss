@@ -6,17 +6,16 @@
     box-sizing: border-box;
 }
 
+.whole-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-index-item {
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-}
-
-.whole-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    /* width: 33%; */
 }
 
 .product-image-item-img {
@@ -53,6 +52,10 @@
 }
 
 .product-color-button:hover {
+    border: 1px solid #000;
+}
+
+.color-black {
     background-color: #000;
 }
 

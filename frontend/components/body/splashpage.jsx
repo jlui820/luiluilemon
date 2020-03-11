@@ -88,7 +88,7 @@ class Body extends React.Component {
             <div className='whole-container-wrapper'>
                 <div className='splash-page-main-container'>
                     <div className='left-container'>
-                        <div className='left-container-title'>lululemon</div>
+                        <div className='left-container-title'>luiluilemon</div>
                         <ul className='left-container-lists-wrapper'>
                             <li className='left-container-list-item'>
                                 <Link to="/" className='click-category-link' href="">Women's What's New</Link>

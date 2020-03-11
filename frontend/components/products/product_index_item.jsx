@@ -2,7 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProductIndexItem = (props) => {
-    // debugger
+    // const buttons = this.props.colors.map(color => {
+    //     return (
+    //         <div>
+    //             <button className={`color-${color}`}></button>
+    //         </div>
+    //     )
+    // }) 
+
     return (
         <div className='whole-page-wrapper'>
             <div className='whole-content-wrapper'>
@@ -15,7 +22,7 @@ const ProductIndexItem = (props) => {
                 </div>
                 <div className='product-item-color-button-holder'>
                     <div className='single-button-container'>
-                        <button className='product-color-button'></button>
+                        <button className='product-color-button color-black'></button>
                     </div>
                     <div className='single-button-container'>
                         <button className='product-color-button'></button>

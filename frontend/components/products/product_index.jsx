@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductIndexItem from './product_index_item'
+import ProductIndexItem from './product_index_item_container'
 
 class ProductIndex extends React.Component {
     constructor(props) {
@@ -17,6 +17,8 @@ class ProductIndex extends React.Component {
 
         let productList = this.props.products.map(product => {
             return <ProductIndexItem product={product} key={product.id}/>
+
+        
         })
 
         return (
