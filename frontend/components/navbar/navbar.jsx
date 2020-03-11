@@ -30,7 +30,7 @@ const NavBar = ({ currentUser, logout }) => {
                     </div>
                     <div>
                         <li className='nav-bar-nav-link'>
-                            <Link to='ProductIndex' className='click-link' href="">MEN</Link>
+                            <Link to='/products' className='click-link' href="">MEN</Link>
                         </li>
                     </div>
                     <div>

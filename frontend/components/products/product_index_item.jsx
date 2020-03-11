@@ -6,22 +6,28 @@ const ProductIndexItem = (props) => {
     return (
         <div className='whole-page-wrapper'>
             <div className='whole-content-wrapper'>
-            <div className='product-index-item-container'>
-                <div className='product-index-item-picture'>
-                    <img className='product-image-item-img' src={window.shorts} />
+                <div className='product-index-item-container'>
+                    <Link to={`/products/${props.product.id}`}>
+                        <div className='product-index-item-picture'>
+                            <img className='product-image-item-img' src={window.shorts} />
+                        </div>
+                    </Link>
                 </div>
-            </div>
                 <div className='product-item-color-button-holder'>
-                    <div>button1</div>
-                    <div>button2</div>
+                    <div className='single-button-container'>
+                        <button className='product-color-button'></button>
+                    </div>
+                    <div className='single-button-container'>
+                        <button className='product-color-button'></button>
+                    </div>
                 </div>
                 <div className='product-item-name'>
                     {props.product.name}
                 </div>
                 <div className='product-item-price'>
-                    {props.product.price}
+                   ${props.product.price}USD
                 </div>
-        </div>
+            </div>
         </div>
     )
 }

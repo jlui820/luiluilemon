@@ -10,6 +10,7 @@ class ProductIndex extends React.Component {
     }
 
     render() {
+        console.log(this.props, "product index")
         const { products } = this.props;
         if(!products) return null
 
