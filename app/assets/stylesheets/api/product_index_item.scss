@@ -4,19 +4,16 @@
     width: 33%;
     padding: 8px;
     box-sizing: border-box;
-    // border: 1px solid greenyellow;
     justify-content: center;
 }
 
 .whole-page-wrapper * {
-    // box-sizing: border-box;
-    // border: 1px solid red;
+    box-sizing: border-box;
 }
 
 .whole-content-wrapper {
     display: flex;
     flex-direction: column;
-    // border: 1px solid blue;
 }
 
 .product-index-item {
@@ -106,3 +103,5 @@
     flex-direction: column;
     margin-left: 50px;
 }
+
+
