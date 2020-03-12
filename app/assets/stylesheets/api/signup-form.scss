@@ -15,6 +15,7 @@
 .create-account-container {
     display: flex;
     justify-content: center;
+    height: auto;
 }
 
 .sign-up-email, .sign-up-password {
@@ -91,4 +92,9 @@
     line-height: 1rem;
     color: #57585b;
     text-align: left;
+    margin-bottom: 18px;
+}
+
+.signup-container {
+    padding-bottom: 20px;
 }

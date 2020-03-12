@@ -97,7 +97,7 @@ class Body extends React.Component {
                                 <Link to="/" className='click-category-link' href="">All Women's</Link>
                             </li>
                             <li className='left-container-list-item'>
-                                <Link to="/" className='click-category-link' href="">All Men's</Link>
+                                <Link to="/products" className='click-category-link' href="">All Men's</Link>
                             </li>
                             <li className='left-container-list-item'>
                                 <Link to="/" className='click-category-link' href="">All Girls'</Link>

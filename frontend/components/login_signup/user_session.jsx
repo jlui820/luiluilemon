@@ -14,7 +14,7 @@ class UserSession extends React.Component {
                         <div className='profile-container-icons-holder'>
                             <div className='profile-container-icon'>
                                 <div className='icon-log'>
-                                <i className="fas fa-box-open" fa-5x></i>
+                                <i className="fas fa-box-open"></i>
                                 </div>
                                 <p className='icon-description'>
                                     Quick order and return tracking
@@ -22,7 +22,7 @@ class UserSession extends React.Component {
                             </div>
                             <div className='profile-container-icon'>
                                 <div className='icon-log'>
-                                <i className="fas fa-credit-card" fa-5x></i>
+                                <i className="fas fa-credit-card"></i>
                                 </div>
                                 <p className='icon-description'>
                                     Store shipping and payment information securely
@@ -30,7 +30,7 @@ class UserSession extends React.Component {
                             </div>
                             <div className='profile-container-icon'>
                                 <div className='icon-log'>
-                                <i className="far fa-heart" fa-5x></i> 
+                                <i className="far fa-heart"></i> 
                                 </div>
                                 <p className='icon-description'>
                                     Access to your favourites
@@ -38,7 +38,7 @@ class UserSession extends React.Component {
                             </div>
                             <div className='profile-container-icon'>
                                 <div className='icon-log'>
-                                <i className="far fa-comment" fa-5x></i>
+                                <i className="far fa-comment"></i>
                                 </div>
                                 <p className='icon-description'>
                                     Instant product reviewer status
@@ -46,7 +46,7 @@ class UserSession extends React.Component {
                             </div>
                             <div className='profile-container-icon'>
                                 <div className='icon-log'>
-                                <i className="fas fa-shopping-bag" fa-10x></i>
+                                <i className="fas fa-shopping-bag"></i>
                                 </div>
                                 <p className='icon-description'>
                                     Get a tailored shopping experience
@@ -70,7 +70,7 @@ class UserSession extends React.Component {
                                     <h4 className='sign-up-form-title'>
                                         CREATE AN ACCOUNT
                                     </h4>
-                                    <div>
+                                    <div className='signup-container'>
                                         <SignupFormContainer />
                                     </div>
                                 </div>
