@@ -6,16 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
 
 User.destroy_all
 Product.destroy_all
 
 demo_user = User.create!({email: 'tucker@gmail.com', password:'123456', first_name: 'tucker', last_name: 'roo'})
 
-
-
 #shorts
 product1 = Product.create!(itemtype: 'shorts', name: "T.H.E Short Linerless 7'", description: 'Train hard. Every day. We engineered these lightweight shorts with a split hem and smooth waistband for agility.', size: 'S', details: 'Designed for Training', price: 68, color: 'Gravel Dust Alpine White Multi')
+photo1 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/theshortwhite.jpg')
+product1.photo.attach(io: photo1, filename:'theshortwhite.jpg')
+
 product2 = Product.create!(itemtype: 'shorts', name: "T.H.E Short Linerless 7'", description: 'Train hard. Every day. We engineered these lightweight shorts with a split hem and smooth waistband for agility.', size: 'M', details: 'Designed for Training', price: 68, color: 'Black')
 
 product5 = Product.create!(itemtype: 'shorts', name: "Pace Breaker Short 7' Linerless", description: 'Run, train or flow. Wear this lightweight, multi-sport short for pretty much everything.', size: 'S', details: 'Designed for Training', price: 68, color: 'Variegated Mesh Camo Black')
@@ -55,5 +57,3 @@ product26 = Product.create!(itemtype: 'pants', name: "City Sweat Jogger French T
 # product10 = Product.create!(itemtype: 'shorts', name: "Surge Short 4' Liner", description: 'One short to run them all. Four-way stretch, sweat-wicking, lightweight, and packed with details, you won’t want to run in anything else.', size: 'M', details: 'Designed for Running', price: 68, color: 'Black')
 # product11 = Product.create!(itemtype: 'shorts', name: "Surge Short 4' Liner", description: 'One short to run them all. Four-way stretch, sweat-wicking, lightweight, and packed with details, you won’t want to run in anything else.', size: 'L', details: 'Designed for Running', price: 68, color: 'Heather Allover Deep Coal Black')
 # product12 = Product.create!(itemtype: 'shorts', name: "Surge Short 4' Liner", description: 'One short to run them all. Four-way stretch, sweat-wicking, lightweight, and packed with details, you won’t want to run in anything else.', size: 'XL', details: 'Designed for Running', price: 68, color: 'Heather Allover Iron Blue True Navy')
-
-abcjog

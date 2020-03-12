@@ -9,14 +9,17 @@ const ProductIndexItem = (props) => {
     //         </div>
     //     )
     // }) 
-
+    // debugger
     return (
         <div className='whole-page-wrapper'>
+            <img src={`${props.product.photo}`} alt="" />
             <div className='whole-content-wrapper'>
+                
                 <div className='product-index-item-container'>
                     <Link to={`/products/${props.product.id}`}>
                         <div className='product-index-item-picture'>
-                            <img className='product-image-item-img' src={window.shorts} />
+                            
+                            {/* <img className='product-image-item-img' src={window.shorts} /> */}
                         </div>
                     </Link>
                 </div>

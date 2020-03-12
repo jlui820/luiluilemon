@@ -10,15 +10,13 @@ class ProductIndex extends React.Component {
     }
 
     render() {
-        console.log(this.props, "product index")
         const { products } = this.props;
         if(!products) return null
 
 
         let productList = this.props.products.map(product => {
+            // debugger
             return <ProductIndexItem product={product} key={product.id}/>
-
-        
         })
 
         return (

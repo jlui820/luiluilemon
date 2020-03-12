@@ -8,7 +8,7 @@ class Product extends React.Component {
 
 
     render() {
-        // debugger
+      
         if (!this.props.product) {
             return null;
         } else {

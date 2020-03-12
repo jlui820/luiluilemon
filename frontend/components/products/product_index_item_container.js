@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ProductIndexItem from './product_index_item'
 
 const mapStateToProps = state => {
-    // debugger
+
     return {
         // colors: Object.values(state.entities.products.colors)
     }

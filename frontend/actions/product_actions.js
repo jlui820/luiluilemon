@@ -9,7 +9,7 @@ export const receiveProducts = products => ({
 })
 
 export const receiveProduct = product => {
-    // debugger
+   
     return {
         type: RECEIVE_PRODUCT,
         product
