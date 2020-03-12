@@ -19,24 +19,49 @@ photo1 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/theshortwhit
 product1.photo.attach(io: photo1, filename:'theshortwhite.jpg')
 
 product2 = Product.create!(itemtype: 'shorts', name: "T.H.E Short Linerless 7'", description: 'Train hard. Every day. We engineered these lightweight shorts with a split hem and smooth waistband for agility.', size: 'M', details: 'Designed for Training', price: 68, color: 'Black')
+photo2 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/theshortblack.jpg')
+product2.photo.attach(io: photo2, filename:'theshortblack.jpg')
 
-product5 = Product.create!(itemtype: 'shorts', name: "Pace Breaker Short 7' Linerless", description: 'Run, train or flow. Wear this lightweight, multi-sport short for pretty much everything.', size: 'S', details: 'Designed for Training', price: 68, color: 'Variegated Mesh Camo Black')
-product6 = Product.create!(itemtype: 'shorts', name: "Pace Breaker Short 7' Linerless", description: 'Run, train or flow. Wear this lightweight, multi-sport short for pretty much everything.', size: 'M', details: 'Designed for Training', price: 68, color: 'Carbon Dust')
+product3 = Product.create!(itemtype: 'shorts', name: "Pace Breaker Short 7' Linerless", description: 'Run, train or flow. Wear this lightweight, multi-sport short for pretty much everything.', size: 'S', details: 'Designed for Training', price: 68, color: 'Variegated Mesh Camo Black')
+photo3 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/pacebreakercamo.jpg')
+product3.photo.attach(io: photo3, filename:'paceshortcamo.jpg')
+
+product4 = Product.create!(itemtype: 'shorts', name: "Pace Breaker Short 7' Linerless", description: 'Run, train or flow. Wear this lightweight, multi-sport short for pretty much everything.', size: 'M', details: 'Designed for Training', price: 68, color: 'Carbon Dust')
+photo4 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/pacebreakershortcarbon.jpg')
+product4.photo.attach(io: photo4, filename:'paceshortcarbon.jpg')
+
+product5 = Product.create!(itemtype: 'shirts', name: "Metal Vent Breathe Short Sleeve", description: "We designed this lightweight and breathable top to keep the air flowing when you're pounding the pavement.", size: 'S', details: 'Designed for Training', price: 68, color: 'Holy Camo/Black/Graphite Grey')
+photo5 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/metalventCamo.jpg')
+product5.photo.attach(io: photo5, filename:'metalventcamo.jpg')
+
+product6 = Product.create!(itemtype: 'shirts', name: "Metal Vent Breathe Short Sleeve", description: "We designed this lightweight and breathable top to keep the air flowing when you're pounding the pavement.", size: 'M', details: 'Designed for Training', price: 68, color: 'Ceramic/White')
+photo6 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/metalvent2white.jpg')
+product6.photo.attach(io: photo6, filename:'metalventwhite.jpg')
+
+product7 = Product.create!(itemtype: 'shirts', name: "Metal Vent Tech Long Sleeve 2.0", description: 'Meet the ultimate technical training top. Breathable and built with anti-stink technology, it was born to perform sweat after sweat.', size: 'S', details: 'Designed for Running and Training', price: 88, color: 'Mineral Blue/True Navy')
+photo7 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/metalvent2blue.jpg')
+product7.photo.attach(io: photo7, filename: 'metalvent2blue.jpg')
+
+product8 = Product.create!(itemtype: 'shirts', name: "Metal Vent Tech Long Sleeve 2.0", description: 'Meet the ultimate technical training top. Breathable and built with anti-stink technology, it was born to perform sweat after sweat.', size: 'M', details: 'Designed for Running and Training', price: 88, color: 'Slate/White')
+photo8 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/metalvent2white.jpg')
+product8.photo.attach(io: photo8, filename:'metalvent2white.jpg')
+
+product9 = Product.create!(itemtype: 'pants', name: "ABC Jogger 30'", description: 'Never experienced ABC (anti-ball crushing) technology? It’s like moving from a cramped studio apartment to a house with a yard.', size: 'S', details: 'Designed for Office Travel Commute', price: 128, color: 'True Navy')
+photo9 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/abcjoggernavy.jpg')
+product9.photo.attach(io: photo9, filename:'abcjoggernavy.jpg')
+
+product10 = Product.create!(itemtype: 'pants', name: "ABC Jogger 30'", description: 'Never experienced ABC (anti-ball crushing) technology? It’s like moving from a cramped studio apartment to a house with a yard.', size: 'M', details: 'Designed for Office Travel Commute', price: 128, color: 'Black')
+photo10 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/abcjoggerblack.jpg')
+product10.photo.attach(io: photo10, filename:'abcjoggerblack.jpg')
 
 
-product13 = Product.create!(itemtype: 'shirts', name: "Metal Vent Breathe Short Sleeve", description: "We designed this lightweight and breathable top to keep the air flowing when you're pounding the pavement.", size: 'S', details: 'Designed for Training', price: 68, color: 'Holy Camo/Black/Graphite Grey')
-product14 = Product.create!(itemtype: 'shirts', name: "Metal Vent Breathe Short Sleeve", description: "We designed this lightweight and breathable top to keep the air flowing when you're pounding the pavement.", size: 'M', details: 'Designed for Training', price: 68, color: 'Ceramic/White')
+product11 = Product.create!(itemtype: 'pants', name: "City Sweat Jogger French Terry 29'", description: 'Workout, hang out, whatever. These soft, versatile French Terry fabric joggers let you do it all in peak comfort.', size: 'S', details: 'Designed for Office Travel Commute', price: 118, color: 'Lunar Rock')
+photo11 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/citysweatjoggerlunar.jpg')
+product11.photo.attach(io: photo11, filename:'citysweatlunar.jpg')
 
-
-product19 = Product.create!(itemtype: 'shirts', name: "Metal Vent Tech Long Sleeve 2.0", description: 'Meet the ultimate technical training top. Breathable and built with anti-stink technology, it was born to perform sweat after sweat.', size: 'S', details: 'Designed for Running and Training', price: 88, color: 'Mineral Blue/True Navy')
-product20 = Product.create!(itemtype: 'shirts', name: "Metal Vent Tech Long Sleeve 2.0", description: 'Meet the ultimate technical training top. Breathable and built with anti-stink technology, it was born to perform sweat after sweat.', size: 'M', details: 'Designed for Running and Training', price: 88, color: 'Slate/White')
-
-product22 = Product.create!(itemtype: 'pants', name: "ABC Jogger 30'", description: 'Never experienced ABC (anti-ball crushing) technology? It’s like moving from a cramped studio apartment to a house with a yard.', size: 'S', details: 'Designed for Office Travel Commute', price: 128, color: 'True Navy')
-product23 = Product.create!(itemtype: 'pants', name: "ABC Jogger 30'", description: 'Never experienced ABC (anti-ball crushing) technology? It’s like moving from a cramped studio apartment to a house with a yard.', size: 'M', details: 'Designed for Office Travel Commute', price: 128, color: 'Black')
-
-product25 = Product.create!(itemtype: 'pants', name: "City Sweat Jogger French Terry 29'", description: 'Workout, hang out, whatever. These soft, versatile French Terry fabric joggers let you do it all in peak comfort.', size: 'S', details: 'Designed for Office Travel Commute', price: 118, color: 'Lunar Rock')
-product26 = Product.create!(itemtype: 'pants', name: "City Sweat Jogger French Terry 29'", description: 'Workout, hang out, whatever. These soft, versatile French Terry fabric joggers let you do it all in peak comfort.', size: 'M', details: 'Designed for Office Travel Commute', price: 118, color: 'Heathered Ultra Light Grey/Sea Salt')
-
+product12 = Product.create!(itemtype: 'pants', name: "City Sweat Jogger French Terry 29'", description: 'Workout, hang out, whatever. These soft, versatile French Terry fabric joggers let you do it all in peak comfort.', size: 'M', details: 'Designed for Office Travel Commute', price: 118, color: 'Heathered Ultra Light Grey/Sea Salt')
+photo12 = open('https://luiluilemon-seeds.s3-us-west-1.amazonaws.com/citysweatjoggergrey.jpg')
+product12.photo.attach(io: photo12, filename: 'citysweatgrey.jpg')
 
 # product21 = Product.create!(itemtype: 'shirts', name: "Metal Vent Tech Long Sleeve 2.0", description: 'Meet the ultimate technical training top. Breathable and built with anti-stink technology, it was born to perform sweat after sweat.', size: 'L', details: 'Designed for Running and Training', price: 88, color: 'Deep Coal/Black')
 # product3 = Product.create!(itemtype: 'shorts', name: "T.H.E Short Linerless 7'", description: 'Train hard. Every day. We engineered these lightweight shorts with a split hem and smooth waistband for agility.', size: 'L', details: 'Designed for Training', price: 68, color: 'Heather Allover Iron Blue True Navy')

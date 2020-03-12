@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { AuthRoute, ProtectedRoute } from '../util/route_util'
+import { AuthRoute} from '../util/route_util'
 import Main from './spash/main'
 import UserSession from '../components/login_signup/user_session'
 import NavBarContainer from './navbar/navbar_container'
@@ -17,7 +17,7 @@ const App = () => (
         </header>
         <Switch>
             <Route exact path='/products/:id' component={ProductShowContainer} />
-            <ProtectedRoute path='/products' component={ProductIndexContainer} />
+            <Route path='/products' component={ProductIndexContainer} />
             <AuthRoute path='/UserSession' component={UserSession} />
             <Route path='/' component={Main} />
         </Switch>

@@ -17,7 +17,7 @@ class Product extends React.Component {
         return (
             <div className='product-show-whole-page-container'>
                 <div className='product-left-side-img'>
-                    <img className='product-image-item-img' src={window.shorts2} />
+                    <img className='show-pic' src={`${this.props.product.photo}`} alt="" />  
                 </div>
                 <div className='right-side-whole-container'>
                     <div className='main-product-description'>
