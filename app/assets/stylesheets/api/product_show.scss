@@ -196,3 +196,35 @@
     margin-top: 2px;
     font-weight: 500;
 }
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.left-side-product-show-review-box {
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.far.fa-star {
+    font-size: 1rem;
+    padding-right: 5px;
+}
+
+.right-side-product-show-chat-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.far.fa-comment {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.live-chat-text {
+    padding-left: 5px;
+}

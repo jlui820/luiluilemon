@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
     componentDidMount() {
@@ -63,6 +64,24 @@ class Product extends React.Component {
                             </div>
                             <div className='add-to-bag-button-container'>
                                 <button className='add-to-bag-button'>ADD TO BAG</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='reviews-container'>
+                        <div className='left-side-product-show-review-box'>
+                            <div>
+                                <i className="far fa-star"></i>
+                            </div>
+                            <div>
+                                <Link to='/'>Reviews</Link>
+                            </div>
+                        </div>
+                        <div className='right-side-product-show-chat-box'>
+                            <div>
+                                <i class="far fa-comment-alt"></i>
+                            </div>
+                            <div>
+                                <Link to='/' className='live-chat-text'>Live Chat</Link>
                             </div>
                         </div>
                     </div>
