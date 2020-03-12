@@ -17,7 +17,7 @@ class Product extends React.Component {
         return (
             <div className='product-show-whole-page-container'>
                 <div className='product-left-side-img'>
-                    <img className='show-pic' src={`${this.props.product.photo}`} alt="" />  
+                    <img className='show-pic-show-page' src={`${this.props.product.photo}`} alt="" />  
                 </div>
                 <div className='right-side-whole-container'>
                     <div className='main-product-description'>
@@ -33,11 +33,8 @@ class Product extends React.Component {
                         </div>
                         <div className='color-buttons-container'>
                             {/* {this.props.product.color} */}
-                            <button className='color-buttons'></button>
-                            <button className='color-buttons'></button>
-                            <button className='color-buttons'></button>
-                            <button className='color-buttons'></button>
-                            <button className='color-buttons'></button>
+                            <button className='color-buttons first'></button>
+                            <button className='color-buttons second'></button>
                         </div>
                         {/* <div className='model-characteristics-container'>
                             <div className='model-description'>model description</div>

@@ -8,7 +8,7 @@
 .product-left-side-img {
     display: flex;
     width: 40%;
-    // border: 1px solid red;
+    // border: 1px0 solid red;
     height: auto;
 }
 
@@ -23,7 +23,6 @@
     flex-direction: column;
     height: auto;
 }
-
 .main-product-description {
     box-sizing: border-box;
     font-size: 2rem;
@@ -227,4 +226,17 @@
 
 .live-chat-text {
     padding-left: 5px;
+}
+
+.show-pic-show-page {
+    height: 42rem;
+    width: auto;
+}
+
+.first {
+    background-color: grey;
+}
+
+.second {
+    background: pink;
 }

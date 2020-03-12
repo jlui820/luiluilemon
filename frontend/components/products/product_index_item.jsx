@@ -28,11 +28,13 @@ const ProductIndexItem = (props) => {
                         <button className='product-color-button'></button>
                     </div>
                 </div> */}
-                <div className='product-item-name'>
-                    {props.product.name}
-                </div>
-                <div className='product-item-price'>
-                   ${props.product.price}USD
+                <div className='product-item-text'>
+                    <div className='product-item-name'>
+                        {props.product.name}
+                    </div>
+                    <div className='product-item-price'>
+                    ${props.product.price}USD
+                    </div>
                 </div>
             </div>
         </div>

@@ -50,20 +50,21 @@ class MainBodyProducts extends React.Component {
     }
 
     render() {
+        debugger
         return (
             <div className='main-container'>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <img className='front-page-items' src={window.shorts}/>
-                        <h3 className='product-description'>T.H.E Short 9"</h3>
-                        <span className='price'>$68 USD</span>
+                        <img className='front-page-items' src={window.pinkjogger}/>
+                        <h3 className='product-description'>City Sweat Jogger French Terry 29"</h3>
+                        <span className='price'>$118 USD</span>
                     </div>
                 </div>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <img className='front-page-items' src={window.shorts2} />
-                        <h3 className='product-description'>T.H.E Short 9"</h3>
-                        <span className='price'>$68 USD</span>
+                        <img className='front-page-items' src={window.greyjogger} />
+                        <h3 className='product-description'>City Sweat Jogger French Terry 29"</h3>
+                        <span className='price'>$1188 USD</span>
                     </div>                    
                 </div>
                 <div>
