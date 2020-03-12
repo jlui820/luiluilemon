@@ -148,39 +148,47 @@
 //     text-align: left;
 //     margin-bottom: 22px;
 // }
-.whole-container-wrapper {
-    padding-left: 1.625rem;
-    padding-right: 1.625rem;
-}
+// .whole-container-wrapper {
+//     padding-left: 1.625rem;
+//     padding-right: 1.625rem;
+// }
 
 .splash-page-main-container {
     // border: 1px solid red;
     display: flex;
     justify-content: center;
-    align-content: center;
-    position: relative;
+    // justify-content: center;
+    // align-content: center;
+    // position: relative;
     // background-image: image-url('lulumain2.jpg');
     // height:37.5rem;
     // width:75.625rem;
+    overflow: hidden;
 }
 
 .splash-page-main-image-container {
     // border: 1px solid blue;
     display: flex;
     justify-content: center;
-    position: fixed;
+    
     // z-index: 1;
     top:0%;
     right: 25%;
-    position: static;
+    // position: absolute;
     margin-left: 110px;
-    // background-image: image-url('mainpage.jpg');
+
+    width: 73%;
+    object-fit: contain;
 }
 
 .splash-page-img {
     display: flex;
-    height: 37.56rem;
-    width: 75.63rem;
+    // height: 37.56rem;
+    // width: 75.63rem;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    object-fit: cover;
 }
 
 
@@ -189,14 +197,16 @@
     display: flex;
     flex-direction: column;
     height: 293px;
-    width: 230px;
+    // width: 230px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left: 50px;
     background: white;
     position: absolute;
-    left: 5%;
-    bottom:20%;
+    left: 8%;
+    bottom:42%;
+    width: 13%;
+ 
     
 }
 
@@ -217,6 +227,7 @@
     flex-direction: column;
     padding-top: 1.875rem;
     padding-bottom: 0.938rem;
+    // flex-grow: 1;
 }
 
 .left-container-list-item {
@@ -224,8 +235,19 @@
     line-height: 1.375;
     margin-bottom: 1.375rem;
     text-align: left;
+    
 }
 
 .click-category-link {
     text-decoration: none;
+
+}
+
+.fas.fa-shopping-cart {
+    padding-left: 10px;
+}
+
+.radio-button {
+      background-color:#bfb;
+      border-color: #4c4;
 }

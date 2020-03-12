@@ -85,7 +85,7 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div className='whole-container-wrapper'>
+            // <div className='whole-container-wrapper'>
                 <div className='splash-page-main-container'>
                     <div className='left-container'>
                         <div className='left-container-title'>luiluilemon</div>
@@ -108,11 +108,11 @@ class Body extends React.Component {
                         </ul>
                     </div>
                     <div className='splash-page-main-image-container'>
-                        <img className='splash-page-img' src={window.mainpageimage} alt="" />
+                        <img className='splash-page-img' src={window.mainpageimage2} alt="" />
                         <div className='image-click-button'></div>
                     </div>
                 </div>
-            </div>
+            // </div>
         )
     }
 }

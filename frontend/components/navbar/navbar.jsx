@@ -52,9 +52,8 @@ const NavBar = ({ currentUser, logout }) => {
                         <div className='search-bar'>
                             {/* <i className="fas fa-search" fa-xs></i> */}
                             <input type="text" placeholder='Search'/>
-                        
+                            <i className="fas fa-shopping-cart"></i>
                         </div>
-                        {/* <i className="fas fa-shopping-cart"></i> */}
                     </div>
                 </div>
             </div>
