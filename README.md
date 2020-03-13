@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Luiluilemon is a Lululemon clone, an ecommerce website for athletic apparel. 
 
-Things you may want to cover:
+Technologies
+
+
 
 * Ruby version
 
