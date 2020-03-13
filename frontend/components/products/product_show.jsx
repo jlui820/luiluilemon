@@ -33,6 +33,7 @@ class Product extends React.Component {
                                 {/* {this.props.product.color} */}
                                 <button className='color-buttons first'></button>
                                 <button className='color-buttons second'></button>
+                                <button className='color-buttons third'></button>
                             </div>
                             {/* <div className='model-characteristics-container'>
                                 <div className='model-description'>model description</div>
