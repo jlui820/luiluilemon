@@ -20,6 +20,7 @@ class Main extends React.Component {
                         {/* <ProductIndexItem />
                         <Product />
                         <ProductIndex /> */}
+                        hello
                     </div>
                     <div>
                     </div>

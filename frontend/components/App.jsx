@@ -14,6 +14,7 @@ const App = () => (
     <div>
         <header>
             <NavBarContainer />
+            
         </header>
         <Switch>
             <Route exact path='/products/:id' component={ProductShowContainer} />
