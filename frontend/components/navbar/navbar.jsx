@@ -17,13 +17,13 @@ const NavBar = ({ currentUser, logout }) => {
     return (
         <div className='nav-bar-head'>
             <div className='nav-bar-head-container'>
-                {/* <div className='left-side-nav-bar'>
+                <div className='left-side-nav-bar'>
                     <div className='nav-bar-logo'>
                         <Link to='/'>
                             <img className='nav-logo' src={window.navlogo2} />
                         </Link>
                     </div>
-                    <div>
+                    {/* <div>
                         <li className='nav-bar-nav-link' >
                             <Link to='/' className='click-link' href="">WOMEN</Link>
                         </li>
@@ -42,60 +42,38 @@ const NavBar = ({ currentUser, logout }) => {
                         <li className='nav-bar-nav-link'>
                             <Link to='/' className='click-link' href="">ACCESSORIES</Link>
                         </li>
+                    </div> */}
+                    <div className='dropdown-nav'>
+                        <ul className='dropdrop'>
+                            <li className='dropdown'>
+                                <a href="">WOMEN</a>
+                                <div className='dropdown-content'> 
+                                    <a className='dropdown-content-list' href="">Womens Clothes</a>
+                                </div>
+                            </li>   
+                            <li className='dropdown'>
+                                <a href="#products" className='dropbtn'>MEN</a>
+                                <div className='dropdown-content'> 
+                                    <a className='dropdown-content-list' href="">Mens Clothes</a>
+                                </div>
+                            </li>   
+                            <li className='dropdown'>
+                                <a href="" className='dropbtn'>GIRLS</a>
+                                <div className='dropdown-content'>
+                                    <a className='dropdown-content-list' href="">Girls</a>
+                                </div>
+                            </li>   
+                            <li className='dropdown'>
+                                <a href="" className='dropbtn'>ACCESSORIES</a>
+                                <div className='dropdown-content'>
+                                    <a className='dropdown-content-list' href="">Accessories</a>
+                                </div>
+                            </li>   
+                        </ul>    
                     </div>
-                </div> */}
+                </div>
 
-                {/* dropdowncode
-                <div className='dropdown'>
-                    <span>navbar</span>
-                    <div className='dropdown-content'>
-                        <li className='dropdown-list'>
-                            <a href="#products">MEN</a>
-                            <div className='dropdown-inner-content'>
-                                <a href="#products">Men's Clothes</a>
-                            </div>
-                        </li>
-                        <li className='dropdown-list'>
-                            <a href="">WOMEN</a>
-                            <div className='dropdown-inner-content'>
-                                <a href="">Womens Product's</a>
-                            </div>
-                        </li>
-                        <li className='dropdown-list'>3</li>
-                    </div>
-                </div> */}
-
-                {/* <div className='dropdown-nav'>
-                    <ul className='navbar-dropdown-container'>
-                        <li className='dropdown-content-list'><a href="">WOMEN</a></li>   
-                        <li className='dropdown-content-list'>
-                            <a href="#products">MEN</a>
-                            <div className='dropdown-content'> 
-                                <a href="">1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                            </div>
-                        </li>   
-                        <li className='dropdown-content-list'><a href="">GIRLS</a></li>   
-                        <li className='dropdown-content-list'><a href="">ACCESSORIES</a></li>   
-                      
-                    </ul>    
-                </div>      */}
-
-                <ul className='dropdrop'>
-                    <li className='dropdown'><a href="#home">Home</a></li>
-                    <li className='dropdown'><a href="#news">News</a></li>
-                    <li className="dropdown second">
-                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-                        <div className="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                </ul> 
-
-
+                
                 <div className='right-side-nav-bar'>
                     {display}
                     <div className="line-break">|</div>
