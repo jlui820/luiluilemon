@@ -45,16 +45,57 @@ const NavBar = ({ currentUser, logout }) => {
                     </div>
                 </div> */}
 
-
+                {/* dropdowncode
                 <div className='dropdown'>
                     <span>navbar</span>
                     <div className='dropdown-content'>
-                        <li className='dropdown-list'>1</li>
-                        <Link to='/products' className='dropdown-list'>5</Link>
-                        <li className='dropdown-list'>2</li>
+                        <li className='dropdown-list'>
+                            <a href="#products">MEN</a>
+                            <div className='dropdown-inner-content'>
+                                <a href="#products">Men's Clothes</a>
+                            </div>
+                        </li>
+                        <li className='dropdown-list'>
+                            <a href="">WOMEN</a>
+                            <div className='dropdown-inner-content'>
+                                <a href="">Womens Product's</a>
+                            </div>
+                        </li>
                         <li className='dropdown-list'>3</li>
                     </div>
-                </div>
+                </div> */}
+
+                {/* <div className='dropdown-nav'>
+                    <ul className='navbar-dropdown-container'>
+                        <li className='dropdown-content-list'><a href="">WOMEN</a></li>   
+                        <li className='dropdown-content-list'>
+                            <a href="#products">MEN</a>
+                            <div className='dropdown-content'> 
+                                <a href="">1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                            </div>
+                        </li>   
+                        <li className='dropdown-content-list'><a href="">GIRLS</a></li>   
+                        <li className='dropdown-content-list'><a href="">ACCESSORIES</a></li>   
+                      
+                    </ul>    
+                </div>      */}
+
+                <ul className='dropdrop'>
+                    <li className='dropdown'><a href="#home">Home</a></li>
+                    <li className='dropdown'><a href="#news">News</a></li>
+                    <li className="dropdown second">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div className="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul> 
+
+
                 <div className='right-side-nav-bar'>
                     {display}
                     <div className="line-break">|</div>
