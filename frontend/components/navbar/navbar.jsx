@@ -17,7 +17,7 @@ const NavBar = ({ currentUser, logout }) => {
     return (
         <div className='nav-bar-head'>
             <div className='nav-bar-head-container'>
-                <div className='left-side-nav-bar'>
+                {/* <div className='left-side-nav-bar'>
                     <div className='nav-bar-logo'>
                         <Link to='/'>
                             <img className='nav-logo' src={window.navlogo2} />
@@ -42,6 +42,17 @@ const NavBar = ({ currentUser, logout }) => {
                         <li className='nav-bar-nav-link'>
                             <Link to='/' className='click-link' href="">ACCESSORIES</Link>
                         </li>
+                    </div>
+                </div> */}
+
+
+                <div className='dropdown'>
+                    <span>navbar</span>
+                    <div className='dropdown-content'>
+                        <li className='dropdown-list'>1</li>
+                        <Link to='/products' className='dropdown-list'>5</Link>
+                        <li className='dropdown-list'>2</li>
+                        <li className='dropdown-list'>3</li>
                     </div>
                 </div>
                 <div className='right-side-nav-bar'>
