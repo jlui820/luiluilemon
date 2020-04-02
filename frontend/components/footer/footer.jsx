@@ -10,7 +10,9 @@ class Footer extends React.Component {
                         <div className='top-container'>
                             <div className='account-container'>
                                 <div className='account-title'>MY ACCOUNT</div>
-                                <div className='account'>Sign In</div>
+                                <div className='account'>
+                                    <Link to='/UserSession' className='account'>Sign In</Link>
+                                </div > 
                                 <div className='account'>Register</div>
                                 <div className='account'>Order Status</div>
                                 <div className='account'>Returns</div>
