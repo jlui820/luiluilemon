@@ -77,19 +77,19 @@ class Footer extends React.Component {
                             <div className='icons-container'>
                                 <div className='icons-title'></div>
                                 <div className='icons'>
-                                    <i className="fab fa-twitter"></i>
+                                    <a href="https://github.com/jlui820/luiluilemon">
+                                        <i className="fab fa-github-alt"></i>
+                                    </a>
                                 </div>
                                 <div className='icons'>
-                                    <i className="fab fa-pinterest-p"></i>
+                                    <a href="https://angel.co/jeffrey-lui-820">
+                                        <i className="fab fa-angellist"></i>
+                                    </a>
                                 </div>
                                 <div className='icons'>
-                                    <i className="fab fa-youtube"></i>
-                                </div>
-                                <div className='icons'>
-                                    <i className="fab fa-facebook-f"></i>
-                                </div>
-                                <div className='icons'>
-                                    <i className="fab fa-instagram"></i>
+                                    <a href="https://www.linkedin.com/in/jeffrey-lui820/">
+                                        <i className="fab fa-linkedin-in"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
