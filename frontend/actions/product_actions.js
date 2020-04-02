@@ -9,7 +9,6 @@ export const receiveProducts = products => ({
 })
 
 export const receiveProduct = product => {
-   
     return {
         type: RECEIVE_PRODUCT,
         product
