@@ -27,6 +27,11 @@ class SignupForm extends React.Component {
             <div className ='sign-up-form-container-wrapper'>
                 <div className='sign-up-form-container'>
                     <form onSubmit={this.handleSubmit}>
+                        {this.props.signUpErrors.map((error, index) => (
+                                <div className='signUp-error' key={`${index}`}>
+                                    {error}
+                                </div>
+                            ))}
                         <div className='create-acccount-container'>
                             <div className='sign-up-email'>
                                 <div className='sign-up-email-text'>Email

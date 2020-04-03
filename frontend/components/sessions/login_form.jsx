@@ -28,11 +28,28 @@ class LoginForm extends React.Component {
         this.props.processForm({email:'tucker@gmail.com', password: '123456'})
     }
 
+    // renderErrors() {
+    //     return (
+    //         <ul>
+    //             {this.props.errors.map((error, index) => (
+    //                 <div className='login-error' key={`${index}`}>
+    //                     {error}
+    //                 </div>
+    //             ))}
+    //         </ul>
+    //     );
+    // }
+
     render() {
         return (
             <div className='login-form-container-wrapper'>
                 <div className='login-form-container'>
                     <form onSubmit={this.handleSubmit}>
+                            {this.props.loginErrors.map((error, index) => (
+                                <div className='login-error' key={`${index}`}>
+                                    {error}
+                                </div>
+                            ))}
                         <div className='login-acccount-container'>
                             <div className='login-email'>
                                 <div className='login-email-text'>Email Address
