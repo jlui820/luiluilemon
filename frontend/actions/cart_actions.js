@@ -38,13 +38,13 @@ export const addToCart = cartItem => dispatch => (
 );
 
 
-export const updateCart = cartItem => dispatch (
+export const updateCart = cartItem => dispatch => (
     CartAPIUtil.updateCart(cartItem)
     .then(cartItem => dispatch(receiveCartItem(cartItem))),
     err => dispatch(receiiveItemErrors(err.response.JSON))
 );
 
-export const removeCartItem = cartItemId => dispatch (
+export const removeCartItem = cartItemId => dispatch => (
     CartAPIUtil.removeCartItem(cartItemId)
     .then(() => dispatch(deleteCartItem(cartItemId))),
     err => dispatch(receiiveItemErrors(err.response.JSON))

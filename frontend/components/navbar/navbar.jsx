@@ -82,7 +82,11 @@ const NavBar = ({ currentUser, logout }) => {
                         <div className='search-bar'>
                             {/* <i className="fas fa-search" fa-xs></i> */}
                             <input type="text" placeholder='Search'/>
-                            <i className="fas fa-shopping-cart"></i>
+                            <div className='nav-cart'>
+                                <Link to='/cart'>
+                                    <i className="fas fa-shopping-cart"></i>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

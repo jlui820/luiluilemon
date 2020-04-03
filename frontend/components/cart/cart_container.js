@@ -1,9 +1,12 @@
 import{ connect } from 'react-redux';
-import CartItems from './cart_items';
+import React from 'react';
+import CartForm from './cart';
 import { fetchCartItems, updateCart, removeCartItem} from '../../actions/cart_actions'
 
 const mapStateToProps = state => ({
-
+    currentUserId: state.session.id,
+    products: Object.values(state.entities.products),
+    currentUser: state.session.currentUser
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -12,4 +15,4 @@ const mapDispatchToProps = dispatch => ({
     removeCartItem: cartItemId => dispatch(removeCartItem(cartItemId))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartItems);
+export default connect(mapStateToProps, mapDispatchToProps)(CartForm);
