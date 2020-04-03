@@ -1,4 +1,4 @@
-import { LOGIN_RECEIVE_ERRORS, SIGNUP_RECEIVE_ERRORS, RECEIVE_CURRENT_USER } from '../actions/session_actions'
+import { LOGIN_RECEIVE_ERRORS, RECEIVE_CURRENT_USER } from '../actions/session_actions'
 
 export default (state = [], action) => {
     Object.freeze(state);
@@ -6,8 +6,6 @@ export default (state = [], action) => {
 
     switch (action.type) {
         case LOGIN_RECEIVE_ERRORS:
-            return action.errors;
-        case SIGNUP_RECEIVE_ERRORS:
             return action.errors;
         case RECEIVE_CURRENT_USER:
             return [];

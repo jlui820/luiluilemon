@@ -23,12 +23,12 @@ export const receiveProductErrors = errors => ({
 
 export const fetchProducts = () => dispatch => (
     ProductApiUtil.fetchProducts()
-    .then(products => dispatch(receiveProducts(products))),
-    error => dispatch(receiveProductErrors(error.responseJSON))
+    .then(products => dispatch(receiveProducts(products)),
+    error => dispatch(receiveProductErrors(error.responseJSON)))
 )
 
 export const fetchProduct = id => dispatch => (
     ProductApiUtil.fetchProduct(id)
-    .then(product => dispatch(receiveProduct(product))),
-    error => dispatch(receiveProductErrors(error.responseJSON))
+    .then(product => dispatch(receiveProduct(product)),
+    error => dispatch(receiveProductErrors(error.responseJSON)))
 )
