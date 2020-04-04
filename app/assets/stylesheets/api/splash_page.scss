@@ -158,31 +158,36 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .splash-page-main-image-container {
     // border: 1px solid blue;
     display: flex;
-    justify-content: center;
-    
-    // z-index: 1;
+    justify-content: center;  
     top:0%;
-    right: 25%;
-    // position: absolute;
-    margin-left: 110px;
 
+    margin-left: 110px;
+    z-index: 0;
     width: 73%;
-    object-fit: contain;
+    height: 37.5rem;
+    // object-fit: contain;
+    position: relative;
 }
+
 
 .splash-page-img {
     display: flex;
-    // height: 37.56rem;
-    // width: 75.63rem;
+    height: 37.56rem;
+    width: 75.63rem;
     width: 100%;
     height: auto;
     min-height: 600px;
     object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
 }
 
 
@@ -196,11 +201,11 @@
     padding-bottom: 30px;
     margin-left: 50px;
     background: white;
-    position: absolute;
+    position: fixed;
     left: 8%;
     bottom:42%;
     // width: 13%;
- 
+    z-index: 2;
     
 }
 

@@ -83,7 +83,20 @@ class Body extends React.Component {
         super(props) 
     }
 
+
     render() {
+  
+        $(function () {
+          $(".splash-page-main-image-container img:gt(0)").hide();
+          setInterval(function () {
+            $(".splash-page-main-image-container :first-child")
+              .fadeOut()
+              .next("img")
+              .fadeIn()
+              .end()
+              .appendTo(".splash-page-main-image-container");
+          }, 6000);
+        });
         return (
             // <div className='whole-container-wrapper'>
                 <div className='splash-page-main-container'>
@@ -108,9 +121,13 @@ class Body extends React.Component {
                         </ul>
                     </div>
                     <div className='splash-page-main-image-container'>
-                        <img className='splash-page-img' src={window.mainpageimage2} alt="" />
-                        <div className='image-click-button'></div>
+                        
+                            <img className='splash-page-img' src={window.mainpageimage2} alt="" />
+                      
+                            <img className='splash-page-img' src={window.mainpageimage3} alt=""/>
+                       
                     </div>
+                        {/* <div className='image-click-button'></div> */}
                 </div>
             // </div>
         )
@@ -118,3 +135,4 @@ class Body extends React.Component {
 }
 
 export default Body;
+
