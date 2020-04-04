@@ -169,3 +169,23 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.logged-in {
+    display: flex;
+    // align-items: center;
+}
+
+.logout-button {
+    border: none;
+    color: #777777;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 0.5875rem;
+}
+
+.user-greeting {
+    font-size: 0.75rem;
+    padding-right: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}

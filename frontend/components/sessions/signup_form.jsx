@@ -48,7 +48,7 @@ class SignupForm extends React.Component {
                                 </div>
                             </div>
                             <div className='signup-form-button'>
-                                <input type="submit" value='CREATE ACCOUNT' />
+                                <input className='signup-button' type="submit" value='CREATE ACCOUNT' />
                             </div>
                             <div>
                                 <div className='signup-form-bottom'>
