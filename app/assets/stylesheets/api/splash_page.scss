@@ -159,6 +159,7 @@
     justify-content: center;
     margin-top: 5rem;
     overflow: hidden;
+    position: sticky;
 }
 
 .splash-page-main-image-container {
@@ -199,10 +200,8 @@
     background: white;
     position: absolute;
     left: 8%;
-    bottom:42%;
+    top: 15%;
     // width: 13%;
- 
-    
 }
 
 .left-container-title {
