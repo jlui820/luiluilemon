@@ -252,3 +252,10 @@
       background-color:#bfb;
       border-color: #4c4;
 }
+
+.click-category-link:hover {
+    border-bottom: .1575rem solid;
+    // border-color: #d22030;
+    border-color: black;
+    transition: all .35s ease-in-out;
+}

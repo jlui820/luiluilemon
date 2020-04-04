@@ -23,26 +23,6 @@ const NavBar = ({ currentUser, logout }) => {
                             <img className='nav-logo' src={window.navlogo2} />
                         </Link>
                     </div>
-                    {/* <div>
-                        <li className='nav-bar-nav-link' >
-                            <Link to='/' className='click-link' href="">WOMEN</Link>
-                        </li>
-                    </div>
-                    <div>
-                        <li className='nav-bar-nav-link'>
-                            <Link to='/products' className='click-link' href="">MEN</Link>
-                        </li>
-                    </div>
-                    <div>
-                        <li className='nav-bar-nav-link'>
-                            <Link to='/' className='click-link' href="">GIRLS</Link>
-                        </li>
-                    </div>
-                    <div>
-                        <li className='nav-bar-nav-link'>
-                            <Link to='/' className='click-link' href="">ACCESSORIES</Link>
-                        </li>
-                    </div> */}
                     <div className='dropdown-nav'>
                         <ul className='dropdrop'>
                             <li className='dropdown'>
