@@ -15,6 +15,11 @@
     padding-left: 1.5625rem;
     padding-bottom: 0.75rem;
     padding-right: 1.5625rem;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .left-side-nav-bar {
@@ -189,3 +194,14 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
+
+// .sticky {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+// }
+
+// .sticky+.content {
+//     padding-top: 60px;
+// }
+

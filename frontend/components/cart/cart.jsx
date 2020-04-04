@@ -28,7 +28,7 @@ class CartForm extends React.Component {
       </div>
     ) : (
       <div className="header">
-        <h1>Please Sign in to View Shopping Cart THIS IS THE CART</h1>
+        <h1>Please Sign in to View Shopping Cart</h1>
       </div>
     );
     return cart_page;
