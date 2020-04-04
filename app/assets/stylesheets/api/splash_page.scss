@@ -157,9 +157,7 @@
 .splash-page-main-container {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
     overflow: hidden;
-    position: sticky;
 }
 
 .splash-page-main-image-container {
@@ -200,8 +198,10 @@
     background: white;
     position: absolute;
     left: 8%;
-    top: 15%;
+    bottom:42%;
     // width: 13%;
+ 
+    
 }
 
 .left-container-title {

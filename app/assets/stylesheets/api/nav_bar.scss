@@ -17,7 +17,7 @@
     padding-right: 1.5625rem;
     overflow: hidden;
     background-color: #fff;
-    position: fixed;
+    // position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -194,14 +194,4 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
-
-// .sticky {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-// }
-
-// .sticky+.content {
-//     padding-top: 60px;
-// }
 
