@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
-    width: 100%;
     padding-top: 1.5rem;
     padding-left: 1.5625rem;
     padding-bottom: 0.75rem;
@@ -20,6 +19,7 @@
     // position: fixed;
     top: 0;
     z-index: 10;
+    width: 100vw;
 }
 
 .left-side-nav-bar {
@@ -132,17 +132,16 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-bottom: 3px solid white;
 }
 
 .dropdown a:hover,
 .dropdown:hover .dropbtn {
-    border-bottom: .1875rem solid;
-    border-color: #d22030;
+    border-bottom: 3px solid #d22030;
     transition: all .35s ease-in-out;
     // visibility: hidden;
-    z-index: 0;
+    z-index: 1;
     cursor: pointer;
-    border-bottom-width:3px;
 }
 
 // .dropdown.second{
@@ -165,6 +164,10 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    position: relative;
 }
 
 .dropdown-content a:hover {

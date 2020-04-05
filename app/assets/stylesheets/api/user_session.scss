@@ -119,6 +119,7 @@ flex-wrap: wrap;
     height: 29.024rem;
     width: 22.5rem;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .sign-in-form-title, .sign-up-form-title {
@@ -132,9 +133,9 @@ flex-wrap: wrap;
 }
 
 .user-session-border {
-    border-left: 1px solid #ddd;
-    width: 1px;
-    height: px;
+    // border-left: 1px solid #ddd;
+    // width: 1px;
+    // height: px;
     // margin-left: 24px;
 }
 
@@ -142,4 +143,14 @@ flex-wrap: wrap;
 .user-session-wrapper {
     height: auto;
     margin-bottom: 6rem;
+}
+
+.user-session-wrapper {
+    display: flex;
+    width: 78%
+}
+
+.sign-up-form-wrapper {
+    border-left: 1px solid #ddd;
+    width: 40%;
 }
