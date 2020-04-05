@@ -59,8 +59,10 @@
 
 
 .sign-up-field input, .sign-up-password-field input {
-    height: 30px;
-    width: 350px;
+    width: 75%;
+    height: 1.5rem;
+    padding: .625rem;
+    border: 1px solid black;
     // border: 1px solid red;
     line-height: .938rem;
     font-size: 1rem;
@@ -76,15 +78,7 @@
     font-size: 11px;
 }
 
-.signup-form-button input{
-    width: 360px;
-    height: 45px;
-    padding: 10px;
-    background-color: #dbdbdb;
-    color: #fff;
-    font-size: .875rem;
-    letter-spacing: 2px;
-}
+
 
 
 // .signup-form-wrapper {
@@ -99,6 +93,23 @@
     text-align: left;
     margin-bottom: 18px;
 }
+
+.signup-button {
+    width: 70%;
+    height: 45px;
+    padding: 10px;
+    background-color: #dbdbdb;
+    color: #fff;
+    font-size: .875rem;
+    letter-spacing: 2px;
+}
+
+.signup-button:hover {
+    color: #fff;
+    transition: all .2s ease-in-out;
+    background-color: #000;
+}
+
 
 .signup-container {
     padding-bottom: 20px;

@@ -35,12 +35,15 @@
 }
 
 .login-field input, .password-field input {
-    height: 1.875rem;
-    width: 21rem;
+    height: 1.5rem;
+    width: 75%;
     // border: 1px solid red;
     line-height: .938rem;
     font-size: 1rem;
     padding-left: 20px;
+    background-color: rgb(232, 240, 254);
+    border: 1px solid black;
+    padding: .625rem;
 }
 
 // .password-field input {
@@ -49,7 +52,7 @@
 // }
 
 .signin-button {
-    width: 360px;
+    width: 82%;
     height: 45px;
     padding: 10px;
     background-color: #000;
@@ -103,10 +106,21 @@
 // }
 
 .demo {
-    height: 1.5rem;
-    width: 15rem;
+    height: 2rem;
+    width: 35%;
     margin-bottom: 1rem;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: .75rem;
+}
+
+
+.demo:hover {
+    color: #000;
+    transition: all .2s ease-in-out;
+    background-color: rgb(219, 219, 219);
 }
 
 .login-error {
