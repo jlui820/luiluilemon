@@ -59,22 +59,24 @@
 }
 
 .signin-button:hover {
-    // width: 360px;
-    // height: 45px;
-    // padding: 10px;
-    // background-color: #fff;
-    // color: #000;
-    // transition: all .2s ease-in-out;
+    color: #000;
+    transition: all .2s ease-in-out;
+    background-color: rgb(219, 219, 219);
+    
 }
+
+
 
 .login-email-text {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 11px;
 }
 
 .login-password-text {
     padding-bottom: 43px;
+    font-size: 11px;
 }
 
 .sign-in-container {
