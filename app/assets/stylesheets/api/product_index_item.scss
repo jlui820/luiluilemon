@@ -129,11 +129,11 @@
 
 .productindex-buttons-container {
     // border: 1px solid red;
-    margin-bottom: 2.8125rem;
+    margin-bottom: 1.8125rem;
     height: auto;
     display: flex;
     justify-content: space-around;
-    color: #FFFFFF;
+    background-color: #fafafa;
 }
 
 .product-index-buttons {
@@ -143,5 +143,14 @@
     padding-bottom: 10px;
     margin-top: 7px;
     margin-bottom: 7px;
+    outline:none;
+    background-color:#fafafa;
+    border-bottom: 3px solid #fafafa;
+}
+
+.product-index-buttons:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #d22030;
+    transition: all .35s ease-in-out;
 }
 
