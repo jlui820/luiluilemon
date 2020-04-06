@@ -10,3 +10,11 @@ export const fetchProduct = id =>
         method: 'GET'
     })
     
+export const fetchProductsByType = itemtype => {
+    // debugger
+    return $.ajax({
+        method: 'GET',
+        url: `/api/products`,
+        data: { itemtype: itemtype }
+    })
+}
