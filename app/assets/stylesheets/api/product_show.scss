@@ -246,3 +246,17 @@
 .third {
     background: pink
 }
+
+.men-show-link {
+    font-size: .75rem;
+    text-decoration: none;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: .1875rem;
+    font-weight: 500;
+}
+
+.men-show-link:hover {
+    border-bottom: 1px solid #d22030;
+    transition: all .35s ease-in-out;
+    cursor: pointer;
+}

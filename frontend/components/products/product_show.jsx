@@ -18,6 +18,10 @@ class Product extends React.Component {
                         <img className='show-pic-show-page' src={`${this.props.product.photo}`} alt="" />  
                     </div>
                     <div className='right-side-whole-container'>
+                        <div>
+                            <a href="#products" className='men-show-link'>Men's Clothes</a>
+                            
+                        </div>
                         <div className='main-product-description'>
                             <h1 className='product-name'>{this.props.product.name}</h1>
                             <div className='product-price'>${this.props.product.price}USD</div>
