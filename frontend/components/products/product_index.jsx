@@ -5,6 +5,7 @@ class ProductIndex extends React.Component {
     constructor(props) {
         super(props)
         this.handleGetProduct = this.handleGetProduct.bind(this)
+        this.handleAllProduct = this.handleAllProduct.bind(this)
     }
     componentDidMount() {
         this.props.fetchProducts();
@@ -19,6 +20,11 @@ class ProductIndex extends React.Component {
         )
     }
 
+    handleAllProduct(e) {
+        e.preventDefault()
+        return this.props.fetchProducts();
+    }
+
     render() {
         const { products } = this.props;
         if(!products) return null
@@ -28,20 +34,28 @@ class ProductIndex extends React.Component {
         })
 
         return (
-            <div>
-                <div className='product-index-item'>
-                    {product}
+            <div className='productindex-wrapper'>
+                <div className='left-side-product-index'>
+                    <p className='right-side-header'>Men's Clothes</p>
                 </div>
-                <div className="index-body-sidebar-7">
-                    <button onClick={this.handleGetProduct} value="shorts">
-                        SHORTS
-                    </button>
-                    <button onClick={this.handleGetProduct} value="shirts">
-                        SHIRTS
-                    </button>
-                    <button onClick={this.handleGetProduct} value="pants">
-                        PANTS
-                    </button>
+                <div className='right-side-product-index'>
+                    <div className="productindex-buttons-container">
+                        <button className='product-index-buttons' onClick={this.handleAllProduct}>
+                            All
+                        </button>
+                        <button className='product-index-buttons' onClick={this.handleGetProduct} value="shorts">
+                            Shorts
+                        </button>
+                        <button className='product-index-buttons' onClick={this.handleGetProduct} value="shirts">
+                            Shirts
+                        </button>
+                        <button className='product-index-buttons' onClick={this.handleGetProduct} value="pants">
+                            Pants
+                        </button>
+                    </div>    
+                    <div className='product-index-item'>
+                        {product}
+                    </div>
                 </div>
             </div>      
         );
