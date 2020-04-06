@@ -114,6 +114,7 @@
 .productindex-wrapper {
     display: flex;
     justify-content: space-evenly;
+    background-color: #fafafa;
 }
 
 .right-side-header {
@@ -133,7 +134,7 @@
     height: auto;
     display: flex;
     justify-content: space-around;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 .product-index-buttons {
@@ -144,8 +145,8 @@
     margin-top: 7px;
     margin-bottom: 7px;
     outline:none;
-    background-color:#fafafa;
-    border-bottom: 3px solid #fafafa;
+    background-color:#ffffff;
+    border-bottom: 3px solid #ffffff;
 }
 
 .product-index-buttons:hover {
@@ -157,3 +158,4 @@
 .left-side-product-index {
     // border: 1px solid red;
 }
+
