@@ -27,23 +27,20 @@
 .login-field, .password-field {
     height: 2.813rem;
     width: 21rem;
-    // border: 1px solid #777;
     text-align: start;
-    font-size: 1rem;
     line-height: 0.9375rem;
-    // border: 1px solid magenta
+    color: #333333;
 }
 
 .login-field input, .password-field input {
-    height: 1.5rem;
+    height: .9rem;
     width: 75%;
-    // border: 1px solid red;
     line-height: .938rem;
-    font-size: 1rem;
-    padding-left: 20px;
     background-color: rgb(232, 240, 254);
     border: 1px solid black;
     padding: .625rem;
+    font-size: .825rem;
+    font-weight: 200;
 }
 
 // .password-field input {
@@ -68,13 +65,26 @@
     
 }
 
-
+.email-login-header, .password-login-header {
+    display: flex;
+    padding-bottom: .4375rem;
+}
 
 .login-email-text {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     font-size: 11px;
+}
+
+.login-email-text-bar, .login-password-text-bar {
+    color: #777;
+    font-size: .75rem;
+    padding-left: 3px;
+}
+
+.star {
+    color: #d22030;
 }
 
 .login-password-text {

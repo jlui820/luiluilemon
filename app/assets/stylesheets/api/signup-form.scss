@@ -38,15 +38,6 @@
     padding-right: 18px;
 }
 
-// .sign-up-field, .sign-up-password-field {
-//     height: 45px;
-//     width: 360px;
-//     border: 1px solid #777;
-//     text-align: start;
-//     font-size: 1rem;
-//     line-height: 0.9375rem;
-// }
-
 .sign-up-field, .sign-up-password-field {
     height: 2.813rem;
     width: 20.376rem;
@@ -60,12 +51,12 @@
 
 .sign-up-field input, .sign-up-password-field input {
     width: 75%;
-    height: 1.5rem;
+    height: .9rem;
     padding: .625rem;
     border: 1px solid black;
-    // border: 1px solid red;
     line-height: .938rem;
-    font-size: 1rem;
+    font-size: .825rem;
+    font-weight: 200;
 }
 
 .sign-up-email-text {
@@ -78,20 +69,13 @@
     font-size: 11px;
 }
 
-
-
-
-// .signup-form-wrapper {
-//     height: 28.0875rem;
-//     width: 22.5rem;
-// }
-
 .signup-form-bottom {
     font-size: .87rem;
     line-height: 1rem;
     color: #57585b;
     text-align: left;
-    margin-bottom: 18px;
+    margin-bottom: 1.1rem;
+    margin-top: .4rem;
 }
 
 .signup-button {
@@ -117,4 +101,22 @@
 
 .signUp-error {
     color: red;
+}
+
+.email-signup-header, .password-signup-header {
+    display: flex;
+    padding-bottom: .4375rem;
+}
+
+.signup-email-text {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+.signup-email-text-bar, .signup-password-text-bar {
+    color: #777;
+    font-size: .75rem;
+    padding-left: 3px;
 }

@@ -34,14 +34,22 @@ class SignupForm extends React.Component {
                             ))}
                         <div className='create-acccount-container'>
                             <div className='sign-up-email'>
-                                <div className='sign-up-email-text'>Email
+                                <div className='email-signup-header'>
+                                    <p className='star'>*</p>
+                                    <p className='signup-email-text-bar'>Email</p>
+                                </div>
+                                <div className='sign-up-email-text'>
                                     <div className='sign-up-field'>
                                         <input type="text" value={this.state.email} onChange={this.update('email')}/>
                                     </div>
                                 </div>
                             </div>
                             <div className='sign-up-password'>
-                                <div className='sign-up-password-text'>Password
+                                <div className='password-signup-header'>
+                                    <p className='star'>*</p>
+                                    <p className='signup-password-text-bar'>Password</p>
+                                </div>
+                                <div className='sign-up-password-text'>
                                     <div className='sign-up-password-field'>
                                         <input type="password" value={this.state.password} onChange={this.update('password')}/>
                                     </div>

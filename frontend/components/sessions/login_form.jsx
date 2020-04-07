@@ -88,14 +88,22 @@ class LoginForm extends React.Component {
                             ))}
                         <div className='login-acccount-container'>
                             <div className='login-email'>
-                                <div className='login-email-text'>Email Address
+                                <div className='email-login-header'>
+                                    <p className='star'>*</p>
+                                    <p className='login-email-text-bar'>Email</p>
+                                </div>
+                                <div className='login-email-text'>
                                     <div className='login-field'>
                                         <input type="text" value={this.state.email} onChange={this.update('email')} />
                                     </div>
                                 </div>
                             </div>
                             <div className='login-password'>
-                                <div className='login-password-text'>Password 
+                                <div className='password-login-header'>
+                                    <p className='star'>*</p>
+                                    <p className='login-password-text-bar'>Password</p>
+                                </div>
+                                <div className='login-password-text'>
                                     <div className='password-field'>
                                         <input type="password" value={this.state.password}  onChange={this.update('password')} />        
                                     </div>
