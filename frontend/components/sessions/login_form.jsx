@@ -9,12 +9,48 @@ class LoginForm extends React.Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this)
         this.fillDemo = this.fillDemo.bind(this)
+        this.handleDemo = this.handleDemo.bind(this);
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+    }
+
+    handleDemo(e, speed = 120) {
+        e.preventDefault();
+        const user = { email: "tucker@gmail.com", password: "123456" };
+        let { email, password } = user;
+        if (this.state.email !== email) {
+            const inputUser = setInterval(() => {
+                if (this.state.email !== email) {
+                    const temp = email.slice(0, this.state.email.length + 1);
+                    this.setState({ email: temp });
+                } else {
+                    clearInterval(inputUser);
+                    animatePassword();
+                }
+            }, speed);
+        }
+
+        const animatePassword = () => {
+            const inputPassword = setInterval(() => {
+                if (this.state.password !== password)
+                    this.setState({
+                        password: password.slice(0, this.state.password.length + 1)
+                    });
+                    else {
+                        clearInterval(inputPassword);
+                        login();
+                    }
+            }, speed);
+        }
+
+        const login = () => {
+            this.props.processForm(this.state)
+            this.setState({ username: '', password:'' });
+        };
     }
 
     update(field) {
@@ -66,7 +102,7 @@ class LoginForm extends React.Component {
                                 </div>                               
                             </div>
                             <div>
-                                <button className='demo' onClick={this.fillDemo}> DEMO USER </button>
+                                <button className='demo' onClick={this.handleDemo}> DEMO USER </button>
                             </div>
                             <div className='login-form-button'>
                                 <input className='signin-button' type="submit" value='SIGN IN' />
