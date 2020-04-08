@@ -4,6 +4,7 @@ import { RECEIVE_CART_ITEMS, REMOVE_CART_ITEM, RECEIVE_CART_ITEM } from "../acti
 
 const cartItemsReducer = (state = {}, action) => {
     Object.freeze(state);
+    // let newState = Object.assign({}, state)
     switch (action.type) {
         case RECEIVE_CART_ITEMS:
             return Object.assign({}, state, action.cartItems);

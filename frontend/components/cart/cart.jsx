@@ -12,8 +12,8 @@ class CartForm extends React.Component {
   }
 
   render() {
-    const { products } = this.props;
-    const { currentUser } = this.props;
+    const { products, currentUser } = this.props;
+
     const cart_page = currentUser ? (
       <div className="cart_items">
         <header className="header">

@@ -90,7 +90,7 @@ class LoginForm extends React.Component {
                             <div className='login-email'>
                                 <div className='email-login-header'>
                                     <p className='star'>*</p>
-                                    <p className='login-email-text-bar'>Email</p>
+                                    <p className='login-email-text-bar'>Email Address</p>
                                 </div>
                                 <div className='login-email-text'>
                                     <div className='login-field'>
