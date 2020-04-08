@@ -13,13 +13,13 @@ export const addToCart = (cartItem) => (
     })
 )
 
-// export const updateCart = cartItem => (
-//     $.ajax({
-//         url: `/api/carts/${cartItem.id})`,
-//         method: 'PATCH',
-//         data: {cartItem}
-//     })
-// )
+export const updateCart = cartItem => (
+    $.ajax({
+        url: `/api/cart_items/${cartItem.id})`,
+        method: 'PATCH',
+        data: {cartItem}
+    })
+)
 
 export const removeCartItem = cartItemId => (
     $.ajax({

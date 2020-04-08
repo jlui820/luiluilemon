@@ -2,20 +2,42 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {quantity: 1}
+
+        this.addItemToCart = this.addItemToCart.bind(this)
+    }
+
+    addItemToCart(e) {
+        e.preventDefault()
+        let { product } = this.props
+
+        this.setState({ quantity: this.state.quantity + 1})
+
+        this.props.addToCart({product_id: product.id, quantity: this.state.quantity})
+    }
+
+    update(field) {
+        return e => this.setState({
+            [field]: e.currentTarget.value
+        })
+    }
+
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.id)
     }
 
 
     render() {
-      
-        if (!this.props.product) {
+        let { product } = this.props
+        if (!product) {
             return null;
         } else {
              return (
                 <div className='product-show-whole-page-container'>
                     <div className='product-left-side-img'>
-                        <img className='show-pic-show-page' src={`${this.props.product.photo}`} alt="" />  
+                        <img className='show-pic-show-page' src={`${product.photo}`} alt="" />  
                     </div>
                     <div className='right-side-whole-container'>
                         <div>
@@ -23,8 +45,8 @@ class Product extends React.Component {
                             
                         </div>
                         <div className='main-product-description'>
-                            <h1 className='product-name'>{this.props.product.name}</h1>
-                            <div className='product-price'>${this.props.product.price}USD</div>
+                            <h1 className='product-name'>{product.name}</h1>
+                            <div className='product-price'>${product.price}USD</div>
                         </div>
                         <div className='clothes-description-container'>
                             <div>{this.props.product.color}</div>
@@ -63,7 +85,7 @@ class Product extends React.Component {
                                         <div className='pickup-text'>Pick up in-store</div>
                                 </div>
                                 <div className='add-to-bag-button-container'>
-                                    <button className='add-to-bag-button'>ADD TO BAG</button>
+                                    <button className='add-to-bag-button' onClick={this.addItemToCart}>ADD TO BAG</button>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +109,7 @@ class Product extends React.Component {
                         </div>
                         <div className='details-container'>
                             <div className='details'>Details
-                                <div className='product-details'>{this.props.product.details}</div>
+                                <div className='product-details'>{product.details}</div>
                             </div>
                         </div>
                     </div>

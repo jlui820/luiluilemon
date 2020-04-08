@@ -6,10 +6,10 @@ class Api::CartItemsController < ApplicationController
 
     def create
         @cart_item = CartItem.new(cart_items_params)
-        if @cart_item.save
-            render :show
-        else
-            render json: @cart_item.errors.full_messages, status: 422
+        if @cart_item.save!
+        #     render :index
+        # else
+        #     render json: @cart_item.errors.full_messages, status: 422
         end
     end
 

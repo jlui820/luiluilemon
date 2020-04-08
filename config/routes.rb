@@ -5,7 +5,8 @@ Rails.application.routes.draw do
         resource :session, only: [:create, :destroy]
         resources :products, only: [:index, :show]
 
-        resources :cart_items, only: [:index, :create, :destroy]
+        resources :cart_items, only: [:index, :create, :destroy, :update]
+        
     end
 
     root to: 'static_pages#root'
