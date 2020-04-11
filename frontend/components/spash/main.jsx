@@ -17,11 +17,9 @@ class Main extends React.Component {
                     <div>
                         <Body />
                         {/* <MainBodyProducts /> */}
-                        {/* <ProductIndexItem /> */}
-                        {/* <Product />
+                        {/* <ProductIndexItem />
+                        <Product />
                         <ProductIndex /> */}
-                    </div>
-                    <div>
                     </div>
                 </div>
             </div>
