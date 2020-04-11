@@ -1,10 +1,11 @@
 .product-show-whole-page-container {
     display: flex;
-    padding: 8px;
+    padding: .5rem;
     box-sizing: border-box;
     justify-content: center;
     width: 100vw;
     // border: 1px solid red;
+    margin-top: 4.688rem;
 }
 
 .product-left-side-img {
@@ -16,7 +17,7 @@
 
 .right-side-whole-container {
     display: flex;
-    padding: 8px;
+    padding: .5rem;
     box-sizing: border-box;
     // border: 1px solid blue;
     padding-right: .78125rem;

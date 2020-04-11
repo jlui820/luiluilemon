@@ -76,6 +76,7 @@
 // export default Body;
 import React from 'react';
 import { Link } from 'react-router-dom'
+import MainBodyProducts from '../main_body_products/main_page_products_body'
 
 
 class Body extends React.Component {
@@ -126,7 +127,7 @@ class Body extends React.Component {
                       
                             <img className='splash-page-img' src={window.mainpageimage3} alt=""/>
                        
-                    </div>                   
+                    </div>                 
                 </div>
             // </div>
         )

@@ -22,9 +22,9 @@ const App = () => (
             <Route exact path="/cart" component={CartContainer} />
             <Route path='/' component={Main} />
         </Switch>
-        <footer>
             <Footer />
-        </footer>
+        {/* <footer>
+        </footer> */}
     </div>
 );
 
