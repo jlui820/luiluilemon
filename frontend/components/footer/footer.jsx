@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Footer extends React.Component {
     render() {
         return (
-            <div className='footer-wrapper'>
+            // <div className='footer-wrapper'>
                 <div className='icons-container'>
                     <div className='icons'>
                         <a href="https://github.com/jlui820/luiluilemon">
@@ -22,7 +22,7 @@ class Footer extends React.Component {
                         </a>
                     </div>
                 </div>
-            </div>
+            // </div>
         )
     }
 }

@@ -160,6 +160,7 @@
     overflow: hidden;
     box-sizing: border-box;
     margin-top: 4.688rem;
+    margin-bottom: 4rem;
 }
 
 .splash-page-main-image-container {
@@ -172,20 +173,19 @@
     z-index: 0;
     width: 73%;
     height: 73vh;
-    // object-fit: contain;
+    object-fit: contain;
     position: relative;
 }
 
 
 .splash-page-img {
     display: flex;
-    height: 37.56rem;
-    width: 75.63rem;
     width: 100%;
     height: auto;
     min-height: 600px;
     object-fit: cover;
     position: absolute;
+    height: 75vh;
     z-index: 1;
     left: 0;
     top: 0;
