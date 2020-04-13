@@ -30,13 +30,13 @@ export const receiveItemErrors = errors => ({
     errors
 });
 
-export const getAllCartItems = () => dispatch => (
+export const fetchCartItems = () => dispatch => (
     CartAPIUtil.getAllCartItems()
     .then(cartItems => dispatch(receiveCartItems(cartItems))),
     err => dispatch(receiveItemErrors(err.response.JSON))
 );
 
-export const getCartItem = cartItemId => dispatch => (
+export const fetchCartItem = cartItemId => dispatch => (
     CartAPIUtil.getCartItem(cartItemId)
     .then(cartItem => dispatch(receiveCartItem(cartItem))),
     err => dispatch(receiveItemErrors(err.response.JSON))

@@ -16,7 +16,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
     fetchProduct: id => dispatch(fetchProduct(id)),
-    // addToCart: product => dispatch(addToCart(product)),
+    addCartItem: product => dispatch(addCartItem(product)),
     createCartItem: product => dispatch(createCartItem(product))
 })
 

@@ -1,7 +1,7 @@
 import{ connect } from 'react-redux';
 import React from 'react';
 import CartForm from './cart';
-import { getAllCartItems, updateCart, deleteCartItem, getCartItem, deletedCartItem} from '../../actions/cart_actions'
+import { fetchCartItems, updateCart, deleteCartItem, getCartItem, deletedCartItem} from '../../actions/cart_actions'
 
 const mapStateToProps = state => ({
     currentUserId: state.session.id,
@@ -13,7 +13,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    getAllCartItems: () => dispatch(getAllCartItems()),
+    fetchCartItems: () => dispatch(fetchCartItems()),
     getCartItem: cartItem => dispatch(getCartItem(cartItem)),
     // updateCart: cartItem => dispatch(updateCart(cartItem)),
     deleteCartItem: cartItemId => dispatch(deleteCartItem(cartItemId)),
