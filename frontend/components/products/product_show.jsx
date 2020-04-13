@@ -6,16 +6,16 @@ class Product extends React.Component {
         super(props)
         this.state = {quantity: 1}
 
-        this.addItemToCart = this.addItemToCart.bind(this)
+        this.addToCart = this.addToCart.bind(this)
     }
 
-    addItemToCart(e) {
+    addToCart(e) {
         e.preventDefault()
-        let { product } = this.props
+        let { sessionId, product } = this.props
 
         this.setState({ quantity: this.state.quantity + 1})
 
-        this.props.addToCart({product_id: product.id, quantity: this.state.quantity})
+        this.props.createCartItem({user_id: sessionId, product_id: product.id, quantity: this.state.quantity})
     }
 
     update(field) {
@@ -49,7 +49,7 @@ class Product extends React.Component {
                             <div className='product-price'>${product.price}USD</div>
                         </div>
                         <div className='clothes-description-container'>
-                            <div>{this.props.product.color}</div>
+                            <div>{product.color}</div>
                             <div className='color-description-container'>
                                 <div className='color-description-characteristics'></div>
                                 <div className='color-description-characteristics'></div>
@@ -70,6 +70,11 @@ class Product extends React.Component {
                                 <button className='clothes-size-button'>M</button>
                                 <button className='clothes-size-button'>L</button>
                             </div>
+                            {/* <div className='description-container'>
+                                <p>
+                                  {product.description}  
+                                </p>
+                            </div> */}
                             <div className='purchase-method'>
                                 <div className='shipping-method'>
                                     <div className='radio-button-container-holder'>
@@ -85,7 +90,7 @@ class Product extends React.Component {
                                         <div className='pickup-text'>Pick up in-store</div>
                                 </div>
                                 <div className='add-to-bag-button-container'>
-                                    <button className='add-to-bag-button' onClick={this.addItemToCart}>ADD TO BAG</button>
+                                    <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +105,7 @@ class Product extends React.Component {
                             </div>
                             <div className='right-side-product-show-chat-box'>
                                 <div>
-                                    <i class="far fa-comment-alt"></i>
+                                    <i className="far fa-comment-alt"></i>
                                 </div>
                                 <div>
                                     <Link to='/' className='live-chat-text'>Live Chat</Link>

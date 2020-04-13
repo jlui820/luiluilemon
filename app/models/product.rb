@@ -5,5 +5,9 @@ class Product < ApplicationRecord
     foreign_key: :product_id,
     class_name: :CartItem
 
+    has_one :user,
+    through:  :cart_items,
+    source: :user
+
     has_one_attached :photo
 end

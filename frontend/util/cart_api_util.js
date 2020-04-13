@@ -1,27 +1,26 @@
-export const fetchCartItems = () => (
+export const getAllCartItems = () => (
     $.ajax({
         url: '/api/cart_items',
         method: 'GET'
     })
 )
 
-export const addToCart = (cartItem) => (
+export const getCartItem = (cartItem) => (
     $.ajax({
-        url: '/api/cart_items',
+        url: `/api/cart_items/${cartItemId}`,
+        method: 'GET'
+    })
+)
+
+export const createCartItem = cartItem => (
+    $.ajax({
+        url: `/api/cart_items`,
         method: 'POST',
         data: {cartItem}
     })
 )
 
-export const updateCart = cartItem => (
-    $.ajax({
-        url: `/api/cart_items/${cartItem.id})`,
-        method: 'PATCH',
-        data: {cartItem}
-    })
-)
-
-export const removeCartItem = cartItemId => (
+export const deleteCartItem = cartItemId => (
     $.ajax({
         url: `/api/cart_items/${cartItemId}`,
         method: 'DELETE'

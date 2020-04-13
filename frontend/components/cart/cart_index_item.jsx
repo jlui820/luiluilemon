@@ -18,8 +18,8 @@ class CartIndexItem extends React.Component {
         const {products, cartItems} = this.props
 
         return (
-            <div>
-                <h1>Cart</h1>
+            <div className='cart-index-item-wrapper'>
+                <h1 className='cart-title'>Cart.........</h1>
                 <ul>
                     {cartItems.map(cartItem => {
                         return <li>{products[cartItem.product_id].name}</li>

@@ -7,9 +7,9 @@ class CartForm extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.props.fetchCartItems();
-  }
+  // componentDidMount() {
+  //   // this.props.fetchCartItems();
+  // }
 
   render() {
     const { products, currentUser } = this.props;
