@@ -1,6 +1,6 @@
 import{ connect } from 'react-redux';
 import React from 'react';
-import CartForm from './cart';
+import Cart from './cart';
 import { fetchCartItems, updateCart, deleteCartItem, getCartItem, deletedCartItem} from '../../actions/cart_actions'
 
 const mapStateToProps = state => {
@@ -34,4 +34,4 @@ const mapDispatchToProps = dispatch => {
 //     deletedCartItem: (id) => dispatch(deletedCartItem(id))
 // })
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartForm);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
