@@ -30,20 +30,28 @@ export const receiveItemErrors = errors => ({
     errors
 });
 
-export const fetchCartItems = () => dispatch => (
-    CartAPIUtil.getAllCartItems()
-    .then(cartItems => dispatch(receiveCartItems(cartItems))),
-    err => dispatch(receiveItemErrors(err.response.JSON))
-);
+export const getAllCartItems = () => {
+    debugger
+    return dispatch => {
+    debugger
+    return CartAPIUtil.getAllCartItems()
+    .then(cartItems => {
+        debugger
+        dispatch(receiveCartItems(cartItems)),
+        err => dispatch(receiveItemErrors(err.response.JSON))
+        })
+    }
+}
 
-export const fetchCartItem = cartItemId => dispatch => (
+
+export const getAllCartItem = cartItemId => dispatch => (
     CartAPIUtil.getCartItem(cartItemId)
     .then(cartItem => dispatch(receiveCartItem(cartItem))),
     err => dispatch(receiveItemErrors(err.response.JSON))
 );
 
 
-export const addCartItem = cartItem => dispatch => (
+export const createCartItem = cartItem => dispatch => (
     CartAPIUtil.createCartItem(cartItem)
     .then(cartItem => dispatch(receiveCartItem(cartItem))),
     err => dispatch(receiveItemErrors(err.response.JSON))

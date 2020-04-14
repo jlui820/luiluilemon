@@ -3,6 +3,7 @@ import CartIndexItem from "./cart";
 import { Link } from "react-router-dom";
 
 class CartForm extends React.Component {
+
   constructor(props) {
     super(props);
   }
@@ -12,6 +13,7 @@ class CartForm extends React.Component {
   // }
 
   render() {
+    debugger
     const { products, currentUser } = this.props;
 
     const cart_page = currentUser ? (

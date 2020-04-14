@@ -40,9 +40,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 140px;
     font-size: .8rem;
     letter-spacing: .09375rem;
+    margin-right: 10%;
 }
 
 .nav-logo {
@@ -135,7 +135,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #fff;
 }
 
 .dropdown a:hover,
