@@ -44,7 +44,7 @@ class Cart extends React.Component {
                      </div>
                 </div>
                 <div className='right-side-cart-container'>
-                    <h1 className='cart-right-side-header'>Order Summary</h1>
+                    <div className='cart-right-side-header'>Order Summary</div>
 
                 </div>
             </div>
