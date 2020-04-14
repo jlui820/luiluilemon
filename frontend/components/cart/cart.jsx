@@ -15,34 +15,36 @@ class Cart extends React.Component {
             <div className='cart-page-wrapper'>
                 <div className='left-side-cart-container'>
                     <h1 className='left-side-header'>My Bag</h1>
-                    <div className='left-side-items-container'>
-                        <div className='product-index-item-picture'>
-                            {/* <img className='cart-pic' src={`${product.photo}`} alt="" />   */}
+                    <div className='below-header-left-side-container'>
+                        <div className='left-side-items-container'>
+                            <div className='product-index-item-picture'>
+                                {/* <img className='cart-pic' src={`${product.photo}`} alt="" />   */}
+                            </div>
+                            <div className='left-side-middle-container'>
+                                <div className='cart-product-name'>
+                                    {/* {product.name} */}
+                                </div>
+                                <div className='cart-product-color'>
+                                    {/* {product.color} */}
+                                </div>
+                                <div className='cart-product-size'>
+                                    Size 
+                                    {/* {product.size} */}
+                                </div>
+                                <p className='cart-free-ship'>Free Shipping + Free Returns</p>
+                            </div>
+                            <div className='price-container'>
+                                <p className='cart-item-price'>Item Price</p>
+                                <div className='cart-product-price'>
+                                    Price
+                                    {/* {product.price} */}
+                                </div>
+                            </div>
                         </div>
-                        <div className='left-side-middle-container'>
-                            <div className='cart-product-name'>
-                                {/* {product.name} */}
-                            </div>
-                            <div className='cart-product-color'>
-                                {/* {product.color} */}
-                            </div>
-                            <div className='cart-product-size'>
-                                Size 
-                                {/* {product.size} */}
-                            </div>
-                            <p className='cart-free-ship'>Free Shipping + Free Returns</p>
-                        </div>
-                        <div className='price-container'>
-                            <p className='cart-item-price'>Item Price</p>
-                            <div className='cart-product-price'>
-                                Price
-                                {/* {product.price} */}
-                            </div>
-                        </div>
-                    </div>
+                     </div>
                 </div>
                 <div className='right-side-cart-container'>
-                    <h1 className='right-side-header'>Order Summary</h1>
+                    <h1 className='cart-right-side-header'>Order Summary</h1>
 
                 </div>
             </div>
