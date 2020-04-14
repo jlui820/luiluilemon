@@ -3,14 +3,14 @@
     justify-content: space-evenly;
     padding-right: 1.5625rem;
     padding-left: 1.5625rem;
-    height: 661px;
     // width: 1322px;
     margin-left: 155px;
     // flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .main-product-item {
-    height: 100px;
+    height: 100%;
     flex-wrap: wrap;
     padding-top: 30px;
     // border: 1px solid red;
@@ -30,7 +30,7 @@
 }
 
 .front-page-items {
-    height: 300px;
+    height: 35vh;
     width: auto;
     // border: 1px solid blue;
 }
