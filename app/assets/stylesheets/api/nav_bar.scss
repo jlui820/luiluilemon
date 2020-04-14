@@ -4,8 +4,6 @@
     align-items: left;
     width: 100%;
     margin-bottom: 10px;
-
-    overflow: hidden;
 }
 
 .nav-bar-head-container {
@@ -16,7 +14,7 @@
     padding-left: 1.5625rem;
     padding-bottom: 0.75rem;
     padding-right: 1.5625rem;
-    overflow: hidden;
+    // overflow: hidden;
     background-color: #fff;
     // position: fixed;
     top: 0;
@@ -143,7 +141,7 @@
     border-bottom: 3px solid #d22030;
     transition: all .35s ease-in-out;
     // visibility: hidden;
-    z-index: 1;
+    z-index: 14;
     cursor: pointer;
 }
 
@@ -157,7 +155,7 @@
     // background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 4;
     box-sizing: border-box;
 }
 
