@@ -4,7 +4,7 @@ import Cart from './cart';
 import { getAllCartItems, deleteCartItem, getCartItem} from '../../actions/cart_actions'
 
 const mapStateToProps = state => {
-    debugger
+    // debugger
     return({
     currentUserId: state.session.id,
     products: Object.values(state.entities.products),
@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 })}
 
 const mapDispatchToProps = dispatch => {
-    debugger
+    // debugger
 
     return ({
     getAllCartItems: () => dispatch(getAllCartItems()),

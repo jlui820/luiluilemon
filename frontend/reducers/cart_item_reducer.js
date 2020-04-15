@@ -26,18 +26,18 @@ const cartItemsReducer = (state = {}, action) => {
     let newState = Object.assign({}, state)
     switch (action.type) {
         case RECEIVE_CART_ITEMS:
-            debugger
+            // debugger
             return action.cartItems
         case RECEIVE_CART_ITEM:
-            debugger
+            // debugger
             newState[action.cartItem.id] = action.cartItem
             return newState
         case REMOVE_CART_ITEM:
-            debugger
+            // debugger
             delete newState.id
             return newState
         case DELETED_CART_ITEM:
-            debugger
+            // debugger
             newState[action.id].deleted = true
             return newState
         default:

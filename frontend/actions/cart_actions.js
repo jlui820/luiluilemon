@@ -31,12 +31,12 @@ export const receiveItemErrors = errors => ({
 });
 
 export const getAllCartItems = () => {
-    debugger
+    // debugger
     return dispatch => {
-    debugger
+    // debugger
     return CartAPIUtil.getAllCartItems()
     .then(cartItems => {
-        debugger
+        // debugger
         dispatch(receiveCartItems(cartItems)),
         err => dispatch(receiveItemErrors(err.response.JSON))
         })
@@ -58,12 +58,12 @@ export const getCartItem = cartItemId => dispatch => (
 // );
 
 export const createCartItem = () => {
-    debugger
+    // debugger
     return dispatch => {
-        debugger
+        // debugger
         return CartAPIUtil.createCartItem()
             .then(cartItem => {
-                debugger
+                // debugger
                 dispatch(receiveCartItem(cartItem)),
                     err => dispatch(receiveItemErrors(err.response.JSON))
             })

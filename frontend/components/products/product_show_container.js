@@ -5,7 +5,7 @@ import { fetchProduct } from '../../actions/product_actions';
 import { createCartItem } from '../../actions/cart_actions';
 
 const mapStateToProps = (state, ownProps) => {
-    debugger
+    // debugger
     return {
         product: state.entities.products[ownProps.match.params.id],
         cartItem: { user_id: null, product_id: null },
@@ -14,7 +14,7 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = dispatch => {
-    debugger
+    // debugger
     return {
     fetchProduct: id => dispatch(fetchProduct(id)),
     createCartItem: product => dispatch(createCartItem(product)),

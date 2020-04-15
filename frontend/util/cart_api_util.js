@@ -1,5 +1,5 @@
 export const getAllCartItems = () => {
-    debugger
+    // debugger
     return $.ajax({
         url: '/api/cart_items',
         method: 'GET'
@@ -7,7 +7,7 @@ export const getAllCartItems = () => {
 }
 
 export const getCartItem = (cartItem) => {
-    debugger
+    // debugger
     return $.ajax({
         url: `/api/cart_items/${cartItemId}`,
         method: 'GET'
@@ -15,7 +15,7 @@ export const getCartItem = (cartItem) => {
 }
 
 export const createCartItem = cart_item => {
-    debugger
+    // debugger
 
     return $.ajax({
         url: `/api/cart_items`,
@@ -25,7 +25,7 @@ export const createCartItem = cart_item => {
 }
 
 export const deleteCartItem = cartItemId => {
-    debugger
+    // debugger
     return $.ajax({
         url: `/api/cart_items/${cartItemId}`,
         method: 'DELETE'

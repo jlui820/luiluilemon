@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
     constructor(props) {
-        debugger
+        // debugger
         super(props)
         this.state = {quantity: 1}
 
@@ -11,7 +11,7 @@ class Product extends React.Component {
     }
 
     addToCart(e) {
-        debugger
+        // debugger
         e.preventDefault()
         let { sessionId, product } = this.props
 
@@ -27,7 +27,7 @@ class Product extends React.Component {
 
 
     render() {
-        debugger
+        // debugger
         let { product } = this.props
         if (!product) {
             return null;
