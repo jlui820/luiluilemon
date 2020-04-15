@@ -17,15 +17,9 @@ class Product extends React.Component {
 
         this.setState({ quantity: this.state.quantity + 1})
 
-        this.props.createCartItem({user_id: sessionId, product_id: product.id, quantity: this.state.quantity})
+        this.props.createCartItem({user_id: sessionId, product_id: product.d, quantity: this.state.quantity})
     }
 
-    update(field) {
-        debugger
-        return e => this.setState({
-            [field]: e.currentTarget.value
-        })
-    }
 
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.id)
@@ -104,7 +98,7 @@ class Product extends React.Component {
                                     <i className="far fa-star"></i>
                                 </div>
                                 <div>
-                                    <Link to='/'>Reviews</Link>
+                                    <div className='product-show-review'>Reviews</div>
                                 </div>
                             </div>
                             <div className='right-side-product-show-chat-box'>
@@ -112,7 +106,7 @@ class Product extends React.Component {
                                     <i className="far fa-comment-alt"></i>
                                 </div>
                                 <div>
-                                    <Link to='/' className='live-chat-text'>Live Chat</Link>
+                                    <div className='live-chat-text'>Live Chat</div>
                                 </div>
                             </div>
                         </div>

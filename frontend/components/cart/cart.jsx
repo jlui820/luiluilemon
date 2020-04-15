@@ -7,6 +7,9 @@ class Cart extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        this.props.getAllCartItems();
+    }
 
     render() {
         let { product } = this.props;

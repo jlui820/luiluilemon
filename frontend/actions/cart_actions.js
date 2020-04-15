@@ -44,18 +44,31 @@ export const getAllCartItems = () => {
 }
 
 
-export const getAllCartItem = cartItemId => dispatch => (
+export const getCartItem = cartItemId => dispatch => (
     CartAPIUtil.getCartItem(cartItemId)
     .then(cartItem => dispatch(receiveCartItem(cartItem))),
     err => dispatch(receiveItemErrors(err.response.JSON))
 );
 
 
-export const createCartItem = cartItem => dispatch => (
-    CartAPIUtil.createCartItem(cartItem)
-    .then(cartItem => dispatch(receiveCartItem(cartItem))),
-    err => dispatch(receiveItemErrors(err.response.JSON))
-);
+// export const createCartItem = cartItem => dispatch => (
+//     CartAPIUtil.createCartItem(cartItem)
+//     .then(cartItem => dispatch(receiveCartItem(cartItem))),
+//     err => dispatch(receiveItemErrors(err.response.JSON))
+// );
+
+export const createCartItem = () => {
+    debugger
+    return dispatch => {
+        debugger
+        return CartAPIUtil.createCartItem()
+            .then(cartItem => {
+                debugger
+                dispatch(receiveCartItem(cartItem)),
+                    err => dispatch(receiveItemErrors(err.response.JSON))
+            })
+    }
+}
 
 export const deleteCartItem = cartItemId => dispatch => (
     CartAPIUtil.deleteCartItem(cartItemId)

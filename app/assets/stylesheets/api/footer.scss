@@ -157,6 +157,23 @@
     line-height: 1.2rem;
 }
 
+.icons-container:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 1px 1px 10px white, 0 0 15px white, 0 0 20px white;
+}
+
 .account {
     text-decoration: none;
+}
+
+.fab {
+    font-size: 2.5rem;
+}
+
+.fab:hover {
+    cursor: pointer;
+    color: goldenrod;
+    transition: 0.5s;
+    text-shadow: 1px 1px 10px gold, 0 0 15px gold, 0 0 20px gold;
 }
