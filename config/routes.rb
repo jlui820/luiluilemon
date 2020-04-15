@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
     # debugger
-    # root to: 'static_pages#root'
+    root to: 'static_pages#root'
   
     namespace :api, defaults: { format: :json } do 
         resources :users, only: [:create]
@@ -11,5 +11,4 @@ Rails.application.routes.draw do
         resources :cart_items, only: [:index, :create, :destroy, :show]
         
     end
-    root to: 'static_pages#root'
 end

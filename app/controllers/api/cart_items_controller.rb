@@ -5,10 +5,10 @@ class Api::CartItemsController < ApplicationController
     end
 
     def create
-        # debugger
         @cart_item = CartItem.new(cart_items_params)
+        debugger
         if @cart_item.save
-            render :show
+            render :index
         else
             render json: @cart_item.errors.full_messages, status: 422
         end

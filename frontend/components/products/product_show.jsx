@@ -13,11 +13,11 @@ class Product extends React.Component {
     addToCart(e) {
         // debugger
         e.preventDefault()
-        let { sessionId, product } = this.props
+        let { product } = this.props
 
         this.setState({ quantity: this.state.quantity + 1})
 
-        this.props.createCartItem({user_id: sessionId, product_id: product.d, quantity: this.state.quantity})
+        this.props.createCartItem({product_id: product.id, quantity: this.state.quantity})
     }
 
 

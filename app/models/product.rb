@@ -6,8 +6,8 @@ class Product < ApplicationRecord
     class_name: :CartItem
 
     has_one :user,
-    through:  :cart_items,
-    source: :user
+    through: :cart_items,
+    source: :User
 
     has_one_attached :photo
 end

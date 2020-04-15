@@ -1,4 +1,4 @@
-import { RECEIVE_CART_ITEMS, REMOVE_CART_ITEM, RECEIVE_CART_ITEM, DELETED_CART_ITEM } from "../actions/cart_actions";
+import { RECEIVE_CART_ITEMS, REMOVE_CART_ITEM, RECEIVE_CART_ITEM } from "../actions/cart_actions";
 
 
 
@@ -23,23 +23,19 @@ import { RECEIVE_CART_ITEMS, REMOVE_CART_ITEM, RECEIVE_CART_ITEM, DELETED_CART_I
 
 const cartItemsReducer = (state = {}, action) => {
     Object.freeze(state);
-    let newState = Object.assign({}, state)
+    let nextState = Object.assign({}, state)
     switch (action.type) {
         case RECEIVE_CART_ITEMS:
             // debugger
-            return action.cartItems
+            return Object.assign({}, action.cartItems)
         case RECEIVE_CART_ITEM:
             // debugger
-            newState[action.cartItem.id] = action.cartItem
-            return newState
+            nextState[action.cartItem.id] = action.cartItem
+            return nextState
         case REMOVE_CART_ITEM:
             // debugger
-            delete newState.id
-            return newState
-        case DELETED_CART_ITEM:
-            // debugger
-            newState[action.id].deleted = true
-            return newState
+            delete nextState.id
+            return nextState
         default:
             return state;
     }

@@ -45,18 +45,12 @@
     display: flex;
     flex-direction: column;
     border-top: 1px solid #d3d3d3;
-    max-width: 1322px;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 90em;
-    height: 34.31rem;
     font-size: .875rem;
     line-height: 1rem;
     padding-top: 2.8125rem;
-    height: 565px;
-    width: 1680px;
+    width: 100%;
     border-top: .0625rem solid #e0e0e0;
-
+    margin-left: 6%;
 }
 
 .footer-wrapper-top-section {
@@ -83,12 +77,17 @@
     color: #333;
 }
 
-.top-container,
-.bottom-container {
+.top-container {
     width: 23.4364%;
     height: 17.69rem;
     text-align: left;
     // border: 1px solid red;
+}
+
+.bottom-container {
+    width: 23.4364%;
+    // height: 17.69rem;
+    text-align: left;
 }
 
 .bullet {

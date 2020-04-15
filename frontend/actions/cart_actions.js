@@ -4,7 +4,6 @@ export const RECEIVE_CART_ITEMS = 'RECEIVE_CART_ITEMS';
 export const RECEIVE_CART_ITEM = 'RECEIVE_CART_ITEM';
 export const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM';
 export const RECEIVE_ITEM_ERRORS = 'RECEIVE_ITEM_ERRORS';
-export const DELETED_CART_ITEM = "DELETED_CART_ITEM"
 
 export const receiveCartItems = cartItems => ({
     type: RECEIVE_CART_ITEMS,
@@ -16,14 +15,11 @@ export const receiveCartItem = cartItem => ({
     cartItem
 });
 
-export const removeCartItem = () => ({
-    type: REMOVE_CART_ITEM
+export const removeCartItem = (cartItemId) => ({
+    type: REMOVE_CART_ITEM,
+    cartItemId
 });
 
-export const deletedCartItem = (id) => ({
-    type: DELETED_CART_ITEM,
-    id
-})
 
 export const receiveItemErrors = errors => ({
     type: RECEIVE_ITEM_ERRORS,
