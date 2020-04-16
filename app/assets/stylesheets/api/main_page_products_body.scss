@@ -24,9 +24,7 @@
     line-height: 1.2rem;
 }
 
-.price {
-    // border: 1px solid purple;
-}
+
 .front-page-items_front-image {
     height: 35vh;
     width: auto;
@@ -38,45 +36,4 @@
     width: auto;
     cursor: pointer;
 }
-
-// body {
-// 	background-color: orange;
-// 	margin: 50px auto;
-// 	box-sizing: border-box;
-// }
-
-/* Make the container relative */
-// .swap-on-hover {
-//   position: relative;	
-// 	margin:  0 auto;
-// 	max-width: 400px;
-// }
-
-/* Select the image and make it absolute to the container */
-// .swap-on-hover img {
-//   position: absolute;
-//   top:0;
-//   left:0;
-// 	overflow: hidden;
-// 	/* Sets the width and height for the images*/
-// 	width: 400px;
-// 	height: 400px;
-// }
-
-/* 
-	We set z-index to be higher than the back image, so it's alwyas on the front.
-
-We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
-*/
-// .swap-on-hover .swap-on-hover__front-image {
-//   z-index: 9999;
-//   transition: opacity .5s linear;
-//   cursor: pointer;
-// }
-
-/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
-// .swap-on-hover:hover > .swap-on-hover__front-image{
-//   opacity: 0;
-// }
-
 

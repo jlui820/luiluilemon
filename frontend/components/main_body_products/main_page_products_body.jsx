@@ -58,6 +58,10 @@ class MainBodyProducts extends React.Component {
                         <span className='price'>$68 USD</span>
                         </Link>
                     </div>
+                    {/* <div className="swap-on-hover">
+                        <img  className="swap-on-hover__front-image" src={window.shorts2}/>
+                        <img className="swap-on-hover__back-image" src={window.shorts}/>
+                    </div> */}
                 </div>
             </div>
         )
