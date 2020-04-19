@@ -15,8 +15,6 @@ class Product extends React.Component {
         e.preventDefault()
         let { product } = this.props
 
-        this.setState({ quantity: this.state.quantity + 1})
-
         this.props.createCartItem({product_id: product.id, quantity: this.state.quantity})
     }
 

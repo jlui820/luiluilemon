@@ -14,13 +14,23 @@ export const getCartItem = (cartItem) => {
     })
 }
 
-export const createCartItem = cart_item => {
+// export const createCartItem = cart_item => {
+//     // debugger
+
+//     return $.ajax({
+//         url: `/api/cart_items`,
+//         method: 'POST',
+//         data: {cart_item}
+//     })
+// }
+
+export const createCartItem = cartItem => {
     // debugger
 
     return $.ajax({
         url: `/api/cart_items`,
         method: 'POST',
-        data: {cart_item}
+        data: {cartItem}
     })
 }
 
