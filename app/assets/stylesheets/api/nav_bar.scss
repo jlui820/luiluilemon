@@ -82,7 +82,7 @@
 
 .search-bar {
     line-height: 1.2rem;
-    border: 2px;
+    // border: 2px;
     padding-right: 30px;
     padding-left: 10px;
     // padding-top: 1px;
@@ -97,7 +97,74 @@
     height: 2rem;
     width: 120px;
     font-size: .875rem;
+    border: none;
 }
+
+
+// <div class="searchContainer">
+//   <i class="fa fa-search searchIcon"></i>
+//   <input class="searchBox" type="search" name="search" placeholder="Search...">
+//   <input type="submit" value="Search" class="searchButton">
+// </div>
+
+.searchbar-icon {
+    display: grid;
+    grid-template-columns: 1.5rem 4fr 1fr;
+    // width: 300px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.searchbar-icon :focus-within i {
+    display: none;
+}
+
+.searchbar-icon :focus-within .searchBox {
+    grid-column: 1/4;
+}
+
+.searchbar-icon :focus-within .searchBox::placeholder {
+    color: transparent;
+}
+
+.searchIcon {
+    padding: 0.5rem;
+    grid-row: 1;
+    grid-column: 1/2;
+    z-index: 2
+}
+
+.searchBox {
+    border: 0;
+    padding: 0.5rem;
+    grid-column: 2/4;
+    grid-row: 1;
+    outline: none;
+    border: none;
+}
+
+// .searchButton {
+//     background: #538AC5;
+//     border: 0;
+//     color: white;
+//     padding: 0.5rem;
+//     border-radius: 0;
+//     grid-column: 4/5;
+//     grid-row: 1;
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar-dropdown-container {
     list-style-type: none;
@@ -106,14 +173,6 @@
     overflow: hidden;
     background-color: #333;
 }
-
-
-
-
-
-
-
-
 
 .dropdrop {
     list-style-type: none;
@@ -204,3 +263,4 @@
     top: 0;
     width: 100%;
 }
+

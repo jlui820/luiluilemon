@@ -80,18 +80,23 @@ class NavBar extends React.Component {
                             </ul>    
                         </div>
                     </div>
-    
+                    
                     
                     <div className='right-side-nav-bar'>
                         {display}
                         <div className="line-break">|</div>
-                        <div className='search'>
-                            {/* <Link to='/' className='login-button'>SEARCH</Link> */}
+                        <div className='right-side-inner-container'>
                             <div className='search-bar'>
+
+
+
                                 <div className='searchbar-icon'>
-                                    <input type="text" placeholder='Search'/>
-                                    <i className="fas fa-search" fa-xs></i>
+                                    <i className="fas fa-search searchIcon"></i>
+                                    <input className='searchbox' type="text" placeholder='Search'/>
                                 </div>
+
+
+
                                 <div className='nav-cart'>
                                     <Link to='/cart'>
                                         <i className="fas fa-shopping-cart"></i>

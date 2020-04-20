@@ -45,7 +45,7 @@ export const clearCartItems = () => ({
 // }
 
 export const getAllCartItems = () => dispatch => (
-    CartAPIUtil.getAllCartItem()
+    CartAPIUtil.getAllCartItems()
     .then(cartItems => dispatch(receiveCartItem(cartItems)))
     // err => dispatch(receiveItemErrors(err.response.JSON))
 );
