@@ -23,6 +23,10 @@ class Product extends React.Component {
         this.props.fetchProduct(this.props.match.params.id)
     }
 
+    // handleClick = (product) => {
+    //     this.props.createCartItem(product);
+    // }
+
 
     render() {
         // debugger
