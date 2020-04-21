@@ -7,12 +7,15 @@ class Api::CartItemsController < ApplicationController
     end
 
     def create
-        debugger
+        # debugger
         @cart_item = CartItem.new
         @cart_item.product_id = cart_items_params[:product][:id]
+        @cart_item.quantity = cart_items_params[:product][:quantity]
         @cart_item.user_id = @current_user.id
+
+        # debugger
         if @cart_item.save
-            render :index
+            render :show
         else
             render json: @cart_item.errors.full_messages, status: 422
         end
@@ -26,7 +29,7 @@ class Api::CartItemsController < ApplicationController
 
     private
     def cart_items_params
-        params.require(:cart_item).permit(:quantity, :product => [:id])
+        params.require(:cart_item).permit(:product => [:itemtype, :name, :description, :size, :details, :price, :id, :quantity, :photo])
     end
 end 
 

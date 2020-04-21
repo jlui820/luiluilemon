@@ -27,10 +27,9 @@ export const fetchProducts = () => dispatch => (
     error => dispatch(receiveProductErrors(error.responseJSON)))
 )
 
-export const fetchProductsByCategory = itemtype => dispatch => 
-    // debugger in parens
+export const fetchProductsByCategory = (itemtype, searchTerm = '') => dispatch => 
     {
-    return ProductApiUtil.fetchProductsByType(itemtype)
+    return ProductApiUtil.fetchProductsByType(itemtype, searchTerm)
     .then(products => dispatch(receiveProducts(products)),
     error => dispatch(receiveProductErrors(error.response.JSON)))
 }

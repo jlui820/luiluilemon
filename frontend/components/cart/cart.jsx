@@ -13,7 +13,7 @@ class Cart extends React.Component {
 
     render() {
         let { product } = this.props;
-
+        console.log(this.props.cartItems)
         return (
             <div className='cart-page-wrapper'>
                 <div className='left-side-cart-container'>
