@@ -1,12 +1,16 @@
 class Api::CartItemsController < ApplicationController
+    before_action :require_login, only: [:create]
+    
     def index
         @cart_items = current_user.cart_items
         render :index
     end
 
     def create
-        @cart_item = CartItem.new(cart_items_params)
         debugger
+        @cart_item = CartItem.new
+        @cart_item.product_id = cart_items_params[:product][:id]
+        @cart_item.user_id = @current_user.id
         if @cart_item.save
             render :index
         else
@@ -22,6 +26,8 @@ class Api::CartItemsController < ApplicationController
 
     private
     def cart_items_params
-        params.require(:cart_item).permit(:product_id, :user_id, :quantity)
+        params.require(:cart_item).permit(:quantity, :product => [:id])
     end
 end 
+
+# [:itemtype, :name, :description, :size, :details, :price, :id, :photo])

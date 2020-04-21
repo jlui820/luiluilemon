@@ -30,7 +30,7 @@ export const createCartItem = cartItem => {
     return $.ajax({
         url: `/api/cart_items`,
         method: 'POST',
-        data: {cartItem}
+        data: {cart_item: cartItem.cart_item}
     })
 }
 

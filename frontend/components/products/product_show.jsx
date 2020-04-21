@@ -14,8 +14,8 @@ class Product extends React.Component {
         // debugger
         e.preventDefault()
         let { product } = this.props
-
-        this.props.createCartItem({product_id: product.id, quantity: this.state.quantity})
+        // debugger
+        this.props.createCartItem({cart_item:{product: product, quantity: this.state.quantity}})
     }
 
 
