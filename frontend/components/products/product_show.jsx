@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
+
 class Product extends React.Component {
     constructor(props) {
         // debugger
@@ -19,15 +20,9 @@ class Product extends React.Component {
         this.props.createCartItem({cart_item:{product: product}})
     }
 
-
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.id)
     }
-
-    // handleClick = (product) => {
-    //     this.props.createCartItem(product);
-    // }
-
 
     render() {
         // debugger

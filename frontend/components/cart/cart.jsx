@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartIndexItem from './cart_index_item';
 
 
 class Cart extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            cartTotal: 0
+        }
     }
 
     componentDidMount() {
@@ -12,9 +16,12 @@ class Cart extends React.Component {
     }
 
     render() {
-        let { product } = this.props;
+        // debugger
+        let { products } = this.props;
+        // let { product } = this.props;
         console.log(this.props.cartItems)
         return (
+            
             <div className='cart-page-wrapper'>
                 <div className='left-side-cart-container'>
                     <h1 className='left-side-header'>My Bag</h1>
@@ -25,7 +32,7 @@ class Cart extends React.Component {
                             </div>
                             <div className='left-side-middle-container'>
                                 <div className='cart-product-name'>
-                                    {/* {product.name} */}
+                                    {/* {cartItems.name} */}
                                 </div>
                                 <div className='cart-product-color'>
                                     {/* {product.color} */}
