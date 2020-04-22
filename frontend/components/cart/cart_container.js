@@ -7,7 +7,8 @@ const mapStateToProps = state => {
     // debugger
     return({
     products: Object.values(state.entities.products),
-    cartItems: Object.values(state.entities.cartItems)
+    cartItems: Object.values(state.entities.cartItems),
+    currentUserId: state.session.id
 })}
 
 const mapDispatchToProps = dispatch => {

@@ -44,7 +44,7 @@ class MainBodyProducts extends React.Component {
                         <Link to={`/products/172`}>
                         <img className='front-page-items_front-image' src={window.shorts4} />
                         {/* <img className='front-page-items_back-image' src={window.shorts3} /> */}
-                        <h3 className='product-description'>T.H.E Short 9"</h3>
+                        <div className='product-description'>T.H.E Short 9"</div>
                         <span className='price'>$68 USD</span>
                         </Link>
                     </div>

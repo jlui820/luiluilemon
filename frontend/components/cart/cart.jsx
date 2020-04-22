@@ -20,6 +20,7 @@ class Cart extends React.Component {
         let { products } = this.props;
         // let { product } = this.props;
         console.log(this.props.cartItems)
+        console.log(this.props.currentUserId)
         return (
             
             <div className='cart-page-wrapper'>
