@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CartIndexItem = (props) => {
+    console.log(props.cartItem.undefined.product.name);
     return (
-      <div>
-        <img className="show-pic-show-page" src={`${product.photo}`} alt="" />
-        <h1 className="product-name">{product.name}</h1>
-        <div className="product-price">${product.price}USD</div>
+      <div className="cart-index-item-div">
+        {props.cartItem.undefined.product.name}
+
       </div>
     );
 }

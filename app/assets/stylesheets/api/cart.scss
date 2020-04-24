@@ -34,3 +34,8 @@
 .cart-right-side-header {
     border-bottom: 4px solid black;
 }
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+}

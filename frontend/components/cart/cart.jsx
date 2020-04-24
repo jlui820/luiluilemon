@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CartIndexItem from './cart_index_item';
+import CartContainer from './cart_container';
 
 
 class Cart extends React.Component {
@@ -17,49 +18,46 @@ class Cart extends React.Component {
 
     render() {
         // debugger
-        let { products } = this.props;
-        // let { product } = this.props;
+        let { cartItems } = this.props;
         console.log(this.props.cartItems)
-        console.log(this.props.currentUserId)
-        return (
-            
-            <div className='cart-page-wrapper'>
-                <div className='left-side-cart-container'>
-                    <h1 className='left-side-header'>My Bag</h1>
-                    <div className='below-header-left-side-container'>
-                        <div className='left-side-items-container'>
-                            <div className='product-index-item-picture'>
-                                {/* <img className='cart-pic' src={`${product.photo}`} alt="" />   */}
-                            </div>
-                            <div className='left-side-middle-container'>
-                                <div className='cart-product-name'>
-                                    {/* {cartItems.name} */}
-                                </div>
-                                <div className='cart-product-color'>
-                                    {/* {product.color} */}
-                                </div>
-                                <div className='cart-product-size'>
-                                    Size 
-                                    {/* {product.size} */}
-                                </div>
-                                <p className='cart-free-ship'>Free Shipping + Free Returns</p>
-                            </div>
-                            <div className='price-container'>
-                                <p className='cart-item-price'>Item Price</p>
-                                <div className='cart-product-price'>
-                                    Price
-                                    {/* {product.price} */}
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-                <div className='right-side-cart-container'>
-                    <div className='cart-right-side-header'>Order Summary</div>
 
-                </div>
-            </div>
-        )
+        // let cartItem = this.props.cartItems.map((cartItem) => {
+        //   return <CartIndexItem product={cartItem} key={cartItem.id} />;
+        // });     
+        return (
+          <div className="cart-page-wrapper">
+          //   <CartContainer />
+          //   <div className="left-side-cart-container">
+          //     <h1 className="left-side-header">My Bag</h1>
+          //     <div className="below-header-left-side-container">
+          //       <div className="left-side-items-container">
+          //         <div className="product-index-item-picture"></div>
+          //         <div className="left-side-middle-container">
+          //           {/* <div className='cart-product-name'>
+                                   
+          //                       </div>
+          //                       <div className='cart-product-color'>
+                                   
+          //                       </div>
+          //                       <div className='cart-product-size'>
+          //                           Size 
+                                  
+                                    
+          //                       </div> */}
+          //           {/* <p className='cart-free-ship'>Free Shipping + Free Returns</p> */}
+          //         </div>
+          //         <div className="price-container">
+          //           <p className="cart-item-price">Item Price</p>
+          //           <div className="cart-product-price">Price</div>
+          //         </div>
+          //       </div>
+          //     </div>
+          //   </div>
+          //   <div className="right-side-cart-container">
+          //     <div className="cart-right-side-header">Order Summary</div>
+          //   </div>
+          // </div>
+        );
     }
 }
 
