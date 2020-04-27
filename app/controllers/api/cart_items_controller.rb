@@ -16,6 +16,8 @@ class Api::CartItemsController < ApplicationController
         # debugger
         if @cart_item.save
             render :show
+            # want to send up product json object we just added 
+            # can creat @product extract what we want
         else
             render json: @cart_item.errors.full_messages, status: 422
         end

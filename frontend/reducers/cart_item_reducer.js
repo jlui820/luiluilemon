@@ -29,7 +29,7 @@ const cartItemsReducer = (state = {}, action) => {
             // debugger
             return Object.assign({}, action.cartItems)
         case RECEIVE_CART_ITEM:
-            // debugger
+            debugger
             nextState[action.cartItem.id] = action.cartItem
             return nextState
         case REMOVE_CART_ITEM:
