@@ -197,7 +197,7 @@ class CartItems extends React.Component {
     let cartItemsObj = Object.entries(this.uniqueCartItems());
     return (
       <div>
-        <h1 className="header">Your Cart</h1>
+        <h1 className="header">My Bag</h1>
 
         <div className="buy-page">
           <div className="new-cart-div">
