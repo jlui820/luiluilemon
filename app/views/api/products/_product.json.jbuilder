@@ -1,4 +1,4 @@
-json.extract! product, :itemtype, :name, :description, :size, :details, :price, :id
+json.extract! product, :itemtype, :name, :description, :size, :details, :price, :id, :color
 
 
 # if @product.photo.attached?
