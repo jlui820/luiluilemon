@@ -198,32 +198,52 @@ class Cart extends React.Component {
 
         const cart_page = currentUser ? (
           <div className="whole-cart-page-wrapper">
-            <div className="left-side-items">
                 <div className='left-side-header'>
                     <h1 className="header">Your Cart</h1>
                 </div>
-                <div className="left-cart-index-item-div">
-                    {this.props.cartItems.map((cartItem, idx) => {
-                    let product = cartItem.product;
-                    return (
-                        <div>
-                            <Link className="cart-product-link" to={`/products/${product.id}`}>
-                                <img className="cart-product-image" src={product.photoUrl} alt="" />
-                            </Link>
-                        <div>{product.name}</div>
-                        <div>{product.color}</div>
-                        <div>{product.size}</div>
-                            
-                            <button className="delete-item-in-cart" onClick={() => this.props.deleteCartItem(cartItem.deleteableId)}>Delete Item</button>
-                        </div>);
-                        
-                    })}
-                    <br />
-                </div>
-            </div>
 
-            <div className="right-side-checkout">
-              <button className="checkout">Checkout</button>
+            <div className='cart-body-wrapper'>
+                <div className="left-side-items">
+                    <div className="left-cart-index-item-div">
+                        {this.props.cartItems.map((cartItem, idx) => {
+                        let product = cartItem.product;
+                        return (
+                            <div>
+                                <Link className="cart-product-link" to={`/products/${product.id}`}>
+                                    <img className="cart-product-image" src={product.photoUrl} alt="" />
+                                </Link>
+                                <div>
+                                    <div>{product.name}</div>
+                                </div>
+                                <div>
+                                    <div>{product.color}</div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>{product.size}</div>
+                                    </div>
+                                    <div>
+                                        <div>{product.price}</div>
+                                    </div>
+                                    <div>
+                                        <div>{product.quantity}</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Free Shipping + Free returns</p>
+                                    <button className="delete-item-in-cart" onClick={() => this.props.deleteCartItem(cartItem.deleteableId)}>Delete Item</button>
+                                </div>
+                            </div>);
+                            
+                        })}
+                        <br />
+                    </div>
+                </div>
+
+                <div className="right-side-checkout">
+                <p>Order Summary</p>
+                <button className="checkout">Checkout</button>
+                </div>
             </div>
           </div>
         ) : (
