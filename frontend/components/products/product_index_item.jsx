@@ -9,7 +9,7 @@ const ProductIndexItem = (props) => {
     //         </div>
     //     )
     // }) 
-    // debugger
+    debugger
     
     return (
         <div className='whole-page-wrapper'>
