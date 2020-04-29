@@ -203,16 +203,13 @@ class CartItems extends React.Component {
           <div className="new-cart-div">
             {cartItemsObj.map((cartItem) => {
               let product = cartItem[1].product;
+
               return (
                 <div className="cart-item-div">
-                  <Link
-                    className="public-product-links"
-                    to={`/products/${product.id}`}
-                  >
+                  <Link to={`/products/${product.id}`} className="public-product-links">
                     <img className="idx-images" src={product.photoUrl} alt="" />
                     {this.showLess(product.name)}
                   </Link>
-                  <br />
                   <div className="quantity">
                     <label className="quantity-word">Quantity: </label>
                     <div className="quantity-num">{cartItem[1].quantity}</div>
@@ -243,8 +240,6 @@ class CartItems extends React.Component {
 }
 
 export default CartItems;
-
-
 
 
 

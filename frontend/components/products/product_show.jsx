@@ -25,8 +25,8 @@ class Product extends React.Component {
     }
 
     render() {
-        // debugger
-        console.log(this.props.cartItems)
+        
+        // console.log(this.props.cartItems)
         let { product } = this.props
         if (!product) {
             return null;
