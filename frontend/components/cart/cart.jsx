@@ -145,7 +145,7 @@ class Cart extends React.Component {
     constructor(props) {
         super(props)
         this.state= {
-            render: [false],
+            // render: [false],
             grandTotal: 0
         }        
 
@@ -196,7 +196,13 @@ class Cart extends React.Component {
 
 
     render() {
+        // const { cartItems } = this.props;
         // debugger
+
+        // let cartItem = this.props.cartItems.map((cartItem, idx) => {
+        //   return <cartItem />;
+        // });
+
         let cartItemsObj = Object.entries(this.uniqueCartItems());
         const { currentUser } = this.props;
 

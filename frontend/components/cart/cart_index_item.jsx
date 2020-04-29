@@ -6,9 +6,7 @@ const CartIndexItem = (props) => {
     debugger
     return (
       <div className="cart-index-item-div">
-        <h1 className="cart-name">{props.product.name}</h1>
-        <h1 className="cart-quantity">{props.product.quantity}</h1>
-        <h1 className="cart-price">{props.product.price}</h1>
+       
       </div>
     );
 }
