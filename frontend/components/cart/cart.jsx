@@ -162,7 +162,7 @@ class Cart extends React.Component {
     }
 
     total(cartItem) {
-        return cartItem[1].product.price * cartItem[1].quantity
+        return cartItem.product.price * cartItem.quantity
     }
 
     uniqueCartItems(){
@@ -183,11 +183,6 @@ class Cart extends React.Component {
 
     render() {
         const { cartItems } = this.props;
-        // debugger
-
-        // let cartItem = this.props.cartItems.map((cartItem, idx) => {
-        //   return <CartIndexItem key={idx}/>
-        // });
 
         // debugger
 
@@ -229,11 +224,15 @@ class Cart extends React.Component {
                                                 <div className='price-quantity'>                                      
                                                     <div className='cart-item-price'>
                                                         <p className='cart-item-price'>Item Price</p>
-                                                        <div>${product.price}</div>
+                                                        <div className='cart-price'>${product.price}</div>
                                                     </div>
                                                     <div className='cart-quantity'>
                                                         <p className='cart-item-quantity'>Quantity</p>
-                                                        <div>{product.quantity}</div>
+                                                        <div className='cart-quantity'>{cartItem.quantity}</div>
+                                                    </div>
+                                                    <div className='cart-total'>
+                                                        <p className='cart-item-total'>Total Price</p>
+                                                        <div className="cart-item-total-price">${this.total(cartItem)}</div>
                                                     </div>
                                                 </div>
                                             </div>

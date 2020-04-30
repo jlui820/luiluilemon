@@ -5,6 +5,8 @@
     // padding-top: 4rem;
     font-family: Calibre,Verlag,Helvetica,sans-serif;
     background-color: #f9f9f9;
+    margin-top: 7%;
+    padding-top: 5%;
 }
 
 .cart-body-wrapper {
@@ -85,9 +87,28 @@
 
 .cart-item-price {
     margin-bottom: 1rem;
+    text-align: right;
+}
+
+.cart-price {
+    margin-right: 1rem;
+}
+
+.cart-total {
+    text-align: right;
+}
+
+.cart-quantity {
+    text-align: right;
+    margin-right: 1rem;
 }
 
 .cart-item-quantity {
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.cart-item-total {
     margin-bottom: 1rem;
 }
 
