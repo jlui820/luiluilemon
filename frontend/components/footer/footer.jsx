@@ -114,7 +114,8 @@ class Footer extends React.Component {
                 <div className="icons-title"></div>
                 <div className="icons">
                   <a href="https://github.com/jlui820/luiluilemon">
-                    <i className="fab fa-github-alt"></i>
+                    {/* <i className="fab fa-github-alt"></i> */}
+                    <i className="fab fa-github"></i>
                   </a>
                 </div>
                 <div className="icons">
