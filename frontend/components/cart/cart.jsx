@@ -198,33 +198,34 @@ class Cart extends React.Component {
                     <div className="left-side-items">
                         <div className="left-cart-index-item-div">
                             {cartItems.map((cartItem, idx) => {
-                            let product = cartItem.product;
+                                debugger
+                            // let product = cartItem.product;
                             return (
                                 <div className='cart-product-info'>
-                                    <Link className="cart-product-link" to={`/products/${product.id}`}>
-                                        <img className="cart-product-image" src={product.photoUrl} alt="" />
+                                    <Link className="cart-product-link" to={`/products/${cartItem.product.id}`}>
+                                        <img className="cart-product-image" src={cartItem.product.photoUrl} alt="" />
                                     </Link>
                                     <div className='cart-product-description'>
                                         <div className='prod-des-top'>
 
                                             <div className='cart-product-name-container'>
-                                                <Link className="cart-product-link" to={`/products/${product.id}`}>
-                                                    <div className='cart-product-name'>{product.name}</div>
+                                                <Link className="cart-product-link" to={`/products/${cartItem.product.id}`}>
+                                                    <div className='cart-product-name'>{cartItem.product.name}</div>
                                                 </Link>                                      
                                             </div>
                                             <div className='cart-product-color-container'>
-                                                <div className='cart-product-color'>{product.color}</div>
+                                                <div className='cart-product-color'>{cartItem.product.color}</div>
                                             </div>
                                             <div className='cart-sizing-price'>
                                                 <div className='cart-product-size-container'>
                                                     <div className='cart-product-size'>
-                                                        Size {product.size}
+                                                        Size {cartItem.product.size}
                                                     </div>
                                                 </div>
                                                 <div className='price-quantity'>                                      
                                                     <div className='cart-item-price'>
                                                         <p className='cart-item-price'>Item Price</p>
-                                                        <div className='cart-price'>${product.price}</div>
+                                                        <div className='cart-price'>${cartItem.product.price}</div>
                                                     </div>
                                                     <div className='cart-quantity'>
                                                         <p className='cart-item-quantity'>Quantity</p>
@@ -240,6 +241,7 @@ class Cart extends React.Component {
 
                                         <div className='ship-desc'>
                                             <p>Free Shipping + Free returns</p>
+                                            {/* <input  type="submit" onClick={() => this.props.deleteCartItem(cartItem.id)}/>Remove */}
                                             <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.id)}>Remove</button>
                                         </div>
                                     </div>
@@ -256,8 +258,9 @@ class Cart extends React.Component {
                 </div>
           </div>
         ) : (
-          <div className="header">
-            <h1>Please Sign in to View Shopping Cart</h1>
+          <div className="signed-out-cart">
+            <h1 className='signed-out-message'>Give your bag some love!</h1>
+            <a className='shop-button' href="#products">Shop</a>
           </div>
         );
         return (
