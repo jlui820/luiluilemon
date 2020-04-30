@@ -21,7 +21,7 @@ class MainBodyProducts extends React.Component {
             <div className='main-container'>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <Link to={`/products/182`}>
+                        <Link to={`/products/12`}>
                             <img className='front-page-items_front-image' src={window.pinkjogger}/>
                             {/* <img className='front-page-items_back-image' src={window.pinkjogger2}/> */}
                             <h3 className='product-description'>City Sweat Jogger French Terry 29"</h3>
@@ -31,7 +31,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <Link to={`/products/183`}>
+                        <Link to={`/products/13`}>
                         <img className='front-page-items_front-image' src={window.greyjogger} />
                         {/* <img className='front-page-items_back-image' src={window.greyjogger2} /> */}
                         <h3 className='product-description'>City Sweat Jogger French Terry 29"</h3>
@@ -41,7 +41,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div>
                     <div className='main-product-item'>
-                        <Link to={`/products/172`}>
+                        <Link to={`/products/2`}>
                         <img className='front-page-items_front-image' src={window.shorts4} />
                         {/* <img className='front-page-items_back-image' src={window.shorts3} /> */}
                         <div className='product-description'>T.H.E Short 9"</div>
@@ -51,7 +51,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div>
                     <div className='main-product-item'>
-                        <Link to={`/products/173`}>
+                        <Link to={`/products/3`}>
                         <img className='front-page-items_front-image' src={window.shorts2} />
                         {/* <img className='front-page-items_back-image' src={window.shorts} /> */}
                         <h3 className='product-description'>T.H.E Short 9"</h3>

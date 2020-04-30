@@ -145,8 +145,7 @@ class Cart extends React.Component {
     constructor(props) {
         super(props)
         this.state= {
-            // render: [false],
-            grandTotal: 0
+            total: 0
         }        
 
         this.uniqueProducts = this.uniqueCartItems.bind(this);
@@ -159,9 +158,7 @@ class Cart extends React.Component {
     }
 
     deleteItem(cartItem) {
-        let deleteableId = cartItem.deleteableId
-
-        this.props.deleteCartItem(deleteableId)
+        this.props.deleteCartItem(cartItem.productId)
     }
 
     total(cartItem) {
@@ -205,7 +202,7 @@ class Cart extends React.Component {
                     </div>
                     <div className="left-side-items">
                         <div className="left-cart-index-item-div">
-                            {this.props.cartItems.map((cartItem, idx) => {
+                            {cartItems.map((cartItem, idx) => {
                             let product = cartItem.product;
                             return (
                                 <div className='cart-product-info'>
@@ -244,7 +241,7 @@ class Cart extends React.Component {
 
                                         <div className='ship-desc'>
                                             <p>Free Shipping + Free returns</p>
-                                            <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.deleteableId)}>Remove</button>
+                                            <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.id)}>Remove</button>
                                         </div>
                                     </div>
                                 </div>);
