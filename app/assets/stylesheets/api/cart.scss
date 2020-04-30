@@ -1,16 +1,135 @@
-.whole-cart-page-wrapper {
-    // display: flex;
 
+.whole-cart-page-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    font-family: Calibre,Verlag,Helvetica,sans-serif;
+    background-color: #f9f9f9;
 }
 
 .cart-body-wrapper {
     display: flex;
+    flex-direction: column;
+    width: 53%;
 }
 
-.left-side-items {
+
+.cart-header {
+    border-bottom: .25rem solid black;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+}
+
+.cart-product-info {
+    display: flex;
+    border-bottom: .0625rem solid #e6e6e6;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+}
+
+.cart-product-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: .6875rem;
+}
+
+.prod-des-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-product-name {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.cart-product-color {
+    margin-top: .375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .4px;
+}
+
+.cart-sizing-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .75rem;
+    font-size: 1rem;
+    letter-spacing: .4px;
+}
+
+.cart-item-price {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.cart-quantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-quantity {
     display: flex;
 }
 
 .cart-product-image {
-    height: 30vh;
+    height: 27vh;
+}
+
+.cart-item-price {
+    margin-bottom: 1rem;
+}
+
+.cart-item-quantity {
+    margin-bottom: 1rem;
+}
+
+.ship-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side-checkout {
+    width: 20%;
+}
+
+.cart-summary {
+    border-bottom: .25rem solid black;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+}
+
+.delete-cart-item {
+    border: none;
+    outline: none;
+    border-bottom: .0625rem solid #d5d5d5;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.delete-cart-item:hover {
+    border-bottom: .0625rem solid #d22030;
+}
+
+.checkout {
+    width: 100%;
+    background-color: #bfbfbf;
+    border-color: #bfbfbf;
+    color: white;
+    border: .0625rem solid;
+    border-radius: .25rem;
+    font-size: 1rem;
+    letter-spacing: .09375rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
 }

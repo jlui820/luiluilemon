@@ -197,54 +197,67 @@ class Cart extends React.Component {
         const { currentUser } = this.props;
 
         const cart_page = currentUser ? (
+            
           <div className="whole-cart-page-wrapper">
-                <div className='left-side-header'>
-                    <h1 className="header">Your Cart</h1>
-                </div>
+                <div className='cart-body-wrapper'>
+                    <div className='left-side-header'>
+                        <h1 className="cart-header">My Bag</h1>
+                    </div>
+                    <div className="left-side-items">
+                        <div className="left-cart-index-item-div">
+                            {this.props.cartItems.map((cartItem, idx) => {
+                            let product = cartItem.product;
+                            return (
+                                <div className='cart-product-info'>
+                                    <Link className="cart-product-link" to={`/products/${product.id}`}>
+                                        <img className="cart-product-image" src={product.photoUrl} alt="" />
+                                    </Link>
+                                    <div className='cart-product-description'>
+                                        <div className='prod-des-top'>
 
-            <div className='cart-body-wrapper'>
-                <div className="left-side-items">
-                    <div className="left-cart-index-item-div">
-                        {this.props.cartItems.map((cartItem, idx) => {
-                        let product = cartItem.product;
-                        return (
-                            <div>
-                                <Link className="cart-product-link" to={`/products/${product.id}`}>
-                                    <img className="cart-product-image" src={product.photoUrl} alt="" />
-                                </Link>
-                                <div>
-                                    <div>{product.name}</div>
-                                </div>
-                                <div>
-                                    <div>{product.color}</div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <div>{product.size}</div>
+                                            <div className='cart-product-name-container'>
+                                                <Link className="cart-product-link" to={`/products/${product.id}`}>
+                                                    <div className='cart-product-name'>{product.name}</div>
+                                                </Link>                                      
+                                            </div>
+                                            <div className='cart-product-color-container'>
+                                                <div className='cart-product-color'>{product.color}</div>
+                                            </div>
+                                            <div className='cart-sizing-price'>
+                                                <div className='cart-product-size-container'>
+                                                    <div className='cart-product-size'>
+                                                        Size {product.size}
+                                                    </div>
+                                                </div>
+                                                <div className='price-quantity'>                                      
+                                                    <div className='cart-item-price'>
+                                                        <p className='cart-item-price'>Item Price</p>
+                                                        <div>${product.price}</div>
+                                                    </div>
+                                                    <div className='cart-quantity'>
+                                                        <p className='cart-item-quantity'>Quantity</p>
+                                                        <div>{product.quantity}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='ship-desc'>
+                                            <p>Free Shipping + Free returns</p>
+                                            <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.deleteableId)}>Remove</button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <div>{product.price}</div>
-                                    </div>
-                                    <div>
-                                        <div>{product.quantity}</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p>Free Shipping + Free returns</p>
-                                    <button className="delete-item-in-cart" onClick={() => this.props.deleteCartItem(cartItem.deleteableId)}>Delete Item</button>
-                                </div>
-                            </div>);
-                            
-                        })}
-                        <br />
+                                </div>);
+                                
+                            })}
+                            <br />
+                        </div>
                     </div>
                 </div>
-
                 <div className="right-side-checkout">
-                <p>Order Summary</p>
-                <button className="checkout">Checkout</button>
+                    <p className='cart-summary'>Order Summary</p>
+                    <button className="checkout">CHECKOUT</button>
                 </div>
-            </div>
           </div>
         ) : (
           <div className="header">
