@@ -13,6 +13,7 @@ class Cart extends React.Component {
     // this.uniqueProducts = this.uniqueCartItems.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.total = this.total.bind(this);
+    this.numberWithCommas = this.numberWithCommas.bind(this);
   }
 
   componentDidMount() {
@@ -33,8 +34,7 @@ class Cart extends React.Component {
   total(cartItem) {
     return cartItem.product.price * cartItem.quantity;
   }
-
-
+  
 
     updateTotalPrice() {
     //   debugger
@@ -45,6 +45,10 @@ class Cart extends React.Component {
             }
             })
         this.setState({total: sum})
+    }
+
+    numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     }
     
   render() {
@@ -138,7 +142,7 @@ class Cart extends React.Component {
         </div>
         <div className="right-side-checkout">
           <p className="cart-summary">Order Summary</p>
-          <div className="cart-total">Total ${this.state.total}</div>
+          <div className="cart-total">Total ${this.numberWithCommas(this.state.total)}</div>
           <button className="checkout">CHECKOUT</button>
         </div>
       </div>
