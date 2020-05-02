@@ -27,7 +27,6 @@ class Cart extends React.Component {
   }
 
   deleteItem() {
-      debugger
       this.props.deleteCartItem(cartItems.id)
   }
 
@@ -37,7 +36,6 @@ class Cart extends React.Component {
   
 
     updateTotalPrice() {
-    //   debugger
         let sum = 0;
         let prodQty = 0;
 
@@ -55,6 +53,20 @@ class Cart extends React.Component {
 
     numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    uniqueCartItems(){
+        let { userCartItems } = this.props
+        let newCartItems = {}
+        userCartItems.forEach(userCartItem => {
+            if (newCartItems[userCartItem.product.id]) {
+                newCartItems[userCartItem.product.id].quantity += userCartItem.quantity
+            } else {
+                newCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity}
+            }
+        })
+        
+        return newCartItems
     }
     
   render() {
