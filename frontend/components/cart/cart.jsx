@@ -7,7 +7,7 @@ class Cart extends React.Component {
     super(props);
     this.state = {
       total: 0,
-      totalQty: 0,
+      productQty: 0,
     };
 
     // this.uniqueProducts = this.uniqueCartItems.bind(this);
@@ -39,13 +39,19 @@ class Cart extends React.Component {
     updateTotalPrice() {
     //   debugger
         let sum = 0;
+        let prodQty = 0;
+
         this.props.cartItems.forEach(cartItem => {
             if (cartItem.product) {
             sum += cartItem.quantity * cartItem.product.price;
-            }
-            })
+        }
+            prodQty++;
+        })
+
         this.setState({total: sum})
+        this.setState({productQty: prodQty})
     }
+
 
     numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -56,35 +62,25 @@ class Cart extends React.Component {
     const { currentUser } = this.props;
 
     const cart_page = currentUser ? (
-      <div className="whole-cart-page-wrapper">
+        <div className="whole-cart-page-wrapper">
         <div className="cart-body-wrapper">
           <div className="left-side-header">
             <h1 className="cart-header">My Bag</h1>
+            <div className='cart-items-qty'>{this.state.productQty} Items</div>
           </div>
           <div className="left-side-items">
             <div className="left-cart-index-item-div">
-              {cartItems.map((cartItem, idx) => {
-                // debugger
+              {cartItems.map((cartItem) => {
                 let product = cartItem.product;
                 return (
-                  <div className="cart-product-info">
-                    <Link
-                      className="cart-product-link"
-                      to={`/products/${product.id}`}
-                    >
-                      <img
-                        className="cart-product-image"
-                        src={product.photoUrl}
-                        alt=""
-                      />
+                  <div className="cart-product-info" key={cartItem.id}>
+                    <Link className="cart-product-link" to={`/products/${product.id}`}>
+                      <img className="cart-product-image" src={product.photoUrl} alt=""/>
                     </Link>
                     <div className="cart-product-description">
                       <div className="prod-des-top">
                         <div className="cart-product-name-container">
-                          <Link
-                            className="cart-product-link"
-                            to={`/products/${product.id}`}
-                          >
+                          <Link className="cart-product-link" to={`/products/${product.id}`}>
                             <div className="cart-product-name">
                               {product.name}
                             </div>
