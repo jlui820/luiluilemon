@@ -157,6 +157,21 @@
     border-bottom: .0625rem solid #d22030;
 }
 
+
+.cart-shipping-container {
+    display: flex;
+    padding: .75rem 0;
+    line-height: 1.23;
+    justify-content: space-between;
+}
+
+.cart-line {
+    height: .0625rem;
+    background: #e6e6e6;
+    border: none;
+    margin: 0;
+}
+
 .cart-total-continer {
     display: flex;
     justify-content: space-between;

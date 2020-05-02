@@ -4,19 +4,20 @@ import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
   constructor(props) {
+    // debugger
     super(props);
     this.state = {
       total: 0,
       productQty: 0,
     };
 
-    // this.uniqueProducts = this.uniqueCartItems.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
+    // this.deleteItem = this.deleteItem.bind(this);
     this.total = this.total.bind(this);
     this.numberWithCommas = this.numberWithCommas.bind(this);
   }
 
   componentDidMount() {
+    // debugger
     this.props.getAllCartItems();
   }
 
@@ -54,24 +55,11 @@ class Cart extends React.Component {
     numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     }
-
-    uniqueCartItems(){
-        let { userCartItems } = this.props
-        let newCartItems = {}
-        userCartItems.forEach(userCartItem => {
-            if (newCartItems[userCartItem.product.id]) {
-                newCartItems[userCartItem.product.id].quantity += userCartItem.quantity
-            } else {
-                newCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity}
-            }
-        })
-        
-        return newCartItems
-    }
     
   render() {
     const { cartItems } = this.props;
     const { currentUser } = this.props;
+    debugger
 
     const cart_page = currentUser ? (
         <div className="whole-cart-page-wrapper">
@@ -84,6 +72,7 @@ class Cart extends React.Component {
             <div className="left-cart-index-item-div">
               {cartItems.map((cartItem) => {
                 let product = cartItem.product;
+                // debugger
                 return (
                   <div className="cart-product-info" key={cartItem.id}>
                     <Link className="cart-product-link" to={`/products/${product.id}`}>
@@ -132,13 +121,8 @@ class Cart extends React.Component {
 
                       <div className="ship-desc">
                         <p>Free Shipping + Free returns</p>
-                        {/* <input  type="submit" onClick={() => this.props.deleteCartItem(cartItem.id)}/>Remove */}
-                        <button
-                          className="delete-cart-item"
-                          onClick={() => this.props.deleteCartItem(cartItem.id)}
-                        >
-                          Remove
-                        </button>
+                        {/* <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.id)}>Remove</button> */}
+                        <input className="delete-cart-item" type="submit" value='Remove' onClick={() => this.props.deleteCartItem(cartItem.id)}/>
                       </div>
                     </div>
                   </div>
@@ -150,6 +134,11 @@ class Cart extends React.Component {
         </div>
         <div className="right-side-checkout">
           <p className="cart-summary">Order Summary</p>
+          <div className='cart-shipping-container'> 
+            <p className='cart-shipping'>Shipping</p>
+            <p className='cart-shipping-free'>FREE</p>
+          </div>
+          <div className='cart-line'></div>
           <div className='cart-total-continer'>
             <p className='cart-total-text'>Total</p>
             <div className="cart-total">USD ${this.numberWithCommas(this.state.total)}</div>
