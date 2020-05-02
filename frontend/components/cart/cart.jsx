@@ -142,7 +142,10 @@ class Cart extends React.Component {
         </div>
         <div className="right-side-checkout">
           <p className="cart-summary">Order Summary</p>
-          <div className="cart-total">Total ${this.numberWithCommas(this.state.total)}</div>
+          <div className='cart-total-continer'>
+            <p className='cart-total-text'>Total</p>
+            <div className="cart-total">USD ${this.numberWithCommas(this.state.total)}</div>
+          </div>
           <button className="checkout">CHECKOUT</button>
         </div>
       </div>
