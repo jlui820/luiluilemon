@@ -15,6 +15,7 @@ class Cart extends React.Component {
     this.total = this.total.bind(this);
     this.numberWithCommas = this.numberWithCommas.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.currentUserCartItems = this.currentUserCartItems.bind(this)
   }
 
   componentDidMount() {
@@ -28,14 +29,6 @@ class Cart extends React.Component {
     }
   }
 
-  // deleteItem() {
-  //     this.props.deleteCartItem(cartItems.id)
-  // }
-
-  total(cartItem) {
-    return cartItem.product.price * cartItem.quantity;
-  }
-  
 
     updateTotalPrice() {
         let sum = 0;
@@ -72,16 +65,17 @@ class Cart extends React.Component {
 
     currentUserCartItems(){
         let { userCartItems } = this.props
-        let newCartItems = {}
+        let currentCartItems = {}
+
         userCartItems.forEach(userCartItem => {
-            if (newCartItems[userCartItem.product.id]) {
-                newCartItems[userCartItem.product.id].quantity += userCartItem.quantity
+            if (currentCartItems.length) {
+                currentCartItems[userCartItem.product.id].quantity += userCartItem.quantity
             } else {
-                newCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, cartItemId: userCartItem.id}
+                currentCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, cartItemId: userCartItem.id}
             }
         })
         
-        return newCartItems
+        return currentCartItems
     }
 
 
@@ -91,7 +85,7 @@ class Cart extends React.Component {
     const { cartItems } = this.props;
     const { currentUser } = this.props;
     let cartItemsObj = Object.entries(this.currentUserCartItems())
-    debugger
+    // debugger
 
     const cart_page = currentUser ? (
         <div className="whole-cart-page-wrapper">
@@ -102,10 +96,9 @@ class Cart extends React.Component {
           </div>
           <div className="left-side-items">
             <div className="left-cart-index-item-div">
-              debugger
               {cartItemsObj.map((cartItem) => {
                 let product = cartItem[1].product;
-                debugger
+                // debugger
                 return (
                   <div className="cart-product-info" key={cartItem[1].cartItemId}>
                     <Link className="cart-product-link" to={`/products/${product.id}`}>
