@@ -16,7 +16,6 @@ const cartItemsReducer = (state = {}, action) => {
             // debugger
             delete nextState.id
             return nextState
-            // return action.allCartItems
         default:
             return state;
     }

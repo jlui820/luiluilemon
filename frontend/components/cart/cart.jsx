@@ -30,57 +30,57 @@ class Cart extends React.Component {
   }
 
 
-    updateTotalPrice() {
-        let sum = 0;
-        let prodQty = 0;
+  updateTotalPrice() {
+    let sum = 0;
+    let prodQty = 0;
 
-        this.props.cartItems.forEach(cartItem => {
-            if (cartItem.product) {
-            sum += cartItem.quantity * cartItem.product.price;
-        }
-            prodQty++;
-        })
+    this.props.cartItems.forEach(cartItem => {
+      if (cartItem.product) {
+        sum += cartItem.quantity * cartItem.product.price;
+      }
+      prodQty++;
+    })
 
-        this.setState({total: sum})
-        this.setState({productQty: prodQty})
-        
-    }
+    this.setState({ total: sum })
+    this.setState({ productQty: prodQty })
 
-
-    numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    }
+  }
 
 
+  numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
 
-    deleteItem(cartItem) {
+
+
+  deleteItem(cartItem) {
     let cartItemId = cartItem[1].cartItemId
 
     this.props.deleteCartItem(cartItemId)
-    }
+  }
 
-    total(cartItem) {
-        return cartItem[1].product.price * cartItem[1].quantity
-    }
+  total(cartItem) {
+    return cartItem[1].product.price * cartItem[1].quantity
+  }
 
-    currentUserCartItems(){
-        let { userCartItems } = this.props
-        let currentCartItems = {}
+  currentUserCartItems() {
+    let { userCartItems } = this.props
+    let currentCartItems = {}
 
-        userCartItems.forEach(userCartItem => {
-            if (currentCartItems.length) {
-                currentCartItems[userCartItem.product.id].quantity += userCartItem.quantity
-            } else {
-                currentCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, cartItemId: userCartItem.id}
-            }
-        })
-        
-        return currentCartItems
-    }
+    userCartItems.forEach(userCartItem => {
+      if (currentCartItems[userCartItem.product.id]) {
+        currentCartItems[userCartItem.product.id].quantity += userCartItem.quantity
+      } else {
+        currentCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, cartItemId: userCartItem.id }
+      }
+    })
+
+    return currentCartItems
+  }
 
 
 
-    
+
   render() {
     const { cartItems } = this.props;
     const { currentUser } = this.props;
@@ -88,7 +88,7 @@ class Cart extends React.Component {
     // debugger
 
     const cart_page = currentUser ? (
-        <div className="whole-cart-page-wrapper">
+      <div className="whole-cart-page-wrapper">
         <div className="cart-body-wrapper">
           <div className="left-side-header">
             <h1 className="cart-header">My Bag</h1>
@@ -102,7 +102,7 @@ class Cart extends React.Component {
                 return (
                   <div className="cart-product-info" key={cartItem[1].cartItemId}>
                     <Link className="cart-product-link" to={`/products/${product.id}`}>
-                      <img className="cart-product-image" src={product.photoUrl} alt=""/>
+                      <img className="cart-product-image" src={product.photoUrl} alt="" />
                     </Link>
                     <div className="cart-product-description">
                       <div className="prod-des-top">
@@ -148,7 +148,7 @@ class Cart extends React.Component {
                       <div className="ship-desc">
                         <p>Free Shipping + Free returns</p>
                         {/* <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.id)}>Remove</button> */}
-                        <input className="delete-cart-item" type="submit" value='Remove' onClick={() => this.props.deleteCartItem(cartItem[1].cartItemId)}/>
+                        <input className="delete-cart-item" type="submit" value='Remove' onClick={() => this.props.deleteCartItem(cartItem[1].cartItemId)} />
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ class Cart extends React.Component {
         </div>
         <div className="right-side-checkout">
           <p className="cart-summary">Order Summary</p>
-          <div className='cart-shipping-container'> 
+          <div className='cart-shipping-container'>
             <p className='cart-shipping'>Shipping</p>
             <p className='cart-shipping-free'>FREE</p>
           </div>
@@ -173,13 +173,13 @@ class Cart extends React.Component {
         </div>
       </div>
     ) : (
-      <div className="signed-out-cart">
-        <h1 className="signed-out-message">Give your bag some love!</h1>
-        <a className="shop-button" href="#products">
-          SHOP WHAT'S NEW
+        <div className="signed-out-cart">
+          <h1 className="signed-out-message">Give your bag some love!</h1>
+          <a className="shop-button" href="#products">
+            SHOP WHAT'S NEW
         </a>
-      </div>
-    );
+        </div>
+      );
     return cart_page;
   }
 }
