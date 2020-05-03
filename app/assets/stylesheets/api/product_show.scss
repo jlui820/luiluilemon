@@ -198,6 +198,14 @@
     // width: auto;
 }
 
+.add-to-bag-button:hover {
+    -webkit-filter: brightness(90%);
+    -moz-filter: brightness(90%);
+    -o-filter: brightness(90%);
+    -ms-filter: brightness(90%);
+    filter: brightness(90%);
+}
+
 .add-to-bag-button-container {
         margin: .5rem .625rem;
 }
