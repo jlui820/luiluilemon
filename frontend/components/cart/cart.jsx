@@ -61,23 +61,23 @@ class Cart extends React.Component {
 
 
     deleteItem(cartItem) {
-    let deleteableId = cartItem[1].deleteableId
+    let cartItemId = cartItem[1].cartItemId
 
-    this.props.deleteCartItem(deleteableId)
+    this.props.deleteCartItem(cartItemId)
     }
 
     total(cartItem) {
         return cartItem[1].product.price * cartItem[1].quantity
     }
 
-    uniqueCartItems(){
+    currentUserCartItems(){
         let { userCartItems } = this.props
         let newCartItems = {}
         userCartItems.forEach(userCartItem => {
             if (newCartItems[userCartItem.product.id]) {
                 newCartItems[userCartItem.product.id].quantity += userCartItem.quantity
             } else {
-                newCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, deleteableId: userCartItem.id}
+                newCartItems[userCartItem.product.id] = { product: userCartItem.product, quantity: userCartItem.quantity, cartItemId: userCartItem.id}
             }
         })
         
@@ -90,8 +90,8 @@ class Cart extends React.Component {
   render() {
     const { cartItems } = this.props;
     const { currentUser } = this.props;
-    let cartItemsObj = Object.entries(this.uniqueCartItems())
-    // debugger
+    let cartItemsObj = Object.entries(this.currentUserCartItems())
+    debugger
 
     const cart_page = currentUser ? (
         <div className="whole-cart-page-wrapper">
@@ -102,11 +102,12 @@ class Cart extends React.Component {
           </div>
           <div className="left-side-items">
             <div className="left-cart-index-item-div">
+              debugger
               {cartItemsObj.map((cartItem) => {
                 let product = cartItem[1].product;
                 debugger
                 return (
-                  <div className="cart-product-info" key={cartItem[1].deleteableId}>
+                  <div className="cart-product-info" key={cartItem[1].cartItemId}>
                     <Link className="cart-product-link" to={`/products/${product.id}`}>
                       <img className="cart-product-image" src={product.photoUrl} alt=""/>
                     </Link>
@@ -154,7 +155,7 @@ class Cart extends React.Component {
                       <div className="ship-desc">
                         <p>Free Shipping + Free returns</p>
                         {/* <button className="delete-cart-item" onClick={() => this.props.deleteCartItem(cartItem.id)}>Remove</button> */}
-                        <input className="delete-cart-item" type="submit" value='Remove' onClick={() => this.props.deleteCartItem(cartItem[1].deleteableId)}/>
+                        <input className="delete-cart-item" type="submit" value='Remove' onClick={() => this.props.deleteCartItem(cartItem[1].cartItemId)}/>
                       </div>
                     </div>
                   </div>
