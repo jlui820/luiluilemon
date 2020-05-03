@@ -12,10 +12,10 @@ class Cart extends React.Component {
     };
 
     // this.deleteItem = this.deleteItem.bind(this);
+    this.currentUserCartItems = this.currentUserCartItems.bind(this)
     this.total = this.total.bind(this);
     this.numberWithCommas = this.numberWithCommas.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
-    this.currentUserCartItems = this.currentUserCartItems.bind(this)
   }
 
   componentDidMount() {
@@ -64,6 +64,7 @@ class Cart extends React.Component {
   }
 
   currentUserCartItems() {
+    // debugger
     let { userCartItems } = this.props
     let currentCartItems = {}
 

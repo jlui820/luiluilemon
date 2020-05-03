@@ -59,8 +59,8 @@
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Cart);
 
-import { connect } from 'react-redux'
-import { getAllCartItems, createCartItem, deleteCartItem } from '../../actions/cart_actions'
+import { connect } from 'react-redux';
+import { getAllCartItems, createCartItem, deleteCartItem } from '../../actions/cart_actions';
 import Cart from './cart';
 
 const mapStateToProps = state => { 

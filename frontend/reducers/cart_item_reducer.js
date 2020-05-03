@@ -14,8 +14,10 @@ const cartItemsReducer = (state = {}, action) => {
             return nextState
         case REMOVE_CART_ITEM:
             // debugger
-            delete nextState.id
-            return nextState
+            // delete nextState.id
+            // return nextState
+               delete nextState[action.id]
+               return action.allCartItems
         default:
             return state;
     }

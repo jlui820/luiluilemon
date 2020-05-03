@@ -16,9 +16,10 @@ export const receiveCartItem = cartItem => ({
     cartItem
 });
 
-export const removeCartItem = (cartItemId) => ({
+export const removeCartItem = (cartItemId, allCartItems) => ({
     type: REMOVE_CART_ITEM,
-    cartItemId
+    cartItemId,
+    allCartItems
 });
 
 export const clearCartItems = (id) => ({
@@ -31,19 +32,6 @@ export const clearCartItems = (id) => ({
 //     type: RECEIVE_ITEM_ERRORS,
 //     errors
 // });
-
-// export const getAllCartItems = () => {
-//     // debugger
-//     return dispatch => {
-//     // debugger
-//     return CartAPIUtil.getAllCartItems()
-//     .then(cartItems => {
-//         // debugger
-//         dispatch(receiveCartItems(cartItems)),
-//         err => dispatch(receiveItemErrors(err.response.JSON))
-//         })
-//     }
-// }
 
 export const getAllCartItems = () => dispatch => (
     CartAPIUtil.getAllCartItems()
@@ -83,6 +71,8 @@ export const createCartItem = cartItem => dispatch => {
 
 export const deleteCartItem = cartItemId => dispatch => (
     CartAPIUtil.deleteCartItem(cartItemId)
-    .then(() => dispatch(removeCartItem(cartItemId)))
+    .then(() => CartAPIUtil.getAllCartItems())
+    .then((allCartItems) => dispatch(removeCartItem(cartItemId, allCartItems)))
+
     // err => dispatch(receiveItemErrors(err.response.JSON))
 );
