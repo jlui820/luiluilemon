@@ -6,9 +6,11 @@ class Product extends React.Component {
     constructor(props) {
         // debugger
         super(props)
-        this.state = {quantity: 1}
-
-        this.addToCart = this.addToCart.bind(this)
+        this.state = {
+                quantity: 1,
+                size: '',
+            }
+        this.addToCart = this.addToCart.bind(this);
     }
 
     addToCart(e) {
@@ -66,7 +68,10 @@ class Product extends React.Component {
                                 <button className='clothes-size-button'>S</button>
                                 <button className='clothes-size-button'>M</button>
                                 <button className='clothes-size-button'>L</button>
-                            </div>
+                            </div>  
+
+
+
                             {/* <div className='description-container'>
                                 <p>
                                   {product.description}  
