@@ -12,6 +12,6 @@ export const clearSearch = () => ({
     type: CLEAR_SEARCH
 });
 
-export const getSearchResults = searchString => dispatch =>
+export const getResults = searchString => dispatch =>
     SearchAPIUtil.getSearchResults(searchString)
     .then(results => dispatch(receiveSearchResults(results)))

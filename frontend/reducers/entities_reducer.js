@@ -11,4 +11,4 @@ const entitiesReducer = combineReducers({
     search: searchReducer
 });
 
-export default entitiesReducer;
+export default entitiesReducer; 

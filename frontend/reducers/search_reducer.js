@@ -1,4 +1,4 @@
-import { RECEIVE_SEARCH_RESULTS, CLEAR_SEARCH } from '../actions/session_actions';
+import { RECEIVE_SEARCH_RESULTS, CLEAR_SEARCH } from '../actions/search_actions';
 
 const searchReducer = (state = [], action) => {
     Object.freeze(state);

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchContainer from '../search/search_container'
 
 
 class NavBar extends React.Component {
@@ -93,8 +94,11 @@ class NavBar extends React.Component {
 
 
                                 <div className='searchbar-icon'>
-                                    <i className="fas fa-search searchIcon"></i>
+                                    <Link to='/search'>
+                                        <i className="fas fa-search searchIcon"></i>
+                                    </Link>
                                     <input className='searchbox' type="text" placeholder='Search'/>
+                                    {/* <SearchContainer /> */}
                                 </div>
 
 
