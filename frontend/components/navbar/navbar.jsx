@@ -63,9 +63,9 @@ class NavBar extends React.Component {
                                     </div>
                                 </li>   
                                 <li className='dropdown'>
-                                    <a href="#products" className='dropbtn'>MEN</a>
+                                    <a href="" className='dropbtn'>MEN</a>
                                     <div className='dropdown-content'> 
-                                        <a className='dropdown-content-list' href="">Mens Clothes</a>
+                                        <a className='dropdown-content-list' href="#products">Mens Clothes</a>
                                     </div>
                                 </li>   
                                 <li className='dropdown'>
@@ -93,13 +93,14 @@ class NavBar extends React.Component {
 
 
 
-                                <div className='searchbar-icon'>
-                                    <Link to='/search'>
-                                        <i className="fas fa-search searchIcon"></i>
-                                    </Link>
+                                <div className='searchbar-icon'>                                  
+                                    <i className="fas fa-search searchIcon"></i>
                                     <input className='searchbox' type="text" placeholder='Search'/>
                                     {/* <SearchContainer /> */}
                                 </div>
+                                    <Link to ='/search'>
+                                        <i className="fas fa-search searchIcon"></i>
+                                    </Link>
 
 
 
