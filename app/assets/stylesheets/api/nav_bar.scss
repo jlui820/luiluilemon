@@ -19,7 +19,8 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100vw;
+    // width: 100vw;
+    width: 100%;
     // position: fixed;
     top: 0;
 }
@@ -84,18 +85,24 @@
     line-height: 1.2rem;
     // border: 2px;
     padding-right: 30px;
+    padding-right: 12%;
     padding-left: 10px;
     // padding-top: 1px;
-    padding-bottom: 4px;
+    // padding-bottom: 4px;
     // width: 76px;
     // height: 34px;
     display: flex;
     align-items: center;
+    
+
+
+    // test
+        height: 4vh;
 }
 
 .search-bar input {
-    height: 2rem;
-    width: 120px;
+    // height: 2rem;
+    // width: 120px;
     font-size: .875rem;
     border: none;
     outline: none;
@@ -105,23 +112,30 @@
     display: grid;
     grid-template-columns: 1.5rem 4fr 1fr;
     // width: 300px;
-    border: 2px solid #ccc;
+    // border: 2px solid #ccc;
     overflow: hidden;
     align-items: center;
+    border: 1px solid #ccc;
+    height: 2.5rem;
+
+
+    //test
+        display: flex;
+        align-items: center;
 
 }
 
-.searchbar-icon :focus-within i {
-    display: none;
-}
+// .searchbar-icon :focus-within i {
+//     display: none;
+// }
 
-.searchbar-icon :focus-within .searchBox {
-    grid-column: 1/4;
-}
+// .searchbar-icon :focus-within .searcbox {
+//     grid-column: 1/4;
+// }
 
-.searchbar-icon :focus-within .searchBox::placeholder {
-    color: transparent;
-}
+// .searchbar-icon :focus-within .searchbox::placeholder {
+//     color: transparent;
+// }
 
 .searchIcon {
     padding: 0.5rem;
@@ -130,7 +144,7 @@
     z-index: 2
 }
 
-.searchBox {
+.searchbox {
     border: 0;
     padding: 0.5rem;
     grid-column: 2/4;

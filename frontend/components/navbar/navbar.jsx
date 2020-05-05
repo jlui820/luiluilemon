@@ -90,20 +90,9 @@ class NavBar extends React.Component {
                         <div className="line-break">|</div>
                         <div className='right-side-inner-container'>
                             <div className='search-bar'>
-
-
-
-                                <div className='searchbar-icon'>                                  
-                                    <i className="fas fa-search searchIcon"></i>
-                                    <input className='searchbox' type="text" placeholder='Search'/>
-                                    {/* <SearchContainer /> */}
+                                <div className='searchbar-icon-nav'>                                  
+                                    <SearchContainer />
                                 </div>
-                                    <Link to ='/search'>
-                                        <i className="fas fa-search searchIcon"></i>
-                                    </Link>
-
-
-
                                 <div className='nav-cart'>
                                     <Link to='/cart'>
                                         <i className="fas fa-shopping-cart"></i>

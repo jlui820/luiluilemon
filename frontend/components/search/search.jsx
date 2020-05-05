@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import NavBarContainer from "../navbar/navbar_container";
-import SearchItem from "./search_item"
+import SearchItem from "./search_container";
 
 class Search extends React.Component {
     constructor(props) {
@@ -24,10 +24,33 @@ class Search extends React.Component {
 
     render() {
         const searchResults = this.props.searches.map(product => (
-            <SearchItem key={product.id} product={product}/>
-        ))
+            <SearchItem key={product.id} product={product}/>))
         return (
-            <div className="search-page">
+            <div className="search-bar">
+                <div className="searchbar-icon">
+                    <i className="fas fa-search searchIcon"></i>
+                    <input className='searchbox' onChange={this.handleSearch} type="text" placeholder="Search"/>
+                <div className="search-body-result">
+                    {searchResults}
+                </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+export default Search
+
+
+
+
+
+
+//before change
+{/* <div className="search-page">
+                <div className='search-hello'>
+                    hhehhhhhlo
+                </div>
                 <div className="search-body">
                     <div className="search-body-search">
                         <input onChange={this.handleSearch} type="text" placeholder="Search" id="search-bar-indexshow"/>
@@ -37,8 +60,21 @@ class Search extends React.Component {
                     </div>
                 </div>
             </div>
-        )
-    }
-}
+             */}
 
-export default Search
+
+//before change for original nav bar 
+// render() {
+//         const searchResults = this.props.searches.map(product => (
+//             <SearchItem key={product.id} product={product}/>))
+//         return (
+//             <div className="search-bar">
+//                 <div className="search-body-search">
+//                     <input onChange={this.handleSearch} type="text" placeholder="Search" id="search-bar-indexshow"/>
+//                 </div>
+//                 <div className="search-body-result">
+//                     {searchResults}
+//                 </div>
+//             </div>
+//         )
+//     }
