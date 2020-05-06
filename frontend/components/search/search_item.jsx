@@ -7,14 +7,14 @@ class SearchItem extends React.Component {
   }
 
   render() {
-
+    // debugger
     return (
         <div>
-          <Link to={`/products/${this.props.product.id}`} className="user-ordered-items">
-            <img src={this.props.product.photoUrl} className="user-ordered-items-img" />
-            <div className="user-ordered-items-info">
+          <Link to={`/products/${this.props.product.id}`} className="search-product-items">
+            <img src={this.props.product.photoUrl} className="search-product-items-img" />
+            <div className="search-product-items-info">
               {/* <h2 id="search-item-brand">{props.product.brand}</h2> */}
-              <h2 className="user-ordered-items-name">{this.props.product.name}</h2>
+              <h2 className="search-product-items-name">{this.props.product.name}</h2>
             </div>
           </Link>
     </div>
@@ -28,16 +28,3 @@ class SearchItem extends React.Component {
 export default SearchItem;
 
 
-// const SearchItem = (props) => {
-//   return (
-//     <div>
-//       <Link to={`/products/${props.product.id}`} className="user-ordered-items">
-//         <img src={props.product.photoUrl} className="user-ordered-items-img" />
-//         <div className="user-ordered-items-info">
-//           {/* <h2 id="search-item-brand">{props.product.brand}</h2> */}
-//           <h2 className="user-ordered-items-name">{props.product.name}</h2>
-//         </div>
-//       </Link>
-//     </div>
-//   );
-// };

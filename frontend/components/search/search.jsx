@@ -47,24 +47,6 @@ export default Search
 
 
 
-
-//before change
-{/* <div className="search-page">
-                <div className='search-hello'>
-                    hhehhhhhlo
-                </div>
-                <div className="search-body">
-                    <div className="search-body-search">
-                        <input onChange={this.handleSearch} type="text" placeholder="Search" id="search-bar-indexshow"/>
-                    </div>
-                    <div className="search-body-result">
-                        {searchResults}
-                    </div>
-                </div>
-            </div>
-             */}
-
-
 //before change for original nav bar 
 // render() {
 //         const searchResults = this.props.searches.map(product => (

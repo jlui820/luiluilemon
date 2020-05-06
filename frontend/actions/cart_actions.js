@@ -51,9 +51,11 @@ export const createCartItem = cartItem => dispatch => {
     // debugger
     return CartAPIUtil.createCartItem(cartItem)
     .then(cartItem => {
-        // debugger
+        debugger
        return dispatch(receiveCartItem(cartItem))},
-       err => console.log(err))
+       err => {  debugger
+           console.log(err)})
+           
 };
 
 // export const createCartItem = () => {

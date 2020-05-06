@@ -23,7 +23,7 @@ const App = () => (
             <AuthRoute path='/UserSession' component={UserSession} />
             <Route exact path="/cart" component={CartContainer} />
 
-            <Route exact path="/search" component={SearchContainer} />
+            {/* <Route exact path="/search" component={SearchContainer} /> */}
 
             <Route path='/' component={Main} />
         </Switch>

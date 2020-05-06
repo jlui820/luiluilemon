@@ -4,11 +4,17 @@ import ProductIndexItem from './product_index_item_container';
 class ProductIndex extends React.Component {
     constructor(props) {
         super(props)
+
+        this.state = {
+            products: null
+        }
+
         this.handleGetProduct = this.handleGetProduct.bind(this)
         this.handleAllProduct = this.handleAllProduct.bind(this)
     }
     componentDidMount() {
-        this.props.fetchProducts();
+        this.props.fetchProducts().then( products => this.setState({products}))
+        
     }
 
     handleGetProduct(e){
@@ -26,7 +32,9 @@ class ProductIndex extends React.Component {
     }
 
     render() {
-        const { products } = this.props;
+        
+        const { products } = this.state
+        // debugger
         if(!products) return null
         let product = this.props.products.map(product => {
             return <ProductIndexItem product={product} key={product.id}/>

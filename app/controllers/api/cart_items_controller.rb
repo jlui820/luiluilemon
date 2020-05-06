@@ -12,9 +12,9 @@ class Api::CartItemsController < ApplicationController
         @cart_item.product_id = cart_items_params[:product][:id]
         @cart_item.quantity = cart_items_params[:product][:quantity]
         @cart_item.user_id = @current_user.id
-
         # debugger
         if @cart_item.save
+            # @cart_item.product = cart_items_params[:product]
             render :show
             # want to send up product json object we just added 
             # can creat @product extract what we want

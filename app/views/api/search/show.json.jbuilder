@@ -1,4 +1,4 @@
-json.array! @results.each do |sneaker|
+json.array! @products.each do |product|
     json.extract! product, :itemtype, :name, :description, :size, :details, :price, :id, :color
 
     if product.photo.attached?
