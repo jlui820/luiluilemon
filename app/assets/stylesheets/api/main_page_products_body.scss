@@ -1,41 +1,51 @@
 .main-container {
     display: flex;
-    justify-content: space-evenly;
-    padding-right: 1.5625rem;
-    padding-left: 1.5625rem;
+    // justify-content: space-evenly;
+    // padding-right: 1.5625rem;
+    // padding-left: 1.5625rem;
     // width: 1322px;
-    margin-left: 155px;
-    margin-left: 12%;
+    // margin-left: 155px;
+    // margin-left: 12%;
     // flex-wrap: wrap;
     margin-bottom: 2rem;
-    width: 80%;
+    width: 79%;
+    margin-left: 18%;
 }
 
 .main-product-item {
-    height: 100%;
-    flex-wrap: wrap;
-    padding-top: 30px;
+    // height: 100%;
+    // flex-wrap: wrap;
+    // padding-top: 30px;
     // border: 1px solid red;
+    
 }
 
 .product-description {
     // border: 1px solid black;
-    padding-bottom: 10px;
-    flex-wrap: wrap;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    // padding-bottom: 10px;
+    // flex-wrap: wrap;
+    // font-size: 1.1rem;
+    // line-height: 1.2rem;
+
 }
 
 
 .front-page-items_front-image {
-    height: 35vh;
-    width: auto;
-    cursor: pointer;
+    // height: 35vh;
+    // height: 15%;
+    // width: auto;
+    // cursor: pointer;
+    width: 75%;
 }
 
 .front-page-items_back-image {
-    height: 35vh;
-    width: auto;
-    cursor: pointer;
+    // height: 35vh;
+    // height: 15%;
+    // width: auto;
+    // cursor: pointer;
 }
 
+
+.main-shirt{
+    width: 78%;
+}

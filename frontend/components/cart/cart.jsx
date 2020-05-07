@@ -67,7 +67,7 @@ class Cart extends React.Component {
     // debugger
     let { userCartItems } = this.props
     let currentCartItems = {}
-    debugger
+    // debugger
     userCartItems.forEach(userCartItem => {
       if (currentCartItems[userCartItem.productId]) {
         currentCartItems[userCartItem.productId].quantity += userCartItem.quantity
