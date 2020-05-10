@@ -3,8 +3,8 @@ import Search from './search'
 import { getResults, clearSearch } from '../../actions/search_actions'
 
 const mapStateToProps = (state, ownProps) => ({
-    // searches: state.entities.search || [],
-    searches: Object.values(state.entities.products)
+    searches: state.entities.search || [],
+    // searches: Object.values(state.entities.products)
 })
 
 const mapDispatchToProps = dispatch => ({

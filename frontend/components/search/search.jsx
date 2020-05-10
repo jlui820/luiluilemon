@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import NavBarContainer from "../navbar/navbar_container";
-import SearchItem from "./search_container";
+import SearchItem from "./search_item";
+
 
 class Search extends React.Component {
     constructor(props) {
@@ -44,21 +44,3 @@ class Search extends React.Component {
 export default Search
 
 
-
-
-
-//before change for original nav bar 
-// render() {
-//         const searchResults = this.props.searches.map(product => (
-//             <SearchItem key={product.id} product={product}/>))
-//         return (
-//             <div className="search-bar">
-//                 <div className="search-body-search">
-//                     <input onChange={this.handleSearch} type="text" placeholder="Search" id="search-bar-indexshow"/>
-//                 </div>
-//                 <div className="search-body-result">
-//                     {searchResults}
-//                 </div>
-//             </div>
-//         )
-//     }

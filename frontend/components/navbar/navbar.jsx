@@ -91,7 +91,7 @@ class NavBar extends React.Component {
                         <div className='right-side-inner-container'>
                             <div className='search-bar-nav'>
                                 <div className='searchbar-icon-nav'>                                  
-                                    {/* <SearchContainer /> */}
+                                    <SearchContainer />
                                 </div>
                                 <div className='nav-cart'>
                                     <Link to='/cart'>
