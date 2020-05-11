@@ -6,7 +6,7 @@ import SearchItem from "./search_item";
 class Search extends React.Component {
     constructor(props) {
         super(props)
-        this.handleSearch = this.handleSearch.bind(this)
+        this.handleSearch = this.handleSearch.bind(this);
     }
 
     handleSearch(e){
@@ -32,7 +32,7 @@ class Search extends React.Component {
                     <input className='searchbox' onChange={this.handleSearch} type="text" placeholder="Search"/>
                 </div>
                 <div className="search-body-result">
-                    {/* {searchResults} */}
+                    {/* <div>Top suggestions</div> */}
                     {searchResults.slice(0,4)}
                 </div>
             </div>

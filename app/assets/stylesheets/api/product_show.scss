@@ -5,7 +5,8 @@
     justify-content: center;
     width: 100vw;
     // border: 1px solid red;
-    margin-top: 4.688rem;
+    // margin-top: 4.688rem;
+    margin-top: 5.688rem;
 }
 
 .product-left-side-img {
@@ -31,15 +32,15 @@
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 600;
-    margin-top: 20px;
-   
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 
 
 .clothes-description-container {
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin-bottom: 1.5rem;
 }
 
 .product-price {
@@ -194,7 +195,8 @@
     cursor: pointer;
     font-size: .9rem;
     font-weight: 700;
-    height: 60px;
+    // height: 3.75rem;
+    padding: 1rem 2rem;
     // width: auto;
 }
 
@@ -291,4 +293,15 @@
     border-bottom: 1px solid #d22030;
     transition: all .35s ease-in-out;
     cursor: pointer;
+}
+
+.free-ship-returns {
+    width: 100%;
+    border-radius: .25rem;
+    font-size: .9rem;
+    display: flex;
+    text-align: center;
+    margin: .5rem 0;
+    justify-content: center;
+    line-height: 1.5rem;
 }

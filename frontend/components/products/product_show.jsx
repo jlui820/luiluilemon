@@ -41,7 +41,6 @@ class Product extends React.Component {
                     <div className='right-side-whole-container'>
                         <div>
                             <a href="#products" className='men-show-link'>Men's Clothes</a>
-                            
                         </div>
                         <div className='main-product-description'>
                             <h1 className='product-name'>{product.name}</h1>
@@ -56,18 +55,18 @@ class Product extends React.Component {
                             </div>
                             <div className='color-buttons-container'>
                                 {/* {this.props.product.color} */}
-                                <button className='color-buttons first'></button>
+                                {/* <button className='color-buttons first'></button>
                                 <button className='color-buttons second'></button>
-                                <button className='color-buttons third'></button>
+                                <button className='color-buttons third'></button> */}
                             </div>
                             {/* <div className='model-characteristics-container'>
                                 <div className='model-description'>model description</div>
                                 <div className='size-guide'></div>
                             </div> */}
                             <div className='size-container'>
-                                <button className='clothes-size-button'>S</button>
+                                {/* <button className='clothes-size-button'>S</button>
                                 <button className='clothes-size-button'>M</button>
-                                <button className='clothes-size-button'>L</button>
+                                <button className='clothes-size-button'>L</button> */}
                             </div>  
 
 
@@ -78,7 +77,7 @@ class Product extends React.Component {
                                 </p>
                             </div> */}
                             <div className='purchase-method'>
-                                <div className='shipping-method'>
+                                {/* <div className='shipping-method'>
                                     <div className='radio-button-container-holder'>
                                         <input type="radio" className='radio-button'/>
                                         <div className='ship-container'>Ship it to me</div>
@@ -90,9 +89,12 @@ class Product extends React.Component {
                                         <i className="fas fa-university"></i>
                                     </div>
                                         <div className='pickup-text'>Pick up in-store</div>
-                                </div>
+                                </div> */}
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
+                                </div>
+                                <div className='free-ship-returns'>
+                                    Free Shipping & Free Returns
                                 </div>
                             </div>
                         </div>
