@@ -9,14 +9,17 @@ class SearchItem extends React.Component {
   render() {
     // debugger
     return (
-        <div className='search-products'>
-          <Link to={`/products/${this.props.product.id}`} className="search-product-items">
-            <img src={this.props.product.photo} className="search-product-items-img" />
-            <div className="search-product-items-info">
-            <h2 className="search-product-items-name">{this.props.product.name}</h2>
-            </div>
-          </Link>
-    </div>
+      <div className='search-products'>
+        <Link to={`/products/${this.props.product.id}`} className="search-product-items">
+    
+          <img src={this.props.product.photo} className="search-product-items-img" />
+
+          <div className="search-product-items-info">
+              <div className="search-product-items-name">{this.props.product.name}</div>
+          </div>
+          
+        </Link>
+      </div>
     )
   }
 }
