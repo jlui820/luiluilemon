@@ -17,7 +17,7 @@ class SearchItem extends React.Component {
           <div className="search-product-items-info">
               <div className="search-product-items-name">{this.props.product.name}</div>
           </div>
-          
+
         </Link>
       </div>
     )
@@ -25,25 +25,5 @@ class SearchItem extends React.Component {
 }
 
 
-
-
 export default SearchItem;
 
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const SearchItem = props => {
-//   debugger
-//     return(
-//             <Link to={`/products/${props.product.id}`} className="user-ordered-items">
-//                 <img src={props.product.photoUrl} className="user-ordered-items-img"/>
-//                 <div className="user-ordered-items-info">
-                    
-//                     <h2 className="user-ordered-items-name">{props.product.name}</h2>
-//                 </div>
-//             </Link>    
-//     )
-// }
-
-// export default SearchItem;

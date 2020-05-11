@@ -23,10 +23,8 @@ class Search extends React.Component {
     }
 
     render() {
-        // debugger
         const searchResults = this.props.searches.map(product => (
             <SearchItem key={product.id} product={product}/>))
-            // debugger
         return (
             <div className="search-bar">
                 <div className="searchbar-icon">
@@ -34,7 +32,8 @@ class Search extends React.Component {
                     <input className='searchbox' onChange={this.handleSearch} type="text" placeholder="Search"/>
                 </div>
                 <div className="search-body-result">
-                    {searchResults}
+                    {/* {searchResults} */}
+                    {searchResults.slice(0,4)}
                 </div>
             </div>
         )
