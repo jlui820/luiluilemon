@@ -2,12 +2,12 @@
 .search-product-items {
     display: flex;
     justify-content: flex-start;
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
+    margin: 1.5rem;
 }
 
 .search-product-items:hover {
     background-color: rgb(251, 251, 251);
-    border-right: rgb(8, 160, 92) solid 5px;
 }
 
 .search-product-items-name {
@@ -17,13 +17,13 @@
 .search-product-items-img {
     min-height: 45px;
     margin-right: 10px;
-    width: 15%;
+    width: 25%;
 }
 
 
 .search-body-result {
-    // background-color: #fafafa;
-    background-color: #fff;
+    background-color: #fafafa;
+    // background-color: #fff;
     position: absolute;
     width: 23.125rem;
     z-index: 2;
