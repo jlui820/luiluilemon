@@ -7,7 +7,6 @@ class SearchItem extends React.Component {
   }
 
   render() {
-    // debugger
     return (
       // <div className='search-products'>
         <Link to={`/products/${this.props.product.id}`} className="search-product-items">
@@ -23,4 +22,6 @@ class SearchItem extends React.Component {
 
 
 export default SearchItem;
+
+
 

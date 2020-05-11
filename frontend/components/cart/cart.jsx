@@ -63,6 +63,8 @@ class Cart extends React.Component {
     return cartItem[1].product.price * cartItem[1].quantity
   }
 
+
+
   currentUserCartItems() {
     // debugger
     let { userCartItems } = this.props
