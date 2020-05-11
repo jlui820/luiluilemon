@@ -44,6 +44,10 @@
     margin-right: 12%;
 }
 
+.right-side-inner-container {
+
+}
+
 .nav-logo {
     height: 2.0625rem;
     margin-left: 16%;
@@ -84,7 +88,7 @@
 .search-bar {
     line-height: 1.2rem;
     padding-right: 30px;
-    padding-right: 12%;
+    // padding-right: 12%;
     padding-left: 10px;
     display: flex;
     align-items: center;
@@ -243,5 +247,6 @@
 
 
 .searchbar-icon-nav {
-    display: flex;
+    // border: 1px solid red;
+    // width: 200px;
 }
