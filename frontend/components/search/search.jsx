@@ -6,6 +6,7 @@ import SearchItem from "./search_item";
 class Search extends React.Component {
     constructor(props) {
         super(props)
+
         this.handleSearch = this.handleSearch.bind(this);
     }
 
@@ -24,7 +25,7 @@ class Search extends React.Component {
 
     render() {
         const searchResults = this.props.searches.map(product => (
-            <SearchItem key={product.id} product={product}/>))
+            <SearchItem clearSearch={this.props.clearSearch} key={product.id} product={product}/>))
         return (
             <div className="search-bar">
                 <div className="searchbar-icon">

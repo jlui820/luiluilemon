@@ -3,6 +3,9 @@ import ProductShow from './product_show'
 import { connect } from 'react-redux';
 import { fetchProduct, fetchProducts } from '../../actions/product_actions';
 import { createCartItem } from '../../actions/cart_actions';
+import { openModal, closeModal } from '../../actions/modal_actions';
+import { clearSearch } from '../../actions/search_actions';
+
 
 const mapStateToProps = (state, ownProps) => {
     // debugger
@@ -18,7 +21,10 @@ const mapDispatchToProps = dispatch => {
     fetchProducts: () => dispatch(fetchProducts()),
     fetchProduct: id => dispatch(fetchProduct(id)),
     createCartItem: cartItem => dispatch(createCartItem(cartItem)),
-    // createCartItem: product => dispatch(createCartItem(product)),
+    clearSearch: () => dispatch(clearSearch()),
+    
+    openModal: modal => dispatch(openModal(modal)),
+    closeModal: () => dispatch(closeModal())
     }
 }
 

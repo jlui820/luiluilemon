@@ -24,6 +24,7 @@ class Product extends React.Component {
 
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.id)
+        this.props.clearSearch()
     }
 
     render() {
@@ -121,6 +122,7 @@ class Product extends React.Component {
                                 <div className='product-details'>{product.details}</div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             )
