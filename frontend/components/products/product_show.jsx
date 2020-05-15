@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
     constructor(props) {
-        // debugger
         super(props)
         this.state = {
                 quantity: 1,
@@ -14,22 +13,19 @@ class Product extends React.Component {
     }
 
     addToCart(e) {
-        // debugger
         e.preventDefault()
         let { product } = this.props
-        // debugger
         product['quantity'] = this.state.quantity
         this.props.createCartItem({cart_item:{product: product}})
     }
 
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.id)
-        this.props.clearSearch()
+        // this.props.clearSearch()
     }
 
     render() {
         
-        // console.log(this.props.cartItems)
         let { product } = this.props
         if (!product) {
             return null;
@@ -92,7 +88,7 @@ class Product extends React.Component {
                                         <div className='pickup-text'>Pick up in-store</div>
                                 </div> */}
                                 <div className='add-to-bag-button-container'>
-                                    <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
+                                    <button className='add-to-bag-button' onClick={() => this.props.openModal("addToCart")} onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>
                                 <div className='free-ship-returns'>
                                     Free Shipping & Free Returns

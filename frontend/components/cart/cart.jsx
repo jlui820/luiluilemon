@@ -11,7 +11,7 @@ class Cart extends React.Component {
       productQty: 0,
     };
 
-    // this.deleteItem = this.deleteItem.bind(this);
+
     this.currentUserCartItems = this.currentUserCartItems.bind(this)
     this.total = this.total.bind(this);
     this.numberWithCommas = this.numberWithCommas.bind(this);
@@ -19,7 +19,6 @@ class Cart extends React.Component {
   }
 
   componentDidMount() {
-    // debugger
     this.props.getAllCartItems();
   }
 

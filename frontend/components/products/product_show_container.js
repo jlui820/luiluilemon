@@ -23,7 +23,7 @@ const mapDispatchToProps = dispatch => {
     createCartItem: cartItem => dispatch(createCartItem(cartItem)),
     clearSearch: () => dispatch(clearSearch()),
     
-    openModal: modal => dispatch(openModal(modal)),
+    openModal: (modal) => dispatch(openModal(modal)),
     closeModal: () => dispatch(closeModal())
     }
 }

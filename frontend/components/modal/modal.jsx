@@ -13,13 +13,13 @@ const Modal = ( {modal, closeModal } ) => {
     let component;
 
     switch(modal){
-        case "Sign Up":
+        case "signUp":
             component = <SignupFormContainer />;
             break;
-        case "Log In":
+        case "logIn":
             component = <LoginFormContainer />;
             break;
-        case "Add To Cart":
+        case "addToCart":
             component = <ProductShowContainer />;
             break;
         default: 
