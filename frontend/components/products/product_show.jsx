@@ -23,14 +23,18 @@ class Product extends React.Component {
     }
 
     componentDidMount() {
+        // const { product } = this.props.location.state;
+
+
         this.props.fetchProduct(this.props.match.params.id)
         this.props.clearSearch()
     }
-
+    
     render() {
         
         // console.log(this.props.cartItems)
-        let { product } = this.props
+        let  product  = this.props.product ? this.props.product : this.props.location.state.product;
+        // debugger
         if (!product) {
             return null;
         } else {
