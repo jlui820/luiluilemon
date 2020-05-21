@@ -9,6 +9,7 @@ import Footer from '../components/footer/footer'
 import ProductShowContainer from './products/product_show_container'
 import ProductIndexContainer from './products/product_index_container'
 import CartContainer from './cart/cart_container';
+import Modal from '../components/modal/modal';
 
 import SearchContainer from './search/search_container';
 
@@ -17,6 +18,7 @@ const App = () => (
         <header>
             <NavBarContainer />
         </header>
+            <Modal />
         <Switch>
             <Route exact path='/products/:id' component={ProductShowContainer} />
             <Route path='/products' component={ProductIndexContainer} />

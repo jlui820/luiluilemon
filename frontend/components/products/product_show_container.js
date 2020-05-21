@@ -1,10 +1,11 @@
 import React from 'react';
-import ProductShow from './product_show'
+import ProductShow from './product_show';
 import { connect } from 'react-redux';
 import { fetchProduct, fetchProducts } from '../../actions/product_actions';
 import { createCartItem } from '../../actions/cart_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import { clearSearch } from '../../actions/search_actions';
+import { withRouter } from 'react-router-dom';
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -29,5 +30,6 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductShow) 
+// export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ProductShow)) 
+export default (connect(mapStateToProps, mapDispatchToProps)(ProductShow)) 
 

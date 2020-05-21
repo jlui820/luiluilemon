@@ -19,7 +19,9 @@ class Product extends React.Component {
         let { product } = this.props
         // debugger
         product['quantity'] = this.state.quantity
-        this.props.createCartItem({cart_item:{product: product}})
+        this.props
+          .createCartItem({ cart_item: { product: product } })
+        //   .then(() => this.props.openModal("Add_To_Cart"));
     }
 
     componentDidMount() {
@@ -81,7 +83,7 @@ class Product extends React.Component {
                                 </p>
                             </div> */}
                             <div className='purchase-method'>
-                                {/* <div className='shipping-method'>
+                                <div className='shipping-method'>
                                     <div className='radio-button-container-holder'>
                                         <input type="radio" className='radio-button'/>
                                         <div className='ship-container'>Ship it to me</div>
@@ -93,13 +95,13 @@ class Product extends React.Component {
                                         <i className="fas fa-university"></i>
                                     </div>
                                         <div className='pickup-text'>Pick up in-store</div>
-                                </div> */}
+                                </div>
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>
-                                <div className='free-ship-returns'>
+                                {/* <div className='free-ship-returns'>
                                     Free Shipping & Free Returns
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className='reviews-container'>

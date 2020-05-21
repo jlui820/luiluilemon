@@ -86,7 +86,6 @@ class Footer extends React.Component {
               <div className="contact-us-container">
                 <div className="contact">Contact Us</div>
                 <div className="contact">Live Chat</div>
-                <div className="contact">1.877.263.9300</div>
                 <div className="contact">Email Sign Up</div>
               </div>
             </div>

@@ -4,6 +4,7 @@ import { closeModal } from '../../actions/modal_actions'
 import LoginFormContainer from '../sessions/login_form_container';
 import SignupFormContainer from '../sessions/signup_form_container';
 import ProductShowContainer from '../products/product_show_container';
+import CartModalContainer from '../cartModal/cart_modal_container';
 
 const Modal = ( {modal, closeModal } ) => {
     if (!modal) {
@@ -19,8 +20,10 @@ const Modal = ( {modal, closeModal } ) => {
         case "Log In":
             component = <LoginFormContainer />;
             break;
-        case "Add To Cart":
-            component = <ProductShowContainer />;
+        case "Add_To_Cart":
+            component = <CartModalContainer />;
+
+            //make new component i want to render after clicking 
             break;
         default: 
             return null
