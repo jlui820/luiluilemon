@@ -4,7 +4,6 @@ import NavBar from './navbar';
 import { logout } from '../../actions/session_actions';
 import  { fetchProducts } from '../../actions/product_actions';
 
-
 const mapStateToProps = state => ({
     currentUser: state.entities.users[state.session.id],
     allProducts: Object.values(state.entities.products)
@@ -12,7 +11,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     logout: () => dispatch(logout()),
-    fetchProducts: () => dispatch(fetchProducts())
+    fetchProducts: () => dispatch(fetchProducts()),
+
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar)

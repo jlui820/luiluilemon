@@ -15,8 +15,9 @@ class Search extends React.Component {
             this.props.clearSearch()
         }else{
             this.props.getResults(e.target.value)
-        }
+        } 
     }
+    
 
     componentDidMount() {
         this.props.clearSearch()

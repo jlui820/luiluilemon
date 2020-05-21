@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
     constructor(props) {
-        // debugger
+        // debuggerger
         super(props)
         this.state = {
                 quantity: 1,
@@ -34,7 +34,6 @@ class Product extends React.Component {
         
         // console.log(this.props.cartItems)
         let  product  = this.props.product ? this.props.product : this.props.location.state.product;
-        // debugger
         if (!product) {
             return null;
         } else {

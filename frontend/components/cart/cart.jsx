@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
   constructor(props) {
-    // debugger
+    debugger
     super(props);
     this.state = {
       total: 0,
@@ -16,6 +16,8 @@ class Cart extends React.Component {
     this.total = this.total.bind(this);
     this.numberWithCommas = this.numberWithCommas.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.increaseQuantity = this.increaseQuantity.bind(this);
+    this.decreaseQuantity = this.decreaseQuantity.bind(this)
   }
 
   componentDidMount() {
@@ -29,6 +31,16 @@ class Cart extends React.Component {
     }
   }
 
+  increaseQuantity(e) {
+    e.preventDefault();
+    this.setState({quantity: this.state.quantity + 1})
+  }
+  decreaseQuantity(e) {
+      e.preventDefault();
+      if (this.state.quantity > 1) {
+          this.setState({ quantity: this.state.quantity - 1 });
+      }
+  }
 
   updateTotalPrice() {
     let sum = 0;
@@ -61,6 +73,19 @@ class Cart extends React.Component {
 
   total(cartItem) {
     return cartItem[1].product.price * cartItem[1].quantity
+  }
+
+
+  increaseQuantity(e) {
+    e.preventDefault();
+    this.setState({ productQty: this.state.productQty + 1 });
+  }
+
+  decreaseQuantity(e) {
+    e.preventDefault();
+    if (this.state.productQty > 1) {
+      this.setState({ productQty: this.state.productQty - 1 });
+    }
   }
 
 
@@ -136,6 +161,11 @@ class Cart extends React.Component {
                               <p className="cart-item-quantity">Quantity</p>
                               <div className="cart-quantity">
                                 {cartItem[1].quantity}
+                                {/* <span>
+                                    <button onClick={this.decreaseQuantity} onChange={this.update}>-</button>
+                                        <h1>{this.state.productQty}</h1>
+                                    <button onClick={this.increaseQuantity} onChange={this.update}>+</button>
+                                </span> */}
                               </div>
                             </div>
                             <div className="cart-total">

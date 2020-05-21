@@ -16,7 +16,7 @@ class MainBodyProducts extends React.Component {
         // let product = this.props.products.map((product) => {
         //   return <ProductIndexItem product={product} key={product.id} />;
         // });
-
+        // debugger
         return (
             <div className='main-container'>
                 <div className='item'>

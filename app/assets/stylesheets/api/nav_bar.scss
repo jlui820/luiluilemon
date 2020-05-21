@@ -22,7 +22,7 @@
     // width: 100vw;
     width: 100%;
     // position: fixed;
-    min-width: 86rem;
+    // min-width: 86rem;
 }
 
 .left-side-nav-bar {
@@ -30,7 +30,7 @@
    align-items: center;
    font-weight: 700;
    justify-content: space-evenly;
-   max-width: 808px;
+   min-width: 30.375rem;
    width: 37%;
    margin-left: 6%;
 }
@@ -42,6 +42,7 @@
     font-size: .8rem;
     letter-spacing: .09375rem;
     margin-right: 12%;
+    min-width: 21.625rem;
 }
 
 .right-side-inner-container {
@@ -196,3 +197,6 @@
     // border: 1px solid red;
     // width: 200px;
 }
+
+
+

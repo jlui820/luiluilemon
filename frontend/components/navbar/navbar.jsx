@@ -90,7 +90,7 @@ class NavBar extends React.Component {
                         <div className="line-break">|</div>
                         <div className='right-side-inner-container'>
                             <div className='search-bar-nav'>
-                                <div className='searchbar-icon-nav'>                                  
+                                <div onClick={this.props.clearSearch} className='searchbar-icon-nav'>                                  
                                     <SearchContainer />
                                 </div>
                                 <div className='nav-cart'>
