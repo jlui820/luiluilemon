@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
   constructor(props) {
-    debugger
+    // debugger
     super(props);
     this.state = {
       total: 0,
@@ -113,7 +113,7 @@ class Cart extends React.Component {
     const { cartItems } = this.props;
     const { currentUser } = this.props;
     let cartItemsObj = Object.entries(this.currentUserCartItems())
-    // debugger
+    
 
     const cart_page = currentUser ? (
       <div className="whole-cart-page-wrapper">
@@ -126,7 +126,7 @@ class Cart extends React.Component {
             <div className="left-cart-index-item-div">
               {cartItemsObj.map((cartItem) => {
                 let product = cartItem[1].product;
-                // debugger
+                
                 return (
                   <div className="cart-product-info" key={cartItem[1].cartItemId}>
                     <Link className="cart-product-link" to={`/products/${product.id}`}>

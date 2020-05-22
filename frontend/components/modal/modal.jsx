@@ -5,6 +5,7 @@ import LoginFormContainer from '../sessions/login_form_container';
 import SignupFormContainer from '../sessions/signup_form_container';
 import ProductShowContainer from '../products/product_show_container';
 import CartModalContainer from '../cartModal/cart_modal_container';
+// import CartModal from '../cartModal/cartModal';
 
 const Modal = ( {modal, closeModal } ) => {
     if (!modal) {
@@ -14,10 +15,10 @@ const Modal = ( {modal, closeModal } ) => {
     let component;
 
     switch(modal){
-        case "Sign Up":
+        case "Sign_Up":
             component = <SignupFormContainer />;
             break;
-        case "Log In":
+        case "Log_In":
             component = <LoginFormContainer />;
             break;
         case "Add_To_Cart":

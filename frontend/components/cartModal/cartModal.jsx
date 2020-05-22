@@ -6,7 +6,9 @@ class CartModal extends React.Component {
         return (
             <div>
                 <h3>Added To Your Bag</h3>
-                <a href="#cart">View Bag</a>
+                <button className="view-bag" onClick={this.props.closeModal}>
+                    <a href="#cart">View Bag</a>
+                </button>
             </div>
         )
     }
