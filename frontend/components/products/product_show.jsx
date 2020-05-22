@@ -21,7 +21,7 @@ class Product extends React.Component {
         product['quantity'] = this.state.quantity
         this.props
           .createCartItem({ cart_item: { product: product } })
-        //   .then(() => this.props.openModal("Add_To_Cart"));
+          .then(() => this.props.openModal("Add_To_Cart"));
     }
 
     componentDidMount() {
