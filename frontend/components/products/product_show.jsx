@@ -35,7 +35,7 @@ class Product extends React.Component {
     render() {
         
         // console.log(this.props.cartItems)
-        let  product  = this.props.product ? this.props.product : this.props.location.state.product;
+        let  product  = this.props && this.props.product ? this.props.product : this.props.location.state.product;
         if (!product) {
             return null;
         } else {
