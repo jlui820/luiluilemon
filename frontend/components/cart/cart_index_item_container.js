@@ -4,7 +4,6 @@ import CartIndexItem from './cart_index_item';
 import { getAllCartItems, deleteCartItem, getCartItem, createCartItem} from '../../actions/cart_actions'
 
 const mapStateToProps = state => {
-    // debugger
     return({
     products: Object.values(state.entities.products),
     cartItems: Object.values(state.entities.cartItems),
@@ -12,7 +11,6 @@ const mapStateToProps = state => {
 })}
 
 const mapDispatchToProps = dispatch => {
-    // debugger
 
     return ({
     getAllCartItems: () => dispatch(getAllCartItems()),

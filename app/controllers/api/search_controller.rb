@@ -1,7 +1,7 @@
 class Api::SearchController < ApplicationController
 
     def show
-        @products = Product.where("LOWER(name) LIKE ?", "%#{params[:id]}%")
+        @products = Product.where("(name) LIKE ?", "%#{params[:id]}%")
         render :show    
     end
 end

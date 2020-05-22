@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
   constructor(props) {
-    // debugger
     super(props);
     this.state = {
       total: 0,
@@ -21,7 +20,6 @@ class Cart extends React.Component {
   }
 
   componentDidMount() {
-    // debugger
     this.props.getAllCartItems();
   }
 
@@ -91,10 +89,9 @@ class Cart extends React.Component {
 
 
   currentUserCartItems() {
-    // debugger
     let { userCartItems } = this.props
     let currentCartItems = {}
-    // debugger
+
     userCartItems.forEach(userCartItem => {
       if (currentCartItems[userCartItem.productId]) {
         currentCartItems[userCartItem.productId].quantity += userCartItem.quantity
