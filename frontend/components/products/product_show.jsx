@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 class Product extends React.Component {
     constructor(props) {
-        // debuggerger
         super(props)
         this.state = {
                 quantity: 1,
@@ -14,10 +13,8 @@ class Product extends React.Component {
     }
 
     addToCart(e) {
-        // debugger
         e.preventDefault()
         let { product } = this.props
-        // debugger
         product['quantity'] = this.state.quantity
         this.props
           .createCartItem({ cart_item: { product: product } })
@@ -33,9 +30,9 @@ class Product extends React.Component {
     }
     
     render() {
-        
-        // console.log(this.props.cartItems)
-        let  product  = this.props && this.props.product ? this.props.product : this.props.location.state.product;
+
+        // let  product  = this.props && this.props.product ? this.props.product : this.props.location.state.product;
+        let  product  = this.props ? this.props.product : this.props.location.state.product;
         if (!product) {
             return null;
         } else {

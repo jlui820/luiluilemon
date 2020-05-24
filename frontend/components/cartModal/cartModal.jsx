@@ -5,11 +5,9 @@ class CartModal extends React.Component {
 
     render () {
         return (
-            <div className='cart-modal-container'>
+            <div className='cart-modal-container'onClick={this.props.closeModal}>
                 <h3 className='cart-modal-header'>Added To Your Bag</h3>
-                <button className="view-bag" onClick={this.props.closeModal}>
-                    <a className='cart-modal-button' href="#cart">View Bag</a>
-                </button>
+                 <a className='cart-modal-button' onClick={this.props.closeModal} href="#cart">View Bag</a>
             </div>
         )
     }
