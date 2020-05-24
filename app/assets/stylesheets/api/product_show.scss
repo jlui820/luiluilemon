@@ -28,6 +28,7 @@
     width: 23%;
     justify-content: space-evenly;
 }
+
 .main-product-description {
     box-sizing: border-box;
     font-size: 2rem;
@@ -66,7 +67,7 @@
     width: 2.112rem;
     margin: 1rem;
     padding: 1rem;
-    outline:none;
+    outline: none;
     border-color: #d5d5d5;
     // border-spacing: 10px;
 
@@ -75,7 +76,7 @@
 .color-buttons:hover {
     border-radius: 50px;
     padding: 2px;
-    border-color:5px solid #d5d5d5;
+    border-color: 5px solid #d5d5d5;
     cursor: pointer;
     border: 1px solid #777777;
     //  border-spacing: 10px;
@@ -107,7 +108,7 @@
     height: 2.25rem;
     width: 2.25rem;
     padding: 0 .53125rem;
-    
+
 }
 
 .clothes-size-button:hover {
@@ -157,10 +158,12 @@
     font-size: .9rem;
     color: #57585b
 }
+
 .radio-button {
     margin-right: .625rem;
     color: red;
 }
+
 .pickup-container {
     display: flex;
     align-items: center;
@@ -210,7 +213,7 @@
 }
 
 .add-to-bag-button-container {
-        margin: .5rem .625rem;
+    margin: .5rem .625rem;
 }
 
 .details-container {
@@ -312,21 +315,3 @@
 
 
 
-
-.modal-background {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    // background: rgba(0, 0, 0, 0.7);
-    background: white;
-    z-index: 10;
-}
-
-.modal-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
