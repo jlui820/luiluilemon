@@ -10,8 +10,15 @@ Technologies
 * Heroku
 * Postgresql
 * JBuilder
+* Javascript
 
 Features 
 
 User Auth
 Users are able to sign in / sign out / log in securely. 
+
+Products
+
+Shopping Cart
+
+Search Function
