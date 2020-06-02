@@ -58,9 +58,9 @@ class NavBar extends React.Component {
                             <ul className='dropdrop'>
                                 <li className='dropdown'>
                                     <a href="">WOMEN</a>
-                                    <div className='dropdown-content'> 
+                                    {/* <div className='dropdown-content'> 
                                         <a className='dropdown-content-list' href="">Womens Clothes</a>
-                                    </div>
+                                    </div> */}
                                 </li>   
                                 <li className='dropdown'>
                                     <a href="" className='dropbtn'>MEN</a>
@@ -70,15 +70,15 @@ class NavBar extends React.Component {
                                 </li>   
                                 <li className='dropdown'>
                                     <a href="" className='dropbtn'>GIRLS</a>
-                                    <div className='dropdown-content'>
+                                    {/* <div className='dropdown-content'>
                                         <a className='dropdown-content-list' href="">Girls</a>
-                                    </div>
+                                    </div> */}
                                 </li>   
                                 <li className='dropdown'>
                                     <a href="" className='dropbtn'>ACCESSORIES</a>
-                                    <div className='dropdown-content'>
+                                    {/* <div className='dropdown-content'>
                                         <a className='dropdown-content-list' href="">Accessories</a>
-                                    </div>
+                                    </div> */}
                                 </li>   
                             </ul>    
                         </div>
