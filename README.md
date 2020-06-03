@@ -1,4 +1,4 @@
-# README
+# Luiluilemon
 
 Luiluilemon is a Lululemon clone, an ecommerce website for athletic apparel. 
 
