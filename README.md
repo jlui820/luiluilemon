@@ -1,14 +1,25 @@
-# README
+# Luiluilemon
 
-Luiluilemon is a Lululemon clone, an ecommerce website for athletic apparel. 
+[Live Site](https://luiluilemon.herokuapp.com/#/)
 
-Technologies
-* React
-* Redux
-* Ruby on Rails
-* AWS
-* Heroku
-* Postgresql
+Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
+
+![alt text](./screenshots/splash.png)
+
+## Technologies
+
+### Backend
+  * Ruby on Rails
+  * Postgresql
+
+### Frontend
+  * React
+  * Redux
+
+### Other
+  * AWS
+  * Heroku
+
 * JBuilder
 * Javascript
 
@@ -22,3 +33,4 @@ Products
 Shopping Cart
 
 Search Function
+
