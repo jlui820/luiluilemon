@@ -4,7 +4,8 @@
 
 Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
 
-![alt text](./screenshots/splash.png)
+![](.screenshots/splash.png)
+
 
 ## Technologies
 
