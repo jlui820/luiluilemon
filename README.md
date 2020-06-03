@@ -1,8 +1,8 @@
 # Luiluilemon
 
 [Live Site](https://luiluilemon.herokuapp.com/#/)
-Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
 
+Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
 
 
 ## Technologies
@@ -33,5 +33,3 @@ Shopping Cart
 
 Search Function
 
-
-<h1>hello</h1>
