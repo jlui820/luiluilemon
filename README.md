@@ -2,7 +2,7 @@
 
 Luiluilemon is a Lululemon clone, an ecommerce website for athletic apparel. 
 
-Technologies
+## Technologies
 * React
 * Redux
 * Ruby on Rails
