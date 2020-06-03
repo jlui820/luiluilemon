@@ -1,6 +1,9 @@
 # Luiluilemon
 
-Luiluilemon is a Lululemon clone, an ecommerce website for athletic apparel. 
+[Live Site](https://luiluilemon.herokuapp.com/#/)
+Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
+
+
 
 ## Technologies
 
