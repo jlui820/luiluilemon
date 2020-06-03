@@ -7,7 +7,6 @@ class SearchItem extends React.Component {
   }
 
   render() {
-    // debugger
     return (
       // <div className='search-products'>
       <Link onClick={this.props.clearSearch}
