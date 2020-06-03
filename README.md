@@ -66,4 +66,12 @@ Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel co
     end
 ```
 
+### Cart
+
+![cart](./screenshots.cart.png)
+
+ * Displays all user cart items
+ * Price and quantity are updated as items are added or removed
+ * Clicking on product image will redirect user back to product show page
+ 
 
