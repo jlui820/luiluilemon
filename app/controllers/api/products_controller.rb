@@ -1,9 +1,6 @@
 class Api::ProductsController < ApplicationController
-    # debugger
     def index
-
         if params[:itemtype]
-            # debugger
             @products = Product.where(itemtype: params[:itemtype])
         else
             @products = Product.all

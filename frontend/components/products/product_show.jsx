@@ -25,23 +25,6 @@ class Product extends React.Component {
         this.props.fetchProduct(this.props.match.params.id)
         this.props.clearSearch()
     }
-
-
-    // componentWillUnmount() {
-    //     document.addEventListener('mousedown', this.handleClick, false);
-    // }
-
-    // componentWillUnmount() {
-    //     document.removeEventListener('mousedown', this.handleClick, false);
-    // }
-
-    // handleClick = (e) => {
-    //     if (this.componentDidUpdate.contains(e.target)) {
-    //         return;
-    //     }
-
-    //     this.handleClickOutside();
-    // }
     
     render() {
 

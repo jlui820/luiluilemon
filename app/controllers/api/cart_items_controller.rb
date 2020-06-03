@@ -14,10 +14,7 @@ class Api::CartItemsController < ApplicationController
         @cart_item.user_id = @current_user.id
         # debugger
         if @cart_item.save
-            # @cart_item.product = cart_items_params[:product]
             render :show
-            # want to send up product json object we just added 
-            # can creat @product extract what we want
         else
             render json: @cart_item.errors.full_messages, status: 422
         end
