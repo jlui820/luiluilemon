@@ -11,8 +11,6 @@ class CartIndexItem extends React.Component {
     // }
 
     render() {
-      // debugger
-
       return (
         <div className="cart-index-item-div">
           {this.props.cartItems.map((cartItem, idx) => {

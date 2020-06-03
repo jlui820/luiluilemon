@@ -9,7 +9,6 @@ import { withRouter } from 'react-router-dom';
 
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
     return {
         product: state.entities.products[ownProps.match.params.id],
         cartItem: state.entities.cartItems,
@@ -17,7 +16,6 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = dispatch => {
-    // debugger
     return {
     fetchProducts: () => dispatch(fetchProducts()),
     fetchProduct: id => dispatch(fetchProduct(id)),
@@ -31,5 +29,4 @@ const mapDispatchToProps = dispatch => {
 
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ProductShow)) 
-// export default (connect(mapStateToProps, mapDispatchToProps)(ProductShow)) 
 

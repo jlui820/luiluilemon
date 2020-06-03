@@ -11,7 +11,6 @@ export const fetchProduct = id =>
     })
     
 export const fetchProductsByType = (itemtype, searchTerm) => {
-    // debugger
     return $.ajax({
         method: 'GET',
         url: `/api/products`,

@@ -7,12 +7,11 @@ class Api::CartItemsController < ApplicationController
     end
 
     def create
-        # debugger
         @cart_item = CartItem.new
         @cart_item.product_id = cart_items_params[:product][:id]
         @cart_item.quantity = cart_items_params[:product][:quantity]
         @cart_item.user_id = @current_user.id
-        # debugger
+
         if @cart_item.save
             render :show
         else

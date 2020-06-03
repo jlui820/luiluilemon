@@ -18,10 +18,8 @@ class CartIndex extends React.Component {
           currentUser={this.props.currentUser}
         />
       );
-      // debugger
     });
-    console.log(cartItems);
-    debugger;
+
     return (
       <div className="cart-index-wrapper">
         <div className="left-side-contaner">

@@ -18,7 +18,6 @@ class ProductIndex extends React.Component {
     }
 
     handleGetProduct(e){
-        // debugger
         e.preventDefault()
         const itemtype = e.currentTarget.value
         return(
@@ -34,7 +33,6 @@ class ProductIndex extends React.Component {
     render() {
         
         const { products } = this.state
-        // debugger
         if(!products) return null
         let product = this.props.products.map(product => {
             return <ProductIndexItem product={product} key={product.id}/>
