@@ -4,7 +4,7 @@
 
 Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel company. 
 
-![](.screenshots/splash.png)
+![splash](./screenshots/splash.png)
 
 
 ## Technologies
@@ -21,17 +21,36 @@ Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel co
   * AWS
   * Heroku
 
-* JBuilder
-* Javascript
 
-Features 
+## Features 
 
-User Auth
-Users are able to sign in / sign out / log in securely. 
+### User Authentication
+  * Secure User Auth created using BCrypt hasing
+  * Users are able to create an account, login, and logout of an account 
+  
+```
+    def self.find_by_credentials(email, password)
+        user = User.find_by(email: email)
+        return nil if user.nil?
+        user.is_password?(password) ? user : nil
+    end
 
-Products
+    def password=(password)
+        @password = password
+        self.password_digest = BCrypt::Password.create(password)    
+    end
 
-Shopping Cart
+    def is_password?(password)
+        BCrypt::Password.new(self.password_digest).is_password?(password)
+    end
 
-Search Function
+    def reset_session_token!
+        self.session_token = SecureRandom.urlsafe_base64(16)
+        self.save!
+        self.session_token
+    end
+```
+  * Demo account available
+  
+![demo](demo-login.gif)
 
