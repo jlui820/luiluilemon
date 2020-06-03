@@ -6,21 +6,17 @@ Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel co
 
 ![splash](./screenshots/splash.png)
 
-
 ## Technologies
 
 ### Backend
   * Ruby on Rails
   * Postgresql
-
 ### Frontend
   * React
   * Redux
-
 ### Other
   * AWS
   * Heroku
-
 
 ## Features 
 
@@ -53,4 +49,21 @@ Luiluilemon is an e-commerce website inspired by Lululemon, a fitness apparel co
   * Demo account available
   
 ![](screenshots/demo-login.gif)
+
+### Product Index 
+
+![productidx](./screenshots/productIdx.png)
+  * Allow users to view all products or filter out by type
+     
+```
+    def index
+        if params[:itemtype]
+            @products = Product.where(itemtype: params[:itemtype])
+        else
+            @products = Product.all
+        end
+        render :index
+    end
+```
+
 
