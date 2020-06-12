@@ -19,7 +19,7 @@ class MainBodyProducts extends React.Component {
             <div className='main-container'>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <Link to={`/products/8`}>
+                        <Link to={`/products/55`}>
                             <img className='front-page-items_front-image main-shirt' src={window.metal}/>
                             {/* <img className='front-page-items_back-image' src={window.pinkjogger2}/> */}
                             <h3 className='product-description'>Metal Vent Tech Short Sleeve 2.0</h3>
@@ -29,7 +29,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div className='item'>
                     <div className='main-product-item'>
-                        <Link to={`/products/9`}>
+                        <Link to={`/products/56`}>
                         <img className='front-page-items_front-image main-shirt' src={window.metal1} />
                         {/* <img className='front-page-items_back-image' src={window.greyjogger2} /> */}
                         <h3 className='product-description'>Metal Vent Tech Short Sleeve 2.0</h3>
@@ -39,7 +39,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div>
                     <div className='main-product-item'>
-                        <Link to={`/products/2`}>
+                        <Link to={`/products/49`}>
                         <img className='front-page-items_front-image' src={window.shorts4} />
                         {/* <img className='front-page-items_back-image' src={window.shorts3} /> */}
                         <div className='product-description'>T.H.E Short 9"</div>
@@ -49,7 +49,7 @@ class MainBodyProducts extends React.Component {
                 </div>
                 <div>
                     <div className='main-product-item'>
-                        <Link to={`/products/3`}>
+                        <Link to={`/products/50`}>
                         <img className='front-page-items_front-image' src={window.shorts2} />
                         {/* <img className='front-page-items_back-image' src={window.shorts} /> */}
                         <h3 className='product-description'>T.H.E Short 9"</h3>
