@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 
 class Product extends React.Component {
@@ -15,10 +16,15 @@ class Product extends React.Component {
     addToCart(e) {
         e.preventDefault()
         let { product } = this.props
-        product['quantity'] = this.state.quantity
-        this.props
-          .createCartItem({ cart_item: { product: product } })
-          .then(() => this.props.openModal("Add_To_Cart"));
+        
+        if (this.props.currentUser) {
+            product['quantity'] = this.state.quantity
+            this.props
+                .createCartItem({ cart_item: { product: product } })
+                .then(() => this.props.openModal("Add_To_Cart"));
+        } else {
+            this.props.history.push("/UserSession")
+        }
     }
 
     componentDidMount() {
@@ -129,4 +135,4 @@ class Product extends React.Component {
     }   
 }
 
-export default Product; 
+export default withRouter(Product); 
