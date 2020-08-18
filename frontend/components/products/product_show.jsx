@@ -90,12 +90,6 @@ class Product extends React.Component {
                                     </div>
                                         <div className='free-ship'>Free shipping and returns</div>
                                 </div>
-                                <div className='pickup-container'>
-                                    <div className='pickup-icon'>
-                                        <i className="fas fa-university"></i>
-                                    </div>
-                                        <div className='pickup-text'>Pick up in-store</div>
-                                </div>
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>

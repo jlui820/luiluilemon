@@ -4,15 +4,12 @@
     box-sizing: border-box;
     justify-content: center;
     width: 100vw;
-    // border: 1px solid red;
-    // margin-top: 4.688rem;
     margin-top: 5.688rem;
 }
 
 .product-left-side-img {
     display: flex;
     width: 40%;
-    // border: 1px0 solid red;
     height: auto;
 }
 
@@ -20,7 +17,6 @@
     display: flex;
     padding: .5rem;
     box-sizing: border-box;
-    // border: 1px solid blue;
     padding-right: .78125rem;
     padding-left: .78125rem;
     flex-direction: column;
@@ -69,8 +65,6 @@
     padding: 1rem;
     outline: none;
     border-color: #d5d5d5;
-    // border-spacing: 10px;
-
 }
 
 .color-buttons:hover {
@@ -81,13 +75,6 @@
     border: 1px solid #777777;
     //  border-spacing: 10px;
 }
-
-//  .color-buttons:active, 
-//  .color-buttons:focus 
-//  {
-//      border:0.5em solid #00c; /* here configure as your needs */
-//      color:#00c;
-//   }
 
 .size-container {
     box-sizing: border-box;

@@ -57,25 +57,25 @@ class NavBar extends React.Component {
                         <div className='dropdown-nav'>
                             <ul className='dropdrop'>
                                 <li className='dropdown'>
-                                    <a href="">WOMEN</a>
+                                    {/* <a href=""></a> */}
                                     {/* <div className='dropdown-content'> 
                                         <a className='dropdown-content-list' href="">Womens Clothes</a>
                                     </div> */}
                                 </li>   
                                 <li className='dropdown'>
-                                    <a href="" className='dropbtn'>MEN</a>
+                                    <a href="" className='dropbtn'>Clothing</a>
                                     <div className='dropdown-content'> 
                                         <a className='dropdown-content-list' href="#products">Mens Clothes</a>
                                     </div>
                                 </li>   
                                 <li className='dropdown'>
-                                    <a href="" className='dropbtn'>GIRLS</a>
+                                    {/* <a href="" className='dropbtn'></a> */}
                                     {/* <div className='dropdown-content'>
                                         <a className='dropdown-content-list' href="">Girls</a>
                                     </div> */}
                                 </li>   
                                 <li className='dropdown'>
-                                    <a href="" className='dropbtn'>ACCESSORIES</a>
+                                    {/* <a href="" className='dropbtn'></a> */}
                                     {/* <div className='dropdown-content'>
                                         <a className='dropdown-content-list' href="">Accessories</a>
                                     </div> */}

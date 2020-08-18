@@ -29,19 +29,13 @@ class Body extends React.Component {
                         <div className='left-container-title'>luiluilemon</div>
                         <ul className='left-container-lists-wrapper'>
                             <li className='left-container-list-item'>
-                                <Link to="" className='click-category-link' href="">Women's What's New</Link>
-                            </li>
-                            <li className='left-container-list-item'>
                                 <Link to="" className='click-category-link' href="">All Women's</Link>
                             </li>
                             <li className='left-container-list-item'>
-                                <Link to="/products" className='click-category-link' href="">All Men's</Link>
+                                <Link to="/products" className='click-category-link mens-clothes' href="">All Men's</Link>
                             </li>
                             <li className='left-container-list-item'>
                                 <Link to="" className='click-category-link' href="">All Girls'</Link>
-                            </li>
-                            <li className='left-container-list-item'>
-                                <Link to="" className='click-category-link' href="">All Accessories</Link>
                             </li>
                         </ul>
                     </div>

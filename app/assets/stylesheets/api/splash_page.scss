@@ -39,10 +39,9 @@
 
 
 .left-container {
-    // border: 1px solid pink;
     display: flex;
     flex-direction: column;
-    height: 18.3125rem;
+    height: 14rem;
     width: 14.375rem;
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -50,11 +49,8 @@
     background: white;
     position: absolute;
     left: 8%;
-    bottom: 30%;
+    bottom: 40%;
     z-index: 1;  
-      
-    // height: 35%;
-    // width: 20%;
 }
 
 .left-container-title {
@@ -85,11 +81,6 @@
     
 }
 
-.click-category-link {
-    text-decoration: none;
-
-}
-
 .fas.fa-shopping-cart {
     padding-left: 10px;
 }
@@ -99,9 +90,18 @@
       border-color: #4c4;
 }
 
-.click-category-link:hover {
+.click-category-link {
+    cursor: default;
+}
+
+.mens-clothes {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mens-clothes:hover {
     border-bottom: .1575rem solid;
-    // border-color: #d22030;
     border-color: #d22030;
     transition: all .35s ease-in-out;
 }
+
