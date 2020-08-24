@@ -7,11 +7,10 @@ class MainBodyProducts extends React.Component {
         super(props)
     }
 
-
-
     render() {
-        // const { products } = this.props;
-
+        
+        console.log(this.props.product);
+        const { product } = this.props;
         // let product = this.props.products.map((product) => {
         //   return <ProductIndexItem product={product} key={product.id} />;
         // });

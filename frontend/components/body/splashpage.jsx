@@ -8,9 +8,7 @@ class Body extends React.Component {
         super(props) 
     }
 
-
     render() {
-  
         $(function () {
           $(".splash-page-main-image-container img:gt(0)").hide();
           setInterval(function () {

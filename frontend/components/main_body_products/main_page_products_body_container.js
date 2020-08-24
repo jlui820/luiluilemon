@@ -3,10 +3,9 @@ import {connect} from 'react-redux';
 import MainBodyProducts from './main_page_products_body'
 import { fetchProducts, fetchProductsByCategory } from '../../actions/product_actions';
 
-const mapStateToProps = state => {
-
+const mapStateToProps = (state,ownProps) => {
     return {
-        products: Object.values(state.entities.products)
+        product: state.entities.products[ownProps.match.params.id]
     }
 }
 
