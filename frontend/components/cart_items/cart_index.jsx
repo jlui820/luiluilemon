@@ -6,10 +6,6 @@ class CartIndex extends React.Component {
     super(props);
   }
 
-//   componentDidMount() {
-//     this.props.fetchProduct(this.props.match.params.id);
-//   }
-
   render() {
     let cartItems = this.props.cartItems.map((cartItem, idx) => {
       return (

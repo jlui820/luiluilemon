@@ -5,11 +5,7 @@ class CartIndexItem extends React.Component {
     constructor(props) {
       super(props) 
     }
-
-    //  componentDidMount() {
-    //     this.props.getAllCartItems();
-    // }
-
+    
     render() {
       return (
         <div className="cart-index-item-div">

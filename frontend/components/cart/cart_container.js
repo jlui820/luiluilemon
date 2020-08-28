@@ -6,9 +6,6 @@ const mapStateToProps = state => {
     return ({
     userCartItems: Object.values(state.entities.cartItems),
     cartItems: Object.values(state.entities.cartItems),
-    // currentUserId: state.session.id,
-
-    //test below
     currentUser: state.entities.users[state.session.id],
 })}
 
