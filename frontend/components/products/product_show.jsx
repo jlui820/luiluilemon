@@ -54,34 +54,6 @@ class Product extends React.Component {
                         </div>
                         <div className='clothes-description-container'>
                             <div>{product.color}</div>
-                            <div className='color-description-container'>
-                                <div className='color-description-characteristics'></div>
-                                <div className='color-description-characteristics'></div>
-                                <div className='color-description-characteristics'></div>
-                            </div>
-                            <div className='color-buttons-container'>
-                                {/* {this.props.product.color} */}
-                                {/* <button className='color-buttons first'></button>
-                                <button className='color-buttons second'></button>
-                                <button className='color-buttons third'></button> */}
-                            </div>
-                            {/* <div className='model-characteristics-container'>
-                                <div className='model-description'>model description</div>
-                                <div className='size-guide'></div>
-                            </div> */}
-                            <div className='size-container'>
-                                {/* <button className='clothes-size-button'>S</button>
-                                <button className='clothes-size-button'>M</button>
-                                <button className='clothes-size-button'>L</button> */}
-                            </div>  
-
-
-
-                            {/* <div className='description-container'>
-                                <p>
-                                  {product.description}  
-                                </p>
-                            </div> */}
                             <div className='purchase-method'>
                                 {/* <div className='shipping-method'>
                                     <div className='radio-button-container-holder'>
@@ -93,9 +65,6 @@ class Product extends React.Component {
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>
-                                {/* <div className='free-ship-returns'>
-                                    Free Shipping & Free Returns
-                                </div> */}
                             </div>
                         </div>
                         <div className='reviews-container'>
