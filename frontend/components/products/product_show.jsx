@@ -83,13 +83,13 @@ class Product extends React.Component {
                                 </p>
                             </div> */}
                             <div className='purchase-method'>
-                                <div className='shipping-method'>
+                                {/* <div className='shipping-method'>
                                     <div className='radio-button-container-holder'>
                                         <input type="radio" className='radio-button'/>
                                         <div className='ship-container'>Ship it to me</div>
                                     </div>
                                         <div className='free-ship'>Free shipping and returns</div>
-                                </div>
+                                </div> */}
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>
