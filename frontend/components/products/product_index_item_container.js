@@ -5,7 +5,7 @@ import ProductIndexItem from './product_index_item'
 const mapStateToProps = state => {
 
     return {
-        // colors: Object.values(state.entities.products.colors)
+    
     }
 }
 

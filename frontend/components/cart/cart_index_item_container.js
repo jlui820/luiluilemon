@@ -1,7 +1,7 @@
 import{ connect } from 'react-redux';
 import React from 'react';
 import CartIndexItem from './cart_index_item';
-import { getAllCartItems, deleteCartItem, getCartItem, createCartItem} from '../../actions/cart_actions'
+import { getAllCartItems, deleteCartItem, getCartItem, createCartItem } from '../../actions/cart_actions'
 
 const mapStateToProps = state => {
     return({

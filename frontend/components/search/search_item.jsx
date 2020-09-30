@@ -7,21 +7,22 @@ class SearchItem extends React.Component {
   }
 
   render() {
+    let { product, clearSearch } = this.props
     return (
       // <div className='search-products'>
-      <Link onClick={this.props.clearSearch}
+      <Link onClick={clearSearch}
         to={{
-          pathname: `/products/${this.props.product.id}`,
+          pathname: `/products/${product.id}`,
           state: {
-            product: this.props.product,
+            product: product,
           },
         }}
         className="search-product-items"
       >
-        <img src={this.props.product.photo} className="search-product-items-img"/>
+        <img src={product.photo} className="search-product-items-img"/>
         <div className="search-product-items-info">
           <div className="search-product-items-name">
-            {this.props.product.name}
+            {product.name}
           </div>
         </div>
       </Link>

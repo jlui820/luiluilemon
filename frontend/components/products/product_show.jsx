@@ -33,7 +33,6 @@ class Product extends React.Component {
     }
     
     render() {
-
         // let  product  = this.props && this.props.product ? this.props.product : this.props.location.state.product;
         let  product  = this.props ? this.props.product : this.props.location.state.product;
         if (!product) {
@@ -55,13 +54,6 @@ class Product extends React.Component {
                         <div className='clothes-description-container'>
                             <div>{product.color}</div>
                             <div className='purchase-method'>
-                                {/* <div className='shipping-method'>
-                                    <div className='radio-button-container-holder'>
-                                        <input type="radio" className='radio-button'/>
-                                        <div className='ship-container'>Ship it to me</div>
-                                    </div>
-                                        <div className='free-ship'>Free shipping and returns</div>
-                                </div> */}
                                 <div className='add-to-bag-button-container'>
                                     <button className='add-to-bag-button' onClick={this.addToCart}>ADD TO BAG</button>
                                 </div>

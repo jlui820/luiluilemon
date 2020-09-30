@@ -1,22 +1,25 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import MainBodyProducts from './main_page_products_body'
-import { fetchProducts, fetchProductsByCategory } from '../../actions/product_actions';
-
-const mapStateToProps = (state,ownProps) => {
-    return {
-        product: state.entities.products[ownProps.match.params.id]
-    }
-}
+// import React from 'react';
+// import { connect } from 'react-redux';
+// import MainBodyProducts from './main_page_products_body';
+// import { fetchProducts, fetchProductsByCategory } from '../../actions/product_actions';
 
 
-const mapDispatchToProps = dispatch => ({
-    fetchProducts: () => dispatch(fetchProducts()),
-    fetchProductsByCategory: (itemtype) => dispatch(fetchProductsByCategory(itemtype))
-})
+// const mapStateToProps = (state, ownProps) => {
+//     return {
+//         products: state.entities.products,
+//         cartItem: state.entities.cartItems,
+//         currentUser: state.session.id,
+//     }
+// }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainBodyProducts)
+// const mapDispatchToProps = dispatch => ({
+//     fetchProducts: () => dispatch(fetchProducts()),
+//     fetchProductsByCategory: (itemtype) => dispatch(fetchProductsByCategory(itemtype))
+// })
 
 
-//do i need this page?
+// export default connect(mapStateToProps, mapDispatchToProps)(MainBodyProducts)
+
+
+// //do i need this page?

@@ -30,8 +30,6 @@ const App = () => (
             <Route path='/' component={Main} />
         </Switch>
             <Footer />
-        {/* <footer>
-        </footer> */}
     </div>
 );
 

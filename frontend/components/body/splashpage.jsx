@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import MainBodyProducts from '../main_body_products/main_page_products_body'
 
 
 class Body extends React.Component {
@@ -37,11 +36,8 @@ class Body extends React.Component {
                     </ul>
                 </div>
                 <div className='splash-page-main-image-container'>
-                    
-                        <img className='splash-page-img' src={window.mainpageimage2} alt="" />
-                    
-                        <img className='splash-page-img' src={window.mainpageimage3} alt=""/>
-                    
+                    <img className='splash-page-img' src={window.mainpageimage2} alt="" />
+                    <img className='splash-page-img' src={window.mainpageimage3} alt=""/>
                 </div>                 
             </div>
         )

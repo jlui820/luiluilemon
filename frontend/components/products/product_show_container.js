@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
         product: state.entities.products[ownProps.match.params.id],
         cartItem: state.entities.cartItems,
-        currentUser: state.session.id
+        currentUser: state.session.id,
     }
 }
 
