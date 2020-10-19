@@ -63,9 +63,6 @@ class ProductIndex extends React.Component {
                     <div className='product-index-item'>
                         {product}
                     </div>
-                    {/* <div>
-                        {this.props.product2}
-                    </div> */}
                 </div>
             </div>      
         );

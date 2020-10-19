@@ -9,7 +9,6 @@ import ProductShowContainer from './products/product_show_container'
 import ProductIndexContainer from './products/product_index_container'
 import CartContainer from './cart/cart_container';
 import Modal from '../components/modal/modal';
-import SearchContainer from './search/search_container';
 import ReactGa from 'react-ga';
 
 
@@ -31,9 +30,6 @@ function App() {
                 <Route path='/products' component={ProductIndexContainer} />
                 <AuthRoute path='/UserSession' component={UserSession} />
                 <Route exact path="/cart" component={CartContainer} />
-
-                {/* <Route exact path="/search" component={SearchContainer} /> */}
-
                 <Route path='/' component={Main} />
             </Switch>
             <Footer />
