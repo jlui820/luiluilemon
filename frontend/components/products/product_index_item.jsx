@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProductIndexItem = (props) => {
-
+    
     return (
         <div className='whole-page-wrapper'>
             <div className='whole-content-wrapper'>

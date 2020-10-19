@@ -64,17 +64,6 @@ class LoginForm extends React.Component {
         this.props.processForm({email:'tucker@gmail.com', password: '123456'})
     }
 
-    // renderErrors() {
-    //     return (
-    //         <ul>
-    //             {this.props.errors.map((error, index) => (
-    //                 <div className='login-error' key={`${index}`}>
-    //                     {error}
-    //                 </div>
-    //             ))}
-    //         </ul>
-    //     );
-    // }
 
     render() {
         return (

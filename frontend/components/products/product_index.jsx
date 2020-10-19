@@ -30,6 +30,8 @@ class ProductIndex extends React.Component {
         return this.props.fetchProducts();
     }
 
+    
+
     render() {
         
         const { products } = this.state
