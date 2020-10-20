@@ -33,8 +33,11 @@ class Product extends React.Component {
     }
     
     render() {
-        // let  product  = this.props && this.props.product ? this.props.product : this.props.location.state.product;
-        let  product  = this.props ? this.props.product : this.props.location.state.product;
+        let  product  = this.props ? this.props.product : null;
+        if (!product) {
+            product = this.props.location.state ? this.props.location.state.product : null;
+        }
+
         if (!product) {
             return null;
         } else {
