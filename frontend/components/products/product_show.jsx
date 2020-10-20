@@ -37,7 +37,6 @@ class Product extends React.Component {
         if (!product) {
             product = this.props.location.state ? this.props.location.state.product : null;
         }
-
         if (!product) {
             return null;
         } else {
